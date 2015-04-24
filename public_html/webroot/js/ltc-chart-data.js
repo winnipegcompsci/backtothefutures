@@ -27,7 +27,6 @@ var randomScalingFactor = function(){ return Math.round(Math.random()*1000)};
 
 		}
 		
-
 window.onload = function(){
 	var chart1 = document.getElementById("ltc-line-chart").getContext("2d");
 	window.myLine = new Chart(chart1).Line(lineChartData, {
