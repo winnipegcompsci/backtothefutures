@@ -1,6 +1,5 @@
 <?php 
-echo "<pre>" . print_r($okcoin_data, TRUE) . "</pre>";
-echo "<pre>" . print_r($xchange796_data,  TRUE) . "</pre>";
+echo "<pre>" . print_r($okcoin_client, TRUE) . "</pre>";
 ?>
 
 <div class="row">
