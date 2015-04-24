@@ -55,11 +55,11 @@ class AppController extends Controller
         
         require_once(APP . 'Vendor' . DS  . 'okcoin' . DS . 'OKCoin.php');
         
+        $api_key = Configure::read('okcoin.apikey');
+        $secret_key = Configure::read('okcoin.secretkey');
+        
         $okcoin_client = new OKCoin(
-            new OKCoin_ApiKeyAuthentication(
-                Configure::read('okcoin.apikey'), 
-                Configure::read('okcoin.secretkey')
-            )
+            new OKCoin_ApiKeyAuthentication($api_key, $secret_key)
         );
         
         $this->set('okcoin_client', $okcoin_client);
