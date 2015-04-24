@@ -83,7 +83,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         
         <div class="row">
 			<div class="col-lg-12">
-				<h1 class="page-header"><?= $this->fetch('title'); ?></h1>
+				<h1 class="page-header"><?= $this->params['action'] ?></h1>
 			</div>
 		</div><!--/.row-->
         
