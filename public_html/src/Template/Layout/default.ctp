@@ -84,7 +84,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
         <div class="row">
 			<div class="col-lg-12">
-				<h1 class="page-header"><?= $this->request->params['pass'][0] ?></h1>
+				<h1 class="page-header"><?= ucwords($this->request->params['pass'][0]); ?></h1>
 			</div>
 		</div><!--/.row-->
         
