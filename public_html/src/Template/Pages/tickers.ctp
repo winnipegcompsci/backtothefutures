@@ -25,22 +25,22 @@ echo "<pre>" . print_r($okc_ltc_ticker, TRUE) . "</pre>";
                 <th> Item </th> <th> Value </th>
             </tr>
             <tr>
-                <td> Low </td> <td> </td>
+                <td> Low </td> <td> <?= $okc_btc_ticker->ticker->low ?> </td>
             </tr>
             <tr>
-                <td> High</td> <td>  </td>
+                <td> High</td> <td> <?= $okc_btc_ticker->ticker->high ?> </td>
             </tr>
             <tr>
-                <td> Last </td> <td>  </td>
+                <td> Last </td> <td> <?= $okc_btc_ticker->ticker->last ?>  </td>
             </tr>
             <tr>
-                <td> Buy </td> <td>  </td>
+                <td> Buy </td> <td> <?= $okc_btc_ticker->ticker->buy ?> </td>
             </tr>
             <tr>
-                <td> Sell </td> <td>  </td>
+                <td> Sell </td> <td> <?= $okc_btc_ticker->ticker->sell ?>  </td>
             </tr>
             <tr>
-                <td> Volume </td> <td> </td>
+                <td> Volume </td> <td> <?= $okc_btc_ticker->ticker->vol ?> </td>
             </tr>     
         </table>       
     </div>
@@ -81,23 +81,23 @@ echo "<pre>" . print_r($okc_ltc_ticker, TRUE) . "</pre>";
                 <th> Item </th> <th> Value </th>
             </tr>
             <tr>
-                <td> Low </td> <td> </td>
+                <td> Low </td> <td> <?= $okc_ltc_ticker->ticker->low ?> </td>
             </tr>
             <tr>
-                <td> High</td> <td>  </td>
+                <td> High</td> <td> <?= $okc_ltc_ticker->ticker->high ?> </td>
             </tr>
             <tr>
-                <td> Last </td> <td>  </td>
+                <td> Last </td> <td> <?= $okc_ltc_ticker->ticker->last ?>  </td>
             </tr>
             <tr>
-                <td> Buy </td> <td>  </td>
+                <td> Buy </td> <td> <?= $okc_ltc_ticker->ticker->buy ?> </td>
             </tr>
             <tr>
-                <td> Sell </td> <td>  </td>
+                <td> Sell </td> <td> <?= $okc_ltc_ticker->ticker->sell ?>  </td>
             </tr>
             <tr>
-                <td> Volume </td> <td> </td>
-            </tr>     
+                <td> Volume </td> <td> <?= $okc_ltc_ticker->ticker->vol ?> </td>
+            </tr>        
         </table>
     </div>
     
