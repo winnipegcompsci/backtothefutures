@@ -23,22 +23,22 @@ $okc_ltc_ticker = $okcoin_client->tickerApi(array('symbol' => 'ltc_usd'));
                         <th> Item </th> <th class="pull-right"> Value </th>
                     </tr>
                     <tr>
-                        <td> Low </td> <td class="pull-right"> <?= $okc_btc_ticker->ticker->low ?> </td>
+                        <td> Low </td> <td class="pull-right">$ <?= $okc_btc_ticker->ticker->low ?> </td>
                     </tr>
                     <tr>
-                        <td> High</td> <td class="pull-right"> <?= $okc_btc_ticker->ticker->high ?> </td>
+                        <td> High</td> <td class="pull-right">$ <?= $okc_btc_ticker->ticker->high ?> </td>
                     </tr>
                     <tr>
-                        <td> Last </td> <td class="pull-right"> <?= $okc_btc_ticker->ticker->last ?>  </td>
+                        <td> Last </td> <td class="pull-right">$ <?= $okc_btc_ticker->ticker->last ?>  </td>
                     </tr>
                     <tr>
-                        <td> Buy </td> <td class="pull-right"> <?= $okc_btc_ticker->ticker->buy ?> </td>
+                        <td> Buy </td> <td class="pull-right">$ <?= $okc_btc_ticker->ticker->buy ?> </td>
                     </tr>
                     <tr>
-                        <td> Sell </td> <td class="pull-right"> <?= $okc_btc_ticker->ticker->sell ?>  </td>
+                        <td> Sell </td> <td class="pull-right">$ <?= $okc_btc_ticker->ticker->sell ?>  </td>
                     </tr>
                     <tr>
-                        <td> Volume </td> <td class="pull-right"> <?= $okc_btc_ticker->ticker->vol ?> </td>
+                        <td> Volume </td> <td class="pull-right">$ <?= $okc_btc_ticker->ticker->vol ?> </td>
                     </tr>     
                 </table>       
             </div>
@@ -58,19 +58,19 @@ $okc_ltc_ticker = $okcoin_client->tickerApi(array('symbol' => 'ltc_usd'));
                         <th> Item </th> <th class="pull-right"> Value </th>
                     </tr>
                     <tr>
-                        <td> Low </td> <td class="pull-right"> </td>
+                        <td> Low </td> <td class="pull-right">$ </td>
                     </tr>
                     <tr>
-                        <td> High</td> <td class="pull-right">  </td>
+                        <td> High</td> <td class="pull-right">$  </td>
                     </tr>
                     <tr>
-                        <td> Last </td> <td class="pull-right">  </td>
+                        <td> Last </td> <td class="pull-right">$  </td>
                     </tr>
                     <tr>
-                        <td> Buy </td> <td class="pull-right">  </td>
+                        <td> Buy </td> <td class="pull-right">$  </td>
                     </tr>
                     <tr>
-                        <td> Sell </td> <td class="pull-right">  </td>
+                        <td> Sell </td> <td class="pull-right">$  </td>
                     </tr>
                     <tr>
                         <td> Volume </td> <td class="pull-right"> </td>
@@ -91,19 +91,19 @@ $okc_ltc_ticker = $okcoin_client->tickerApi(array('symbol' => 'ltc_usd'));
                         <th> Item </th> <th class="pull-right"> Value </th>
                     </tr>
                     <tr>
-                        <td> Low </td> <td class="pull-right"> <?= $okc_ltc_ticker->ticker->low ?> </td>
+                        <td> Low </td> <td class="pull-right">$ <?= $okc_ltc_ticker->ticker->low ?> </td>
                     </tr>
                     <tr>
-                        <td> High</td> <td class="pull-right"> <?= $okc_ltc_ticker->ticker->high ?> </td>
+                        <td> High</td> <td class="pull-right">$ <?= $okc_ltc_ticker->ticker->high ?> </td>
                     </tr>
                     <tr>
-                        <td> Last </td> <td class="pull-right"> <?= $okc_ltc_ticker->ticker->last ?>  </td>
+                        <td> Last </td> <td class="pull-right">$ <?= $okc_ltc_ticker->ticker->last ?>  </td>
                     </tr>
                     <tr>
-                        <td> Buy </td> <td class="pull-right"> <?= $okc_ltc_ticker->ticker->buy ?> </td>
+                        <td> Buy </td> <td class="pull-right">$ <?= $okc_ltc_ticker->ticker->buy ?> </td>
                     </tr>
                     <tr>
-                        <td> Sell </td> <td class="pull-right"> <?= $okc_ltc_ticker->ticker->sell ?>  </td>
+                        <td> Sell </td> <td class="pull-right">$ <?= $okc_ltc_ticker->ticker->sell ?>  </td>
                     </tr>
                     <tr>
                         <td> Volume </td> <td class="pull-right"> <?= $okc_ltc_ticker->ticker->vol ?> </td>
@@ -126,19 +126,19 @@ $okc_ltc_ticker = $okcoin_client->tickerApi(array('symbol' => 'ltc_usd'));
                     <th> Item </th> <th class="pull-right"> Value </th>
                 </tr>
                 <tr>
-                    <td> Low </td> <td class="pull-right"> </td>
+                    <td> Low </td> <td class="pull-right">$ </td>
                 </tr>
                 <tr>
-                    <td> High</td> <td class="pull-right">  </td>
+                    <td> High</td> <td class="pull-right">$  </td>
                 </tr>
                 <tr>
-                    <td> Last </td> <td class="pull-right">  </td>
+                    <td> Last </td> <td class="pull-right">$  </td>
                 </tr>
                 <tr>
-                    <td> Buy </td> <td class="pull-right">  </td>
+                    <td> Buy </td> <td class="pull-right">$  </td>
                 </tr>
                 <tr>
-                    <td> Sell </td> <td class="pull-right">  </td>
+                    <td> Sell </td> <td class="pull-right">$  </td>
                 </tr>
                 <tr>
                     <td> Volume </td> <td class="pull-right"> </td>
