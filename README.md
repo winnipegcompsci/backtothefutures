@@ -1,6 +1,5 @@
 BACK TO THE FUTURES:
 -------------------------------------------------------------------------------
-Push to Whiskey    (whiskey.backtothefutures.com)
 Push to Dev Server (dev.backtothefutures.com)
 
 
