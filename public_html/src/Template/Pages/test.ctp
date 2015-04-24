@@ -14,6 +14,8 @@ echo $this->Html->badge('3') ;
 
 echo $this->Html->alert('This is a warning alert!') ;
 echo $this->Html->alert('This is a success alert!', 'success');
+echo $this->Html->alert('This is a danger alert!', 'danger');
+
 echo $this->Html->alert('This is a info alert with a specific id!', [
     'id' => 'alert-info',
     'type' => 'info'
