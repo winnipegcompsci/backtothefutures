@@ -86,7 +86,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 				<h1 class="page-header"><?= ucwords($this->request->params['pass'][0]); ?></h1>
 			</div>
 		</div><!--/.row-->
-        -->
+        
         
         <div class="row">
             <?= $this->Flash->render() ?>
