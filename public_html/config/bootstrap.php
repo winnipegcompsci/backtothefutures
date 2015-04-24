@@ -182,6 +182,18 @@ Request::addDetector('tablet', function ($request) {
 Plugin::load('Bootstrap3', ['autoload' => true]);   // Twitter Bootstrap Helper.
 Plugin::load('Migrations');
 
+Configure::write(array(
+    'okcoin.apikey' => "a3df6a8b-2799-4988-9336-e4ce74b88408",
+    'okcoin.secretkey' => "C890A97000A0A5102CF6462F4F7BDCC1",
+));
+
+Configure::write(array(
+    'xchange796.appid' => "11378",
+    'xchange796.apikey' => "9ff4f593-0fd9-aaf9-b09a-8e2b-6b2f449c",
+    'xchange796.secretkey' => "QVx4ZB572LlRqtl9eQzGxm5DEhvZFM0G5JIOrUi3QPQNlinzGoVHfhIg77U9",
+));
+
+
 // Only try to load DebugKit in development mode
 // Debug Kit should not be installed on a production system
 if (Configure::read('debug')) {
