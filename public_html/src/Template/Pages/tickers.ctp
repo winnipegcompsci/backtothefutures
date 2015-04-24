@@ -18,7 +18,7 @@ $okc_ltc_ticker = $okcoin_client->tickerApi(array('symbol' => 'ltc_usd'));
         <div class="panel panel-default">
             <div class="panel-heading"> BTC Spot Price (OKCoin.com) </div>
             <div class="panel-body">     
-                <table class="col-lg-6 columns"> 
+                <table class="col-lg-12 columns"> 
                     <tr>
                         <th> Item </th> <th class="pull-right"> Value </th>
                     </tr>
@@ -53,7 +53,7 @@ $okc_ltc_ticker = $okcoin_client->tickerApi(array('symbol' => 'ltc_usd'));
         <div class="panel panel-default">
             <div class="panel-heading"> BTC Spot Price (796.com) </div>
             <div class="panel-body">
-                <table class="col-lg-6 columns"> 
+                <table class="col-lg-12 columns"> 
                     <tr>
                         <th> Item </th> <th class="pull-right"> Value </th>
                     </tr>
@@ -86,7 +86,7 @@ $okc_ltc_ticker = $okcoin_client->tickerApi(array('symbol' => 'ltc_usd'));
         <div class="panel panel-default">
             <div class="panel-heading"> LTC Spot Price (OKCoin.com) </div>
             <div class="panel-body">
-                <table class="col-lg-6 columns"> 
+                <table class="col-lg-12 columns"> 
                     <tr>
                         <th> Item </th> <th class="pull-right"> Value </th>
                     </tr>
@@ -121,7 +121,7 @@ $okc_ltc_ticker = $okcoin_client->tickerApi(array('symbol' => 'ltc_usd'));
         <div class="panel panel-default">
             <div class="panel-heading"> LTC Spot Price (796.com) </div>
             <div class="panel-body">
-            <table class="col-lg-6 columns"> 
+            <table class="col-lg-12 columns"> 
                 <tr>
                     <th> Item </th> <th class="pull-right"> Value </th>
                 </tr>
