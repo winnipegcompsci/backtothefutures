@@ -10,28 +10,112 @@
 
 <div class="row">
     <div class="col-lg-5 col-lg-offset-1 columns">
-        <h2 class="subheader"> OkCoin </h2>
-        
-        
+        <h2 class="subheader"> OkCoin - BTC </h2>        
         <table> 
             <tr>
-                <th> Currency </th> <th> Item </th> <th> Value </th>
+                <th> Item </th> <th> Value </th>
             </tr>
-            
             <tr>
-                <td> BTC </td> <td> High</td> <td> <?= $client->ticker(API) ?> </td>
+                <td> Low </td> <td> </td>
             </tr>
-            
             <tr>
-                <td>  BTC </td> <td> </td> <td> <? $client->tickerApi($params) ?> </td>
+                <td> High</td> <td>  </td>
             </tr>
-            
-        </table>
-        
+            <tr>
+                <td> Last </td> <td>  </td>
+            </tr>
+            <tr>
+                <td> Buy </td> <td>  </td>
+            </tr>
+            <tr>
+                <td> Sell </td> <td>  </td>
+            </tr>
+            <tr>
+                <td> Volume </td> <td> </td>
+            </tr>     
+        </table>       
     </div>
     
     <div class="col-lg-5 columns">
-        <h2 class="subheader"> 796 </h2>
+        <h2 class="subheader"> 796.com - BTC </h2>
+        <table> 
+            <tr>
+                <th> Item </th> <th> Value </th>
+            </tr>
+            <tr>
+                <td> Low </td> <td> </td>
+            </tr>
+            <tr>
+                <td> High</td> <td>  </td>
+            </tr>
+            <tr>
+                <td> Last </td> <td>  </td>
+            </tr>
+            <tr>
+                <td> Buy </td> <td>  </td>
+            </tr>
+            <tr>
+                <td> Sell </td> <td>  </td>
+            </tr>
+            <tr>
+                <td> Volume </td> <td> </td>
+            </tr>     
+        </table>     
     </div>
+</div> <!-- ./row --> 
 
+<div class="row">
+    <div class="col-lg-5 col-lg-offset-1 columns">
+        <h2 class="subheader"> OkCoin - LTC </h2>
+        <table> 
+            <tr>
+                <th> Item </th> <th> Value </th>
+            </tr>
+            <tr>
+                <td> Low </td> <td> </td>
+            </tr>
+            <tr>
+                <td> High</td> <td>  </td>
+            </tr>
+            <tr>
+                <td> Last </td> <td>  </td>
+            </tr>
+            <tr>
+                <td> Buy </td> <td>  </td>
+            </tr>
+            <tr>
+                <td> Sell </td> <td>  </td>
+            </tr>
+            <tr>
+                <td> Volume </td> <td> </td>
+            </tr>     
+        </table>
+    </div>
+    
+    <div class="col-lg-5 columns">
+        <h2 class="subheader"> 796.com - LTC </h2>
+        <table> 
+            <tr>
+                <th> Item </th> <th> Value </th>
+            </tr>
+            <tr>
+                <td> Low </td> <td> </td>
+            </tr>
+            <tr>
+                <td> High</td> <td>  </td>
+            </tr>
+            <tr>
+                <td> Last </td> <td>  </td>
+            </tr>
+            <tr>
+                <td> Buy </td> <td>  </td>
+            </tr>
+            <tr>
+                <td> Sell </td> <td>  </td>
+            </tr>
+            <tr>
+                <td> Volume </td> <td> </td>
+            </tr>     
+        </table>     
+    </div>
 </div>
