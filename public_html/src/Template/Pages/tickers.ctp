@@ -46,30 +46,34 @@ $okc_ltc_ticker = $okcoin_client->tickerApi(array('symbol' => 'ltc_usd'));
     </div>
     
     <div class="col-lg-3 col-lg-offset-1 columns">
-        <h2 class="subheader"> 796.com - BTC </h2>
-        <table class="col-lg-6 columns"> 
-            <tr>
-                <th> Item </th> <th class="pull-right"> Value </th>
-            </tr>
-            <tr>
-                <td> Low </td> <td class="pull-right"> </td>
-            </tr>
-            <tr>
-                <td> High</td> <td class="pull-right">  </td>
-            </tr>
-            <tr>
-                <td> Last </td> <td class="pull-right">  </td>
-            </tr>
-            <tr>
-                <td> Buy </td> <td class="pull-right">  </td>
-            </tr>
-            <tr>
-                <td> Sell </td> <td class="pull-right">  </td>
-            </tr>
-            <tr>
-                <td> Volume </td> <td class="pull-right"> </td>
-            </tr>     
-        </table>     
+        <div class="panel panel-default">
+            <div class="panel-heading"> BTC Spot Price (796.com) </div>
+            <div class="panel-body">
+                <table class="col-lg-6 columns"> 
+                    <tr>
+                        <th> Item </th> <th class="pull-right"> Value </th>
+                    </tr>
+                    <tr>
+                        <td> Low </td> <td class="pull-right"> </td>
+                    </tr>
+                    <tr>
+                        <td> High</td> <td class="pull-right">  </td>
+                    </tr>
+                    <tr>
+                        <td> Last </td> <td class="pull-right">  </td>
+                    </tr>
+                    <tr>
+                        <td> Buy </td> <td class="pull-right">  </td>
+                    </tr>
+                    <tr>
+                        <td> Sell </td> <td class="pull-right">  </td>
+                    </tr>
+                    <tr>
+                        <td> Volume </td> <td class="pull-right"> </td>
+                    </tr>     
+                </table> 
+            </div>
+        </div>
     </div>
 </div> <!-- ./row --> 
 
