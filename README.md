@@ -1,8 +1,7 @@
 BACK TO THE FUTURES:
 -------------------------------------------------------------------------------
-Host Entries:
-207.161.146.213		whiskey.backtothefutures.com        #Work, Home, Wherever.
-10.20.10.88		    dev.backtothefutures.com            #Work (Internal)
+- Add Vendor Files
+- Finish Migrating to Whiskey/Development.
 
 Settings (Inputs)::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 Recalculation Period – Interval on Which Positions are Re-Calculated.
