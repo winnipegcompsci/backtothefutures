@@ -11,7 +11,7 @@
 <div class="row">
     <div class="col-lg-5 col-lg-offset-1 columns">
         <h2 class="subheader"> OkCoin - BTC </h2>        
-        <table> 
+        <table class="col-lg-6 columns"> 
             <tr>
                 <th> Item </th> <th> Value </th>
             </tr>
@@ -38,7 +38,7 @@
     
     <div class="col-lg-5 columns pull-right">
         <h2 class="subheader"> 796.com - BTC </h2>
-        <table> 
+        <table class="col-lg-6 columns"> 
             <tr>
                 <th> Item </th> <th> Value </th>
             </tr>
@@ -67,7 +67,7 @@
 <div class="row">
     <div class="col-lg-5 col-lg-offset-1 columns">
         <h2 class="subheader"> OkCoin - LTC </h2>
-        <table> 
+        <table class="col-lg-6 columns"> 
             <tr>
                 <th> Item </th> <th> Value </th>
             </tr>
@@ -94,7 +94,7 @@
     
     <div class="col-lg-5 columns pull-right">
         <h2 class="subheader"> 796.com - LTC </h2>
-        <table> 
+        <table class="col-lg-6 columns"> 
             <tr>
                 <th> Item </th> <th> Value </th>
             </tr>
