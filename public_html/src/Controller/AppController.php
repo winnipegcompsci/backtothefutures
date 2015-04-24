@@ -52,5 +52,11 @@ class AppController extends Controller
     {
         parent::initialize();
         $this->loadComponent('Flash');
+        
+        $okcoin_data = Configure::read('okcoin');
+        $xchange796_data = Configure::read('xchange796');
+        
+        $this->set('okcoin_data', $okcoin_data);
+        $this->set('xchange796_data', $xchange796_data);
     }
 }

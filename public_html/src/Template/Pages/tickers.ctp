@@ -1,6 +1,4 @@
 <?php 
-$okcoin_data = Configure::read('okcoin');
-$xchange796_data = Configure::read('xchange796');
 echo "<pre>" . print_r($okcoin_data, TRUE) . "</pre>";
 echo "<pre>" . print_r($xchange796_data,  TRUE) . "</pre>";
 ?>
