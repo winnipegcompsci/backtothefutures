@@ -77,7 +77,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         <div class="row">   <!-- Breadcrum Row -->
 			<ol class="breadcrumb">
 				<li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
-				<li class="active"><?= $this->fetch('title') ?></li>
+				<li class="active"><?= isset(ucwords($this->request->params['pass'][0])) ? ucwords($this->request->params['pass'][0]) : $this->fetch('title') ?></li>
 			</ol>
 		</div><!--/.row-->
         <!-- 
