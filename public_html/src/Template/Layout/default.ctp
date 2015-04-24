@@ -60,11 +60,6 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 	</nav>
 		
 	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
-		<form role="search">
-			<div class="form-group">
-				<input type="text" class="form-control" placeholder="Search">
-			</div>
-		</form>
 		<ul class="nav menu">
 			<li class="active"><a href="index.html"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
 			<li><a href="widgets.html"><span class="glyphicon glyphicon-th"></span> Widgets</a></li>
@@ -100,7 +95,16 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 	</div><!--/.sidebar-->
 		
 	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">			
-		<?= $this->Flash->render() ?>
+        <div class="row">   <!-- Breadcrum Row -->
+			<ol class="breadcrumb">
+				<li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+				<li class="active"><?= $this->fetch('title') ?></li>
+			</ol>
+		</div><!--/.row-->
+        
+        <div class="row">
+            <?= $this->Flash->render() ?>
+        </div>
         
 		<div class="row">
             <?= $this->fetch('content'); ?>    
