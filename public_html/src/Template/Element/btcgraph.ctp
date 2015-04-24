@@ -1,4 +1,4 @@
-<div class="panel panel-default">
+<div class="panel panel-blue">
     <div class="panel-heading">BTC Spot Prices</div>
     <div class="panel-body">
         <div class="canvas-wrapper">
