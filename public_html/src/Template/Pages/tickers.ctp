@@ -1,7 +1,4 @@
 <?php 
-$api_key = Configure::read('okcoin.apikey');
-$secret_key = Configure::read('okcoin.secretkey');
-
 $okcoin_client = new OKCoin(
     new OKCoin_ApiKeyAuthentication($api_key, $secret_key)
 );

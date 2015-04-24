@@ -37,6 +37,12 @@ class PagesController extends AppController
      */
     public function display()
     {
+        $api_key = Configure::read('okcoin.apikey');
+        $secret_key = Configure::read('okcoin.secretkey');
+        $this->set('api_key', $api_key);
+        $this->set('secret_key', $secret_key);
+        
+        
         $path = func_get_args();
 
         $count = count($path);
