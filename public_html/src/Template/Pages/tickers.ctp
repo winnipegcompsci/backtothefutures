@@ -1,7 +1,5 @@
 <?php 
-$okcoin_client = new OKCoin(
-    new OKCoin_ApiKeyAuthentication($api_key, $secret_key)
-);
+
 echo "<pre>" . print_r($okcoin_client, TRUE) . "</pre>";
 ?>
 
