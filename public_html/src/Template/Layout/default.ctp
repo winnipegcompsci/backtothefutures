@@ -125,16 +125,6 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?= $this->Html->script('easypiechart-data'); ?>
     <?= $this->Html->script('bootstrap-datepicker'); ?>
     
-    <!-- 
-	<script src="js/jquery-1.11.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/chart.min.js"></script>
-	<script src="js/chart-data.js"></script>
-	<script src="js/easypiechart.js"></script>
-	<script src="js/easypiechart-data.js"></script>
-	<script src="js/bootstrap-datepicker.js"></script>
-    -->
-    
 	<script>
 		$('#calendar').datepicker({
 		});
