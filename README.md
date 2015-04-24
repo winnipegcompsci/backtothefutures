@@ -1,7 +1,9 @@
 BACK TO THE FUTURES:
 -------------------------------------------------------------------------------
-Push to Dev Server (dev.backtothefutures.com) -- Testing.
-
+Development Environment:
+Push to Whiskey     (Push Working Dir to Test) 
+Push to Dev Server  (To Show Joe)
+Push to Prod?       (Eventually).
 
 
 Settings (Inputs)::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
