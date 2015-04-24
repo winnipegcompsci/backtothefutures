@@ -100,9 +100,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?= $this->Html->script('jquery-1.11.1.min'); ?>
     <?= $this->Html->script('bootstrap.min'); ?>
     <?= $this->Html->script('chart.min'); ?>
-    <?= $this->Html->script('chart-data'); ?>
     <?= $this->Html->script('easypiechart'); ?>
-    <?= $this->Html->script('easypiechart-data'); ?>
     <?= $this->Html->script('bootstrap-datepicker'); ?>
     
 	<script>
