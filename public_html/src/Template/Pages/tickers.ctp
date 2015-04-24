@@ -10,11 +10,11 @@
 
 <div class="row">
 
-    <div class="col-lg-5 columns">
+    <div class="col-lg-6 columns" style="background-color: RED">
         <span> OkCoin </span>
     </div>
     
-    <div class="col-lg-5 columns">
+    <div class="col-lg-6 columns" style="background-color: BLUE">
         <span> 796 </span>
     </div>
 
