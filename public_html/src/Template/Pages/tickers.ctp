@@ -8,7 +8,7 @@ $okc_ltc_ticker = $okcoin_client->tickerApi(array('symbol' => 'ltc_usd'));
 ?>
 
 <div class="row">
-    <div class="col-lg-12">
+    <div class="col-lg-12 col-lg-offset-1 columns">
         <h1 class="page-header"><?= ucwords($this->request->params['pass'][0]); ?></h1>
     </div>
 </div>
