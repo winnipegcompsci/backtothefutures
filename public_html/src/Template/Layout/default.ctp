@@ -103,6 +103,12 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 		</div><!--/.row-->
         
         <div class="row">
+			<div class="col-lg-12">
+				<h1 class="page-header"><?= $this->fetch('title'); ?></h1>
+			</div>
+		</div><!--/.row-->
+        
+        <div class="row">
             <?= $this->Flash->render() ?>
         </div>
         
@@ -111,6 +117,15 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         </div>
 	</div>	<!--/.main-->
 
+    <?= $this->Html->script('jquery-1.11.1.min'); ?>
+    <?= $this->Html->script('bootstrap.min'); ?>
+    <?= $this->Html->script('chart.min'); ?>
+    <?= $this->Html->script('chart-data'); ?>
+    <?= $this->Html->script('easypiechart'); ?>
+    <?= $this->Html->script('easypiechart-data'); ?>
+    <?= $this->Html->script('bootstrap-datepicker'); ?>
+    
+    <!-- 
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/chart.min.js"></script>
@@ -118,6 +133,8 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 	<script src="js/easypiechart.js"></script>
 	<script src="js/easypiechart-data.js"></script>
 	<script src="js/bootstrap-datepicker.js"></script>
+    -->
+    
 	<script>
 		$('#calendar').datepicker({
 		});
