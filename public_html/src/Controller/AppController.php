@@ -15,7 +15,7 @@
 namespace App\Controller;
 
 use Cake\Controller\Controller;
-
+use Cake\Core\Configure;
 /**
  * Application Controller
  *
