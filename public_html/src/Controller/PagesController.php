@@ -40,9 +40,8 @@ class PagesController extends AppController
         $ok_api_key = Configure::read('okcoin.apikey');
         $ok_secret_key = Configure::read('okcoin.secretkey');
         
-
-        $this->set('ok_api_key', $api_key);
-        $this->set('ok_secret_key', $secret_key);
+        $this->set('ok_api_key', $ok_api_key);
+        $this->set('ok_secret_key', $ok_secret_key);
                 
         $path = func_get_args();
 
