@@ -11,6 +11,23 @@
 <div class="row">
     <div class="col-lg-5 col-lg-offset-1 columns">
         <h2 class="subheader"> OkCoin </h2>
+        
+        
+        <table> 
+            <tr>
+                <th> Currency </th> <th> Item </th> <th> Value </th>
+            </tr>
+            
+            <tr>
+                <td> BTC </td> <td> High</td> <td> <?= $client->ticker(API) ?> </td>
+            </tr>
+            
+            <tr>
+                <td>  BTC </td> <td> </td> <td> <? $client->tickerApi($params) ?> </td>
+            </tr>
+            
+        </table>
+        
     </div>
     
     <div class="col-lg-5 columns">
