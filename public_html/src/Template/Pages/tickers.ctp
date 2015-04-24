@@ -41,6 +41,10 @@ $okc_ltc_ticker = $okcoin_client->tickerApi(array('symbol' => 'ltc_usd'));
         </table>       
     </div>
     
+    <div class="col-lg-4 columns">
+        BTC GRAPH HERE!
+    </div>
+    
     <div class="col-lg-5 columns pull-right">
         <h2 class="subheader"> 796.com - BTC </h2>
         <table class="col-lg-6 columns"> 
@@ -70,7 +74,7 @@ $okc_ltc_ticker = $okcoin_client->tickerApi(array('symbol' => 'ltc_usd'));
 </div> <!-- ./row --> 
 
 <div class="row">
-    <div class="col-lg-5 col-lg-offset-1 columns">
+    <div class="col-lg-3 col-lg-offset-1 columns">
         <h2 class="subheader"> OkCoin - LTC </h2>
         <table class="col-lg-6 columns"> 
             <tr>
@@ -97,29 +101,33 @@ $okc_ltc_ticker = $okcoin_client->tickerApi(array('symbol' => 'ltc_usd'));
         </table>
     </div>
     
-    <div class="col-lg-5 columns pull-right">
+    <div class="col-lg-4 columns">
+        LTC GRAPH HERE!
+    </div>
+    
+    <div class="col-lg-3 columns pull-right">
         <h2 class="subheader"> 796.com - LTC </h2>
         <table class="col-lg-6 columns"> 
             <tr>
-                <th> Item </th> <th> Value </th>
+                <th> Item </th> <th class="pull-right"> Value </th>
             </tr>
             <tr>
-                <td> Low </td> <td> </td>
+                <td> Low </td> <td class="pull-right"> </td>
             </tr>
             <tr>
-                <td> High</td> <td>  </td>
+                <td> High</td> <td class="pull-right">  </td>
             </tr>
             <tr>
-                <td> Last </td> <td>  </td>
+                <td> Last </td> <td class="pull-right">  </td>
             </tr>
             <tr>
-                <td> Buy </td> <td>  </td>
+                <td> Buy </td> <td class="pull-right">  </td>
             </tr>
             <tr>
-                <td> Sell </td> <td>  </td>
+                <td> Sell </td> <td class="pull-right">  </td>
             </tr>
             <tr>
-                <td> Volume </td> <td> </td>
+                <td> Volume </td> <td class="pull-right"> </td>
             </tr>     
         </table>     
     </div>
