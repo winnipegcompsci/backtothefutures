@@ -28,8 +28,8 @@ var randomScalingFactor = function(){ return Math.round(Math.random()*1000)};
 		}
 		
 window.onload = function(){
-	var chart1 = document.getElementById("btc-line-chart").getContext("2d");
-	window.myLine = new Chart(chart1).Line(lineChartData, {
+	var btc_line_chart = document.getElementById("btc-line-chart").getContext("2d");
+	window.myLine = new Chart(btc_line_chart).Line(lineChartData, {
 		responsive: true
 	});	
 };
