@@ -1,10 +1,8 @@
 BACK TO THE FUTURES:
 -------------------------------------------------------------------------------
-Development Environment:
-Push to Whiskey     (Push Working Dir to Test) 
-Push to Dev Server  (To Show Joe)
-Push to Prod?       (Eventually).
-
+Host Entries:
+207.161.146.213		whiskey.backtothefutures.com        #Work, Home, Wherever.
+10.20.10.88		    dev.backtothefutures.com            #Work (Internal)
 
 Settings (Inputs)::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 Recalculation Period – Interval on Which Positions are Re-Calculated.

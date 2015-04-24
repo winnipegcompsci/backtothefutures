@@ -179,6 +179,7 @@ Request::addDetector('tablet', function ($request) {
  *
  */
 
+Plugin::load('Bootstrap3' ['autoload' => true]);
 Plugin::load('Migrations');
 
 // Only try to load DebugKit in development mode
