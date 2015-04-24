@@ -63,7 +63,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 		<ul class="nav menu">
 			<li class="active"><a href="index.html"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
 			<li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'display', 'tickers']); ?>"><span class="glyphicon glyphicon-th"></span> Tickers</a></li>
-            <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'display', 'depth']); ?>"><span class="glyphicon glyphicon-list-alt"></span> Market Depth</a></li>
+            <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'display', 'depths']); ?>"><span class="glyphicon glyphicon-list-alt"></span> Market Depth</a></li>
             
 			<li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'display', 'trades']); ?>"><span class="glyphicon glyphicon-stats"></span> Trades</a></li>
 			<li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'display', 'settlements']); ?>"><span class="glyphicon glyphicon-list-alt"></span> Settlements</a></li>
