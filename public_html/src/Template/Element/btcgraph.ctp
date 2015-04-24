@@ -7,4 +7,4 @@
     </div>
 </div>
 
-<?php echo $this->Html->script('chart-data'); ?>
+<?php echo $this->Html->script('btc-chart-data'); ?>
