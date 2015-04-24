@@ -42,7 +42,7 @@ $okc_ltc_ticker = $okcoin_client->tickerApi(array('symbol' => 'ltc_usd'));
     </div>
     
     <div class="col-lg-4 columns">
-        BTC GRAPH HERE!
+        <?= $this->element('btcgraph'); ?>
     </div>
     
     <div class="col-lg-3 col-lg-offset-1 columns">
@@ -102,7 +102,7 @@ $okc_ltc_ticker = $okcoin_client->tickerApi(array('symbol' => 'ltc_usd'));
     </div>
     
     <div class="col-lg-4 columns">
-        LTC GRAPH HERE!
+        <?= $this->element('ltcgraph'); ?>
     </div>
     
     <div class="col-lg-3 col-lg-offset-1 columns">
