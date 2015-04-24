@@ -36,7 +36,7 @@
         </table>       
     </div>
     
-    <div class="col-lg-5 columns">
+    <div class="col-lg-5 columns pull-right">
         <h2 class="subheader"> 796.com - BTC </h2>
         <table> 
             <tr>
@@ -92,7 +92,7 @@
         </table>
     </div>
     
-    <div class="col-lg-5 columns">
+    <div class="col-lg-5 columns pull-right">
         <h2 class="subheader"> 796.com - LTC </h2>
         <table> 
             <tr>
