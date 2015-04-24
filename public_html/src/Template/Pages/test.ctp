@@ -1,5 +1,8 @@
 <?php 
 
+echo $this->Flash->success('This was successfull');
+echo $this->Flash->danger('This was dangerous');
+
 echo $this->Html->icon('pencil');
 echo $this->Html->glIcon('pencil'); // Glyphicon icons are still available with BootstrapHtmlHelper::glIcon
 echo $this->Html->faIcon('pencil'); // FontAwesome are always available using BootstrapHtmlHelper::faIcon
