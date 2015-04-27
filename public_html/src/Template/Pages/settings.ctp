@@ -26,6 +26,7 @@ Leverage - 20x Leverage: 5% market movement || 50x Leverage: 2% market movement.
     echo $this->Form->input('slippage_stop_percentant');
     echo $this->Form->label('Select Your Leverage');
     echo $this->Form->select('leverage', $leverages, ['default' => '20']);
-    echo $this->Form->end('Update Settings');
+    echo $this->Form->button('Save');
+    echo $this->Form->end();
     
 ?>

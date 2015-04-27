@@ -10,7 +10,7 @@ Cover Ratio – The Ratio of Collateral Left Exposed vs. Unexposed
 Position Bias – The direction the hedge leans (long or short)
 Slippage Stop Percentage (SSP) – The amount of slippage we want to allow before 
                                  forcing re-calculation
-Leverage – (20x Leverage – 5% market movement || 
+Leverage – (20x Leverage – 5% market movement wipeout || 
             50x Leverage – 2% Market Movement Wipeout) 
 
 Views / Displays (Outputs):::::::::::::::::::::::::::::::::::::::::::::::::::::
