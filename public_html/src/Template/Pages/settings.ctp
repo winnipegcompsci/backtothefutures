@@ -1,5 +1,6 @@
 <div class="columns col-lg-5 col-lg-offset-1">
 
+<h2> Terms </h2>
 <dl>
     <dt>Recalculation Period</dt>
     <dd>Interval on which positions get recalculated.</dd>
