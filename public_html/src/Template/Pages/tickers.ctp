@@ -53,10 +53,6 @@ $x796_btc_ticker = json_decode(curl_get($url, $post));
 
 $url = $BASE_URL . 'ltc';
 $x796_ltc_ticker = json_decode(curl_get($url, $post));
-
-echo "<pre>" . print_r($x796_btc_ticker, TRUE) . "</pre>";
-echo "<pre>" . print_r($x796_ltc_ticker, TRUE) . "</pre>";
-
 ?>
 
 <div class="row">
@@ -110,22 +106,22 @@ echo "<pre>" . print_r($x796_ltc_ticker, TRUE) . "</pre>";
                         <th> Item </th> <th class="pull-right"> Value </th>
                     </tr>
                     <tr>
-                        <td> Low </td> <td class="pull-right">$ </td>
+                        <td> Low </td> <td class="pull-right">$ <?= $x796_btc_ticker->ticker->low ?> </td>
                     </tr>
                     <tr>
-                        <td> High</td> <td class="pull-right">$  </td>
+                        <td> High</td> <td class="pull-right">$ <?= $x796_btc_ticker->ticker->high ?> </td>
                     </tr>
                     <tr>
-                        <td> Last </td> <td class="pull-right">$  </td>
+                        <td> Last </td> <td class="pull-right">$ <?= $x796_btc_ticker->ticker->last ?> </td>
                     </tr>
                     <tr>
-                        <td> Buy </td> <td class="pull-right">$  </td>
+                        <td> Buy </td> <td class="pull-right">$ <?= $x796_btc_ticker->ticker->buy ?> </td>
                     </tr>
                     <tr>
-                        <td> Sell </td> <td class="pull-right">$  </td>
+                        <td> Sell </td> <td class="pull-right">$ <?= $x796_btc_ticker->ticker->sell ?> </td>
                     </tr>
                     <tr>
-                        <td> Volume </td> <td class="pull-right"> </td>
+                        <td> Volume </td> <td class="pull-right"> <?= $x796_btc_ticker->ticker->vol ?></td>
                     </tr>     
                 </table> 
             </div>
@@ -178,22 +174,22 @@ echo "<pre>" . print_r($x796_ltc_ticker, TRUE) . "</pre>";
                     <th> Item </th> <th class="pull-right"> Value </th>
                 </tr>
                 <tr>
-                    <td> Low </td> <td class="pull-right">$ </td>
+                    <td> Low </td> <td class="pull-right">$ <?= $x796_ltc_ticker->ticker->low ?> </td>
                 </tr>
                 <tr>
-                    <td> High</td> <td class="pull-right">$  </td>
+                    <td> High</td> <td class="pull-right">$ <?= $x796_ltc_ticker->ticker->high ?> </td>
                 </tr>
                 <tr>
-                    <td> Last </td> <td class="pull-right">$  </td>
+                    <td> Last </td> <td class="pull-right">$ <?= $x796_ltc_ticker->ticker->last ?> </td>
                 </tr>
                 <tr>
-                    <td> Buy </td> <td class="pull-right">$  </td>
+                    <td> Buy </td> <td class="pull-right">$ <?= $x796_ltc_ticker->ticker->buy ?> </td>
                 </tr>
                 <tr>
-                    <td> Sell </td> <td class="pull-right">$  </td>
+                    <td> Sell </td> <td class="pull-right">$ <?= $x796_ltc_ticker->ticker->sell ?> </td>
                 </tr>
                 <tr>
-                    <td> Volume </td> <td class="pull-right"> </td>
+                    <td> Volume </td> <td class="pull-right"> <?= $x796_ltc_ticker->ticker->vol ?> </td>
                 </tr>     
             </table>
             </div>
