@@ -1,10 +1,3 @@
-Recalculation Period - Interval on Which Positions are Recalculated.
-Hedge Amount - Amount to Be Hedged
-Cover Ratio - The Ratio of Collateral Left Explosed vs. Unexposed.
-Position Bias - Direction Hedge Leans (long or short).
-Slippage Stop Percentage - The amount of slippage before forcing early recalculation.
-Leverage - 20x Leverage: 5% market movement || 50x Leverage: 2% market movement.
-
 <dl>
     <dt>Recalculation Period</dt>
     <dd>Interval on which positions get recalculated.</dd>
@@ -19,9 +12,10 @@ Leverage - 20x Leverage: 5% market movement || 50x Leverage: 2% market movement.
     <dd>Direction Hedge Leans (Long or Short).</dd>
     
     <dt>Slippage Stop Percentage</td>
-    <dd></dd>
+    <dd>The amount of slippage before forcing early recalculation.</dd>
     
-    <dt>Leverage </dt></dd>
+    <dt>Leverage </dt>
+    <dd>20x Leverage: 5% market movement || 50x Leverage: 2% market movement.</dd>
 </dl>
     
 
