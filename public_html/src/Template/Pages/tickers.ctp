@@ -88,7 +88,7 @@ $x796_ltc_ticker = json_decode(curl_get($url, $post));
                         <td> Sell </td> <td class="pull-right">$ <?= $okc_btc_ticker->ticker->sell ?>  </td>
                     </tr>
                     <tr>
-                        <td> Volume </td> <td class="pull-right">$ <?= $okc_btc_ticker->ticker->vol ?> </td>
+                        <td> Volume </td> <td class="pull-right"> <?= $okc_btc_ticker->ticker->vol ?> </td>
                     </tr>     
                 </table>       
             </div>
