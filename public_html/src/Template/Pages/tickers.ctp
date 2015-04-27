@@ -14,7 +14,7 @@ function getPost($params = array()) {
         next($params);
     }
     $sign	= rtrim($sign,"&");
-    $sign	= base64_encode(hash_hmac('sha1', $sign, $this->$x796_secret_key));
+    $sign	= base64_encode(hash_hmac('sha1', $sign, Configure::read('xchange796.secretkey')));
 
     $post = array(
         'apikey'	=> $params['apikey'],
