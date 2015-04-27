@@ -95,7 +95,7 @@ $x796_ltc_ticker = json_decode(curl_get($url, $post));
         </div>
     </div>
         
-    <div class="col-lg-7 columns">
+    <div class="col-lg-6 columns">
         <?= $this->element('btcgraph'); ?>
     </div>    
         
