@@ -1,3 +1,5 @@
+<div class="columns col-lg-5 col-lg-offset-1">
+
 <dl>
     <dt>Recalculation Period</dt>
     <dd>Interval on which positions get recalculated.</dd>
@@ -18,6 +20,9 @@
     <dd>20x Leverage: 5% market movement || 50x Leverage: 2% market movement.</dd>
 </dl>
     
+</div>
+
+<div class="columns col-lg-5"> 
 
 <?php
     $biases = array('L' => 'Long', 'S' => 'Short');
@@ -38,3 +43,5 @@
     echo $this->Form->button('Save');
     echo $this->Form->end();  
 ?>
+
+</div>

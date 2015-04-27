@@ -11,6 +11,12 @@ TODO:: Back To The Futures.
     IF New Price >= 1% +/- last fetched price then...  
         Hoodie, or Not and the Middle East. 
     
+4. Implement Decision Based Strategy Functions:
+    1. Long / Short Equity
+    2. Market Neutral
+    3. Merger Arbitrage 
+    4. Convertible Arbitrage
+    5. Event Driven   
 
 Example of Historical Price Changes:
 0: 100.00 (Initial Price).

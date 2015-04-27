@@ -45,8 +45,7 @@ Facilitate this.
 
 Scenario 2:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 Price goes up to $105.00. The OKCoin position would be up 10 BTC. 
-The 796 Position would be wiped out.  Net gain is 6 BTC. 
-The 796.com position needs to be re-opened at 105$
+The 796 Position needs to be re-opened at 105$
 
 Scenario 3:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 Price goes down to $98.00. 
