@@ -19,7 +19,7 @@ $okc_ltc_future_depth = $okcoin_client->depthFutureApi(array(
 ));
 
 ?>
-<table class="col-lg-12 columns">
+<table class="col-lg-12 columns" border="1px solid black;">
 <tr>
     <th>Currency</th>
     <th>Current Depth</th>
