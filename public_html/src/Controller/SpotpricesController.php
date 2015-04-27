@@ -111,9 +111,7 @@ class SpotpricesController extends AppController
     }
     
     public function update() 
-    {
-        require_once(APP . 'Vendor' . DS  . 'okcoin' . DS . 'OKCoin.php');
-        
+    {        
         $spotprice = $this->Spotprices->newEntity();
         echo "Spot Price:: <pre>" . print_r($spotprice, TRUE) . "</pre>";
         
@@ -131,6 +129,7 @@ class SpotpricesController extends AppController
         $ok_api_key = Configure::read('okcoin.apikey');
         $ok_secret_key = Configure::read('okcoin.secretkey');                
 
+        require_once(APP . 'Vendor' . DS  . 'okcoin' . DS . 'OKCoin.php');
         $okcoin_client = new OKCoin(
             new OKCoin_ApiKeyAuthentication($ok_api_key, $ok_secret_key)
         );
