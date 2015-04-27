@@ -117,6 +117,10 @@ class SpotpricesController extends AppController
         $spotprice = $this->Spotprices->newEntity();
         echo "Spot Price:: <pre>" . print_r($spotprice, TRUE) . "</pre>";
         
+        $ok_api_key = Configure::read('okcoin.apikey');
+        $ok_secret_key = Configure::read('okcoin.secretkey');
+        
+        
         $okcoin_client = new OKCoin(
             new OKCoin_ApiKeyAuthentication($ok_api_key, $ok_secret_key)
         );
