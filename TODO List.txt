@@ -5,6 +5,15 @@ TODO:: Back To The Futures.
     - Setup Cron / Shell to do this?
     - On Fetch Save Results witgh PK of Timestamp to database.
     
-2. Handle Logic for Price +- 1% (or SPP).
+2. Depth API vs Depth (Future) API??
 
-3. 
+3. Start Logging Price Changes.
+    IF New Price >= 1% +/- last fetched price then...  
+        Hoodie, or Not and the Middle East. 
+    
+
+Example of Historical Price Changes:
+0: 100.00 (Initial Price).
+1: 101.00 (Keep OKC, Close 796 and Reopen at 101$)
+2: 105.00 (Keep OKC, Close 796 and Reopen at 105$)
+3: 98     (Keep 796, Close  OKC, Reopen @ 98$)
