@@ -14,7 +14,7 @@ function getPost($params = array()) {
         next($params);
     }
     $sign	= rtrim($sign,"&");
-    $sign	= base64_encode(hash_hmac('sha1', $sign, EXCHANGE796_SECRETKEY));
+    $sign	= base64_encode(hash_hmac('sha1', $sign, $x796_secret_key));
 
     $post = array(
         'apikey'	=> $params['apikey'],
@@ -49,10 +49,10 @@ $params = array(
 
 $post = getPost($params);     
 $url = $BASE_URL . 'weekly';
-$x796_btc_ticker = curl_get($url, $post);
+$x796_btc_ticker = json_decode(curl_get($url, $post));
 
 $url = $BASE_URL . 'ltc';
-$x796_ltc_ticker = curl_get($url, $post);
+$x796_ltc_ticker = json_decode(curl_get($url, $post));
 
 echo "<pre>" . print_r($x796_btc_ticker, TRUE) . "</pre>";
 echo "<pre>" . print_r($x796_ltc_ticker, TRUE) . "</pre>";
