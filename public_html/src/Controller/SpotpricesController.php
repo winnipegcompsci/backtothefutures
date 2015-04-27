@@ -114,6 +114,19 @@ class SpotpricesController extends AppController
     {
         require_once(APP . 'Vendor' . DS  . 'okcoin' . DS . 'OKCoin.php');
         
+        $spotprice = $this->Spotprices->newEntity();
+        echo "Spot Price:: <pre>" . print_r($spotprice, TRUE) . "</pre>";
+        die('DIE: Point A');
+        
+        if ($this->request->is('post')) {
+            if ($this->Spotprices->save($spotprice)) {
+                $this->Flash->success('The spotprice has been saved.');
+                return $this->redirect(['action' => 'index']);
+            } else {
+                $this->Flash->error('The spotprice could not be saved. Please, try again.');
+            }
+        }
+       
         $ok_api_key = Configure::read('okcoin.apikey');
         $ok_secret_key = Configure::read('okcoin.secretkey');                
 
