@@ -6,10 +6,6 @@ $okcoin_client = new OKCoin(
 $okc_btc_depth = $okcoin_client->depthApi(array('symbol' => 'btc_usd', 'size' => 5));
 $okc_ltc_depth = $okcoin_client->depthApi(array('symbol' => 'ltc_usd', 'size' => 5));
 
-echo "Client:: <pre>" . print_r($okcoin_client, TRUE) . "</pre>";
-echo "BTC Depth<pre>" . print_r($okc_btc_depth, TRUE) . "</pre>";
-echo "LTC Depth<pre>" . print_r($okc_ltc_depth, TRUE) . "</pre>";
-
 $okc_btc_future_depth = $okcoin_client->depthFutureApi(array(
     'symbol' => 'btc_usd', 
     'contract_type' => 'this_week', 
