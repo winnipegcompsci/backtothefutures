@@ -22,6 +22,28 @@ $okc_ltc_future_depth = $okcoin_client->depthFutureApi(array(
     'size' => 5,
 ));
 
+?>
+<table>
+<tr>
+    <th>Currency</th>
+    <th>Current Depth</th>
+    <th>Future Depth</th>
+</tr>
+
+<tr>
+    <td>BTC</td>
+    <td><?php echo "<pre>" . print_r($okc_btc_depth, TRUE) . "</pre>"; ?></td>
+    <td><?php echo "<pre>" . print_r($okc_btc_future_depth, TRUE) . "</pre>"; ?></td>
+</tr>
+
+<tr>
+    <td> LTC </td>
+    <td><?php echo "<pre>" . print_r($okc_ltc_depth, TRUE) . "</pre>"; ?></td>
+    <td><?php echo "<pre>" . print_r($okc_ltc_future_depth, TRUE) .  "</pre>"; ?></td>
+</tr>
+</table>
+
+
 echo "BTC Futures Depth: <pre>" . print_r($okc_btc_future_depth, TRUE) . "</pre>";
 echo "LTC Futures Depth: <pre>" . print_r($okc_ltc_future_depth, TRUE) . "</pre>";
  
