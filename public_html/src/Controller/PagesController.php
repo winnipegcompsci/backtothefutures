@@ -40,8 +40,16 @@ class PagesController extends AppController
         $ok_api_key = Configure::read('okcoin.apikey');
         $ok_secret_key = Configure::read('okcoin.secretkey');
         
+        $x796_api_key = Configure::read('xchange796.apikey');
+        $x796_secret_key = Configure::read('xchange796.secretkey');
+        $x796_app_id = Configure::read('xchange796.appid');  
+        
         $this->set('ok_api_key', $ok_api_key);
         $this->set('ok_secret_key', $ok_secret_key);
+        
+        $this->set('x796_api_key', $x796_api_key);
+        $this->set('x796_secret_key', $x796_secret_key);
+        $this->set('x796_app_id', $x796_app_id);
                 
         $path = func_get_args();
 

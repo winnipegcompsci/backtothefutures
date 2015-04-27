@@ -26,6 +26,7 @@
 
 <?php
     $biases = array('L' => 'Long', 'S' => 'Short');
+    
     $leverages = array(
         '20' => '20x Leverage - 5% Market Movement',
         '50' => '50x Leverage - 2% Market Movement',
