@@ -64,7 +64,7 @@ $x796_ltc_ticker = json_decode(curl_get($url, $post));
 </div>
 
 <div class="row">
-    <div class="col-lg-4 columns">
+    <div class="col-lg-2 columns">
         <div class="panel panel-blue">
             <div class="panel-heading"> BTC Spot Price (OKCoin.com) </div>
             <div class="panel-body">     
@@ -95,11 +95,11 @@ $x796_ltc_ticker = json_decode(curl_get($url, $post));
         </div>
     </div>
         
-    <div class="col-lg-4 columns">
+    <div class="col-lg-6 columns">
         <?= $this->element('btcgraph'); ?>
     </div>    
         
-    <div class="col-lg-4 columns">
+    <div class="col-lg-2 columns">
         <div class="panel panel-blue">
             <div class="panel-heading"> BTC Spot Price (796.com) </div>
             <div class="panel-body">
@@ -132,7 +132,7 @@ $x796_ltc_ticker = json_decode(curl_get($url, $post));
 </div> <!-- ./row --> 
 
 <div class="row">
-    <div class="col-lg-4 columns">
+    <div class="col-lg-2 columns">
         <div class="panel panel-teal">
             <div class="panel-heading"> LTC Spot Price (OKCoin.com) </div>
             <div class="panel-body">
@@ -163,11 +163,11 @@ $x796_ltc_ticker = json_decode(curl_get($url, $post));
         </div>
     </div>
  
-    <div class="col-lg-4 columns">
+    <div class="col-lg-6 columns">
         <?= $this->element('ltcgraph'); ?>
     </div>
  
-    <div class="col-lg-4 columns">
+    <div class="col-lg-2 columns">
         <div class="panel panel-teal">
             <div class="panel-heading"> LTC Spot Price (796.com) </div>
             <div class="panel-body">
