@@ -11,7 +11,7 @@ Leverage - 20x Leverage: 5% market movement || 50x Leverage: 2% market movement.
 
 <?php 
     echo $this->Form->create();
-    echo $this->Form->create('recalculation_spot_price', TRUE);
+    echo $this->Form->input('recalculation_spot_price');
     echo $this->Form->input('hedge_amount');
     echo $this->Form->input('cover_ratio');
     echo $this->Form->input('position_bias');
