@@ -17,6 +17,6 @@ Leverage - 20x Leverage: 5% market movement || 50x Leverage: 2% market movement.
     echo $this->Form->input('position_bias');
     echo $this->Form->input('slippage_stop_percentant');
     echo $this->Form->input('leverage');
-    echo $this->Form->end();
+    echo $this->Form->end('Update Settings');
     
 ?>
