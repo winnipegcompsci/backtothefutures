@@ -62,7 +62,7 @@ return [
      *   You should treat it as extremely sensitive data.
      */
     'Security' => [
-        'salt' => '__SALT__',
+        'salt' => '883e1d73315f609d8a39360e62c85a8a43ca897baf238c19c5efdf3ae1049020',
     ],
 
     /**
@@ -219,9 +219,9 @@ return [
              * the following line and set the port accordingly
              */
             //'port' => 'nonstandard_port_number',
-            'username' => 'my_app',
-            'password' => 'secret',
-            'database' => 'my_app',
+            'username' => 'root',
+            'password' => '',
+            'database' => 'backtothefutures',
             'encoding' => 'utf8',
             'timezone' => 'UTC',
             'cacheMetadata' => true,
