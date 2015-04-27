@@ -111,35 +111,13 @@ class SpotpricesController extends AppController
     }
     
     public function update() 
-    {        
+    {    
+        require_once(APP . 'Vendor' . DS  . 'okcoin' . DS . 'OKCoin.php');
+        
         $spotprice = $this->Spotprices->newEntity();
         echo "Spot Price:: <pre>" . print_r($spotprice, TRUE) . "</pre>";
         
-        /*
-        if ($this->request->is('post')) {
-            if ($this->Spotprices->save($spotprice)) {
-                $this->Flash->success('The spotprice has been saved.');
-                return $this->redirect(['action' => 'index']);
-            } else {
-                $this->Flash->error('The spotprice could not be saved. Please, try again.');
-            }
-        }
-        */
-       
-        $ok_api_key = Configure::read('okcoin.apikey');
-        $ok_secret_key = Configure::read('okcoin.secretkey');                
-
-        require_once(APP . 'Vendor' . DS  . 'okcoin' . DS . 'OKCoin.php');
-        $okcoin_client = new OKCoin(
-            new OKCoin_ApiKeyAuthentication($ok_api_key, $ok_secret_key)
-        );
-
-        echo "Client: <pre>" . print_r($okcoin_client, TRUE) . "</pre>";
+              
         
-        $okc_btc_ticker = $okcoin_client->tickerApi(array('symbol' => 'btc_usd'));
-        $okc_ltc_ticker = $okcoin_client->tickerApi(array('symbol' => 'ltc_usd'));
-
-        echo "BTC Ticker: <pre>" . print_r($okc_btc_ticker, TRUE) . "</pre>";
-        echo "LTC Ticker: <pre>" . print_r($okc_ltc_ticker, TRUE) . "</pre>";
     }
 }
