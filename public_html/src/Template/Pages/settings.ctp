@@ -8,15 +8,22 @@ Position Bias - Direction Hedge Leans (long or short).
 Slippage Stop Percentage - The amount of slippage before forcing early recalculation.
 Leverage - 20x Leverage: 5% market movement || 50x Leverage: 2% market movement.
 
+    
 
-<?php 
+<?php
+    $biases = array('L' => 'Long', 'S' => 'Short');
+    $leverages = array(
+        '20' => '20x Leverage - 5% Market Movement',
+        '50' => '50x Leverage - 2% Market Movement',
+    );
+    
     echo $this->Form->create();
-    echo $this->Form->input('recalculation_spot_price');
+    echo $this->Form->input('recalc_period');
     echo $this->Form->input('hedge_amount');
     echo $this->Form->input('cover_ratio');
-    echo $this->Form->input('position_bias');
+    echo $this->Form->select('position_bias', $biases, ['default' => 'L'] );
     echo $this->Form->input('slippage_stop_percentant');
-    echo $this->Form->input('leverage');
+    echo $this->Form->select('leverage', $leverages, ['default' => '20']);
     echo $this->Form->end('Update Settings');
     
 ?>
