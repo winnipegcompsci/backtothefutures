@@ -4,3 +4,7 @@ TODO:: Back To The Futures.
 1. Fetch Spot Prices Every X Minutes
     - Setup Cron / Shell to do this?
     - On Fetch Save Results witgh PK of Timestamp to database.
+    
+2. Handle Logic for Price +- 1% (or SPP).
+
+3. 

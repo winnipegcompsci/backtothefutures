@@ -111,9 +111,7 @@ class SpotpricesController extends AppController
     }
     
     public function update() 
-    {    
-        require(APP . 'Vendor' . DS  . 'okcoin' . DS . 'OKCoin.php');
-        
+    {            
         $spotprice = $this->Spotprices->newEntity();
         echo "Spot Price:: <pre>" . print_r($spotprice, TRUE) . "</pre>";
         
