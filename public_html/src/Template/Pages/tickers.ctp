@@ -10,8 +10,8 @@ $okc_ltc_ticker = $okcoin_client->tickerFutureApi(array('symbol' => 'ltc_usd', '
 
 $params = array(
     'symbol' => 'btc_usd',
-    'contract_type' => '',
-    'api_key' => '',
+    'contract_type' => 'weekly',
+    'api_key' => $ok_api_key,
 
 );
 
