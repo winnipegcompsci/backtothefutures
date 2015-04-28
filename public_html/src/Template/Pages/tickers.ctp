@@ -8,15 +8,9 @@ $okcoin_client = new OKCoin(
 $okc_btc_ticker = $okcoin_client->tickerFutureApi(array('symbol' => 'btc_usd', 'contract_type' => 'this_week'));
 $okc_ltc_ticker = $okcoin_client->tickerFutureApi(array('symbol' => 'ltc_usd', 'contract_type' => 'this_week'));
 
-$params = array(
-    'api_key' => $ok_api_key,
-    'symbol' => 'btc_usd',
-    'contract_type' => 'this_week',
-);
-
-
-$future_pos = $okcoin_client->positionFutureApi($params);
-echo "<pre>" . print_r($future_pos, TRUE) . "</pre>";
+$params = array('api_key' => $ok_api_key, 'symbol' => 'btc_usd', 'contract_type' => 'this_week', 'type' => 1);
+$positions = $okcoin_client -> singleBondPositionFutureApi($params);
+echo "<pre>" . print_r($positions, TRUE) . "</pre>";
 die('Printed Future POS');
 
 function getPost($params = array()) {
