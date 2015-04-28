@@ -15,11 +15,11 @@ $params = array(
 
 );
 
-$params['sign'] = getPost($params);
+$post = getPost($params);
 
-$future_pos = $okcoin_client->positionFutureApi($params);
+$future_pos = $okcoin_client->positionFutureApi($post);
 echo "<pre>" . print_r($future_pos, TRUE) . "</pre>";
-die('Printed Future POS');
+// die('Printed Future POS');
 
 function getPost($params = array()) {
     ksort($params);
