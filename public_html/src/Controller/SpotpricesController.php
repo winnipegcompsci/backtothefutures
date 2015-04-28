@@ -116,7 +116,8 @@ class SpotpricesController extends AppController
     {
         $ok_api_key = Configure::read('okcoin.apikey');
         $ok_secret_key = Configure::read('okcoin.secretkey');
-        // require(APP . 'Vendor' . DS  . 'okcoin' . DS . 'OKCoin.php');
+        
+        require(APP . 'Vendor' . DS  . 'okcoin' . DS . 'OKCoin.php');
         
         $client = new OKCoin(new OKCoin_ApiKeyAuthentication($ok_api_key, $ok_secret_key));
         
