@@ -11,14 +11,13 @@ $okc_ltc_ticker = $okcoin_client->tickerFutureApi(array('symbol' => 'ltc_usd', '
 $params = array(
     'symbol' => 'btc_usd',
     'contract_type' => 'weekly',
-    'api_key' => $ok_api_key,
-
+    'apikey' => $ok_api_key,
 );
 
 $post = getPost($params);
 
 $future_pos = $okcoin_client->positionFutureApi($post);
-// echo "<pre>" . print_r($future_pos, TRUE) . "</pre>";
+echo "<pre>" . print_r($future_pos, TRUE) . "</pre>";
 // die('Printed Future POS');
 
 function getPost($params = array()) {
