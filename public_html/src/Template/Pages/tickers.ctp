@@ -19,7 +19,7 @@ $params['sign'] = getPost($params);
 
 $future_pos = $okcoin_client->positionFutureApi($params);
 echo "<pre>" . print_r($future_pos, TRUE) . "</pre>";
-
+die('Printed Future POS');
 
 function getPost($params = array()) {
     ksort($params);
