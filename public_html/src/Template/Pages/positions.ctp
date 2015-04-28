@@ -3,11 +3,11 @@ $okcoin_client = new OKCoin(
     new OKCoin_ApiKeyAuthentication($ok_api_key, $ok_secret_key)
 );
 
-$params = array('api_key' => $ok_api_key, 'symbol' => 'btc_usd', 'contract_type' => 'this_week');
-$okc_btc_position = $okcoin_client->positionFutureApi($params);
+$params = array('api_key' => $ok_api_key, 'symbol' => 'btc_usd', 'contract_type' => 'this_week', 'type' => 1);
+$okc_btc_position = $okcoin_client->singleBondPositionFutureApi($params);
 
-$params = array('api_key' => $ok_api_key, 'symbol' => 'ltc_usd', 'contract_type' => 'this_week');
-$okc_ltc_position = $okcoin_client->positionFutureApi($params);
+$params = array('api_key' => $ok_api_key, 'symbol' => 'ltc_usd', 'contract_type' => 'this_week', 'type' => 1);
+$okc_ltc_position = $okcoin_client->singleBondPositionFutureApi($params);
 ?>
 
 <div class="row">
