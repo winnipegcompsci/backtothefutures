@@ -53,6 +53,8 @@ $url = $BASE_URL . 'ltc';
 $x796_ltc_ticker = json_decode(curl_get($url, $post));
 
 
+
+
 ?>
 
 <div class="row">
