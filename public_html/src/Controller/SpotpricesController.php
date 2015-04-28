@@ -135,7 +135,7 @@ class SpotpricesController extends AppController
     public function cron() 
     {
         echo "DEBUG:: " . WWW_ROOT . '../src/Vendor/okcoin/OKCoin.php';
-        $client = new OKCoin(new OKCoin_ApiKeyAuthentication(API_KEY, SECRET_KEY));
+        // $client = new OKCoin(new OKCoin_ApiKeyAuthentication(API_KEY, SECRET_KEY));
         
         echo "<pre>" . print_r($client, TRUE) . "</pre>";
     }
