@@ -22,7 +22,7 @@ class CurrenciesTable extends Table
     public function initialize(array $config)
     {
         $this->table('currencies');
-        $this->displayField('id');
+        $this->displayField('currency_name');
         $this->primaryKey('id');
         $this->hasMany('Spotprices', [
             'foreignKey' => 'currency_id'

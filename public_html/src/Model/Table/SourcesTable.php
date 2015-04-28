@@ -22,7 +22,7 @@ class SourcesTable extends Table
     public function initialize(array $config)
     {
         $this->table('sources');
-        $this->displayField('id');
+        $this->displayField('source_name');
         $this->primaryKey('id');
         $this->hasMany('Spotprices', [
             'foreignKey' => 'source_id'
