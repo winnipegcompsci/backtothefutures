@@ -11,13 +11,13 @@ $okc_ltc_position = $okcoin_client->singleBondPositionFutureApi($params);
 ?>
 
 <div class="row">
-    <div class="col-lg-12 col-lg-offset-1 columns">
+    <div class="col-lg-10 col-lg-offset-1 columns">
         <h1 class="page-header">Market Positions</h1>
     </div>
 </div>
 
 <div class="row">
-    <div class="col-lg-12 col-lg-offset-1 columns">
+    <div class="col-lg-10 col-lg-offset-1 columns">
     <?php
         echo "<H1> Bitcoin Position (OKCoin) </h1>";
         echo "<pre>" . print_r($okc_btc_position, TRUE) . "</pre>";
