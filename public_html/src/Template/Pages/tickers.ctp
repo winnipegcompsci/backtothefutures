@@ -9,16 +9,15 @@ $okc_btc_ticker = $okcoin_client->tickerFutureApi(array('symbol' => 'btc_usd', '
 $okc_ltc_ticker = $okcoin_client->tickerFutureApi(array('symbol' => 'ltc_usd', 'contract_type' => 'this_week'));
 
 $params = array(
+    'api_key' => $ok_api_key,
     'symbol' => 'btc_usd',
-    'contract_type' => 'weekly',
-    'apikey' => $ok_api_key,
+    'contract_type' => 'this_week',
 );
 
-$post = getPost($params);
 
-$future_pos = $okcoin_client->positionFutureApi($post);
+$future_pos = $okcoin_client->positionFutureApi($params);
 echo "<pre>" . print_r($future_pos, TRUE) . "</pre>";
-// die('Printed Future POS');
+die('Printed Future POS');
 
 function getPost($params = array()) {
     ksort($params);
