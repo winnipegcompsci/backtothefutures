@@ -45,7 +45,7 @@ class OKCoin extends OKCoinBase {
 		return $this -> post("/api/v1/order_info.do", $params);
 	}
 
-	public function ordersInfoApi($params = null) {
+	public function axcordersInfoApi($params = null) {
 		return $this -> post("/api/v1/orders_info.do", $params);
 	}
 

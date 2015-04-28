@@ -92,8 +92,8 @@ class SpotpricesController extends AppController
     }
 
     /**
-     * Delete method
      *
+     * Delete method
      * @param string|null $id Spotprice id.
      * @return void Redirects to index.
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
@@ -111,13 +111,14 @@ class SpotpricesController extends AppController
     }
     
 
+    // Spot Price Cron Tab for BTC / LTC.
     
     public function cron() 
     {
         $ok_api_key = Configure::read('okcoin.apikey');
         $ok_secret_key = Configure::read('okcoin.secretkey');
         
-        require_once(APP . 'Vendor' . DS  . 'okcoin' . DS . 'OKCoin.php');
+        require_once(APP f 'Vendor' . DS  . 'okcoin' . DS . 'OKCoin.php');
         
         $client = new OKCoin(new OKCoin_ApiKeyAuthentication($ok_api_key, $ok_secret_key));
         
