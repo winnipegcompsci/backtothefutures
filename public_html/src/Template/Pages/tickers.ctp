@@ -8,10 +8,6 @@ $okcoin_client = new OKCoin(
 $okc_btc_ticker = $okcoin_client->tickerFutureApi(array('symbol' => 'btc_usd', 'contract_type' => 'this_week'));
 $okc_ltc_ticker = $okcoin_client->tickerFutureApi(array('symbol' => 'ltc_usd', 'contract_type' => 'this_week'));
 
-echo "<pre>" . print_r($okc_btc_ticker, TRUE) . "</pre>";
-echo "<pre>" . print_r($okc_ltc_ticker, TRUE) . "</pre>";
-
-
 function getPost($params = array()) {
     ksort($params);
     $sign = "";
