@@ -5,8 +5,8 @@ $okcoin_client = new OKCoin(
     new OKCoin_ApiKeyAuthentication($ok_api_key, $ok_secret_key)
 );
 
-$okc_btc_ticker = $okcoin_client->tickerFutureApi(array('symbol' => 'btc_usd'));
-$okc_ltc_ticker = $okcoin_client->tickerFutureApi(array('symbol' => 'ltc_usd'));
+$okc_btc_ticker = $okcoin_client->tickerFutureApi(array('symbol' => 'btc_usd', 'contract_type' => 'this_week'));
+$okc_ltc_ticker = $okcoin_client->tickerFutureApi(array('symbol' => 'ltc_usd', 'contract_type' => 'this_week'));
 
 echo "<pre>" . print_r($okc_btc_ticker, TRUE) . "</pre>";
 echo "<pre>" . print_r($okc_ltc_ticker, TRUE) . "</pre>";
