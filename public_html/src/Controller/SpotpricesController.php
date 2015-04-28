@@ -110,33 +110,15 @@ class SpotpricesController extends AppController
         return $this->redirect(['action' => 'index']);
     }
     
-    public function update() 
-    {            
-        $spotprice = $this->Spotprices->newEntity();
-        echo "Spot Price:: <pre>" . print_r($spotprice, TRUE) . "</pre>";
-        
-        $ok_api_key = Configure::read('okcoin.apikey');
-        $ok_secret_key = Configure::read('okcoin.secretkey');
-        
-        
-        $okcoin_client = new OKCoin(
-            new OKCoin_ApiKeyAuthentication($ok_api_key, $ok_secret_key)
-        );
-                        
-        $okc_btc_ticker = $okcoin_client->tickerFutureApi(array('symbol' => 'btc_usd'));
-        $okc_ltc_ticker = $okcoin_client->tickerFutureApi(array('symbol' => 'ltc_usd'));
 
-        echo "<pre>" . print_r($okc_btc_ticker, TRUE) . "</pre>";
-        echo "<pre>" . print_r($okc_ltc_ticker, TRUE) . "</pre>";
-        
-        die('END OF PROCESSING');
-    }
     
     public function cron() 
     {
+        $ok_api_key = Configure::read('okcoin.apikey');
+        $ok_secret_key = Configure::read('okcoin.secretkey');
         // require(APP . 'Vendor' . DS  . 'okcoin' . DS . 'OKCoin.php');
         
-        $client = new OKCoin(new OKCoin_ApiKeyAuthentication(API_KEY, SECRET_KEY));
+        $client = new OKCoin(new OKCoin_ApiKeyAuthentication($ok_api_key, $ok_secret_key));
         
         echo "<pre>" . print_r($client, TRUE) . "</pre>";
         die("end of cron() reached");
