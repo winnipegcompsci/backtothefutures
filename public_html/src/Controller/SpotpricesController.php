@@ -1,5 +1,6 @@
 <?php
 namespace App\Controller;
+require_once (dirname(__FILE__) . '/OKCoin/OKCoin.php');
 
 use App\Controller\AppController;
 use Cake\Core\Configure;
