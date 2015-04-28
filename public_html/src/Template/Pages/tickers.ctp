@@ -35,11 +35,7 @@ function getPost($params = array()) {
 
 function curl_get($url, $data = array()) {
     $curl = curl_init($url);
-	curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, 2);
-	curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
-	curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1); 
-	curl_setopt($curl, CURLOPT_TIMEOUT, 30);
-	curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, 30);
+	curl_setopt($cudrl, CURLOPT_CONNECTTIMEOUT, 30);
 	if(!empty($data)) {
 		curl_setopt($curl, CURLOPT_POST, 1);
 		curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
