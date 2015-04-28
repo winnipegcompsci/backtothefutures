@@ -1,6 +1,6 @@
 <?php
 namespace App\Controller;
-require_once (WWW_ROOT . '..\src\Vendor\okcoin\OKCoin.php');
+require_once (WWW_ROOT . '../src/Vendor/okcoin/OKCoin.php');
 
 use App\Controller\AppController;
 use Cake\Core\Configure;
