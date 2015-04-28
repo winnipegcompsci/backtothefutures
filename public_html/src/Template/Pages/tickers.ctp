@@ -56,8 +56,11 @@ $post = getPost($params);
 $url = $BASE_URL . 'weekly';
 $x796_btc_ticker = json_decode(curl_get($url, $post));
 
+die('Printing BTC Ticker');
+
 $url = $BASE_URL . 'ltc';
 $x796_ltc_ticker = json_decode(curl_get($url, $post));
+
 ?>
 
 <div class="row">
