@@ -8,13 +8,6 @@ $okcoin_client = new OKCoin(
 $okc_btc_ticker = $okcoin_client->tickerFutureApi(array('symbol' => 'btc_usd', 'contract_type' => 'this_week'));
 $okc_ltc_ticker = $okcoin_client->tickerFutureApi(array('symbol' => 'ltc_usd', 'contract_type' => 'this_week'));
 
-/*
-$params = array('api_key' => $ok_api_key, 'symbol' => 'btc_usd', 'contract_type' => 'this_week', 'type' => 1);
-$positions = $okcoin_client -> singleBondPositionFutureApi($params);
-echo "<pre>" . print_r($positions, TRUE) . "</pre>";
-die('Printed Future POS');
-*/
-
 function getPost($params = array()) {
     ksort($params);
     $sign = "";
@@ -56,11 +49,12 @@ $post = getPost($params);
 $url = $BASE_URL . 'weekly';
 $x796_btc_ticker = json_decode(curl_get($url, $post));
 
-die('Printing BTC Ticker');
+echo "BTC TICKER:: <pre>" . print_r($x796_btc_ticker, TRUE) . "</pre>";
 
 $url = $BASE_URL . 'ltc';
 $x796_ltc_ticker = json_decode(curl_get($url, $post));
 
+echo "LTC TICKER:: <pre>" . print_r($x796_ltc_ticker, TRUE) . "</pre>";
 ?>
 
 <div class="row">
