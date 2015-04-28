@@ -47,12 +47,12 @@ $params = array(
 
 $post = getPost($params);     
 $url = $BASE_URL . 'weekly';
-$x796_btc_ticker = json_decode(curl_get($url, $post));
+$x796_btc_ticker = curl_get($url, $post);
 
 echo "BTC TICKER:: <pre>" . print_r($x796_btc_ticker, TRUE) . "</pre>";
 
 $url = $BASE_URL . 'ltc';
-$x796_ltc_ticker = json_decode(curl_get($url, $post));
+$x796_ltc_ticker = curl_get($url, $post);
 
 echo "LTC TICKER:: <pre>" . print_r($x796_ltc_ticker, TRUE) . "</pre>";
 ?>
