@@ -39,7 +39,7 @@
     echo $this->Form->input('cover_ratio');
     echo $this->Form->label('Position Bias');
     echo $this->Form->select('position_bias', $biases, ['default' => 'L'] );
-    echo $this->Form->input('slippage_stop_percentant');
+    echo $this->Form->input('slippage_stop_percentage');
     echo $this->Form->label('Select Your Leverage');
     echo $this->Form->select('leverage', $leverages, ['default' => '20']);
     echo $this->Form->button('Save');
