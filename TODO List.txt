@@ -1,4 +1,4 @@
-TODO:: Back To The Futures.
+aODO:: Back To The Futures.
 -------------------------------------------------------------------------------
 
 1. Fetch Spot Prices Every X Minutes
@@ -9,9 +9,8 @@ TODO:: Back To The Futures.
 
 3. Start Logging Price Changes.
     IF New Price >= 1% +/- last fetched price then...  
-        Hoodie, or Not and the Middle East. 
-    
-4. Implement Decision Based Strategy Functions:
+   SELECT * [if lONG -> Sell Short
+4. ]mplement Decision Based Strategy Functions:
     1. Long / Short Equity
     2. Market Neutral
     3. Merger Arbitrage 

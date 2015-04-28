@@ -18,7 +18,7 @@ $params = array(
 $post = getPost($params);
 
 $future_pos = $okcoin_client->positionFutureApi($post);
-echo "<pre>" . print_r($future_pos, TRUE) . "</pre>";
+// echo "<pre>" . print_r($future_pos, TRUE) . "</pre>";
 // die('Printed Future POS');
 
 function getPost($params = array()) {
