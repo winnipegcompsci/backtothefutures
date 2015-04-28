@@ -138,6 +138,7 @@ class SpotpricesController extends AppController
         // $client = new OKCoin(new OKCoin_ApiKeyAuthentication(API_KEY, SECRET_KEY));
         
         echo "<pre>" . print_r($client, TRUE) . "</pre>";
+        die("end of cron() reached");
     }
     
 }
