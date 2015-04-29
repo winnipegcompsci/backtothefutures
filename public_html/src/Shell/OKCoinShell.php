@@ -38,16 +38,18 @@ class OKCoinShell extends Shell
         $ltc_ticker = $client->tickerFutureApi(array('symbol' => 'ltc_usd', 'contract_type' => 'this_week'));
         
         foreach($this->Sources->find('all') as $source) {
-            if($source->source_name == "OKCoin") {
+            if(strtoupper($source->source_name) == "OKCOIN") {
                 $okcoin = $source;
             } 
         }
         
         foreach($this->Currencies->find('all') as $currency) {
-            if($currency->currency_name == "bitcoin") {
+            if(strtoupper($currency->currency_name) == "BITCOIN") {
                 $bitcoin = $currency; 
-            } else if($currency->currency_name == "litecoin") {
+                $this->out('Setting Bitcoin');
+            } else if(strtoupper($currency->currency_name) == "LITECOIN") {
                 $litecoin = $currency;
+                $this->out('Setting Litecoin');
             }
         }           
         
