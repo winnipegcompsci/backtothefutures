@@ -45,15 +45,19 @@ function printTable($prices) {
 $okcoin_client = Configure::read('okcoin.client');
 
 foreach(TableRegistry::get('Currencies')->find('all') as $currency) {
-    echo "<pre>" . print_r($currency->currency_name, TRUE) . "</pre>";
+    if($currency->currency_name == "Bitcoin") {
+        $btcID = $currency->id;
+    } else if($currency->currency_name == "Litecoin") {
+        $ltcID = $currency->id;
+    }
 }
 
 
 $btcprices = TableRegistry::get('Spotprices')->find('all', [
-    'conditions' => ['currency_id' => '1']
+    'conditions' => ['currency_id' => $btcId]
 ]);
 $ltcprices = TableRegistry::get('Spotprices')->find('all', [
-    'conditions' => ['currency_id' => '2']
+    'conditions' => ['currency_id' => $ltcId]
 ]);
 
 ?>
