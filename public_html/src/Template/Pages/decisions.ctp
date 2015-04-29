@@ -3,7 +3,7 @@ use Cake\ORM\TableRegistry;
 use Cake\Core\Configure;
 
 
-public function printTable($prices) {
+function printTable($prices) {
     echo "<table id=\"datatable\" class='columns col-lg-11'>";
     echo "<tr>";
     echo "<th>Low</th>";
