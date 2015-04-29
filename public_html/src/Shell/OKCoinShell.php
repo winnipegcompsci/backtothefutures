@@ -11,6 +11,8 @@ class OKCoinShell extends Shell
     public function initialize() {
         parent::initialize();
         $this->loadModel('SpotPrices');
+        $this->loadModel('Currencies');
+        $this->loadModel('Sources');
     }
         
     public function showKeys() {
@@ -19,22 +21,17 @@ class OKCoinShell extends Shell
     }
     
     public function getPrice() {
-        require_once(APP . 'Vendor' . DS  . 'okcoin' . DS . 'OKCoin.php');
-        // App::import('Vendor', 'OKCoin', array('file' => 'okcoin' . DS . 'OKCoin.php'));
+        $client = Configure::read('okcoin.client');      
+        // $this->out(print_r($client, TRUE));
         
-        /*
-        $client = new OKCoin(
-            new OKCoin_ApiKeyAuthentication(
-                Configure::read('okcoin.apikey'), 
-                Configure::read('okcoin.secretkey')
-            )
-        );
-        */
+        $btc_ticker = $client->tickerFutureApi(array('symbol' => 'btc_usd', 'contract_type' => 'this_week'));
+        $ltc_ticker = $client->tickerFutureApi(array('symbol' => 'ltc_usd', 'contract_type' => 'this_week'));
         
-        $client = Configure::read('okcoin.client');
+        foreach($this->Currencies->find('all') as $currency) {
+            $this->out('Currency: ' . print_r($currency, TRUE) );
+        }
         
-        $this->out(print_r($client, TRUE));
-      
+        
         
     }
     
