@@ -4,7 +4,6 @@ use Cake\Core\Configure;
 
 
 function printTable($prices) {
-    echo "TABLE::";
     echo "<table id=\"datatable\" class='columns col-lg-11'>";
     echo "<tr>";
     echo "<th>Low</th>";
