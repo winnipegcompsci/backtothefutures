@@ -63,7 +63,7 @@ $ltcprices = TableRegistry::get('Spotprices')->find('all', [
 ?>
 <div class="columns col-lg-12 col-lg-offset-1">
 <H1> Bitcoin Decisions </H1>
-<?php printTable($btcPrices); ?>
+<?php printTable($btcprices); ?>
 <H1> Litecoin Decisions </H1>
-<?php printTable($ltcPrices); ?>
+<?php printTable($ltcprices); ?>
 </div>
