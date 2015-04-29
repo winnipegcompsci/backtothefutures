@@ -38,7 +38,7 @@ foreach($btcprices as $spotprice) {
     if(isset($lastprice)) {
         echo $spotprice->last - $lastprice->last;   
     } else {
-        echo 0;
+        echo "No Change";
     }
     echo "</td>";
     echo "<td>Action</td>";
