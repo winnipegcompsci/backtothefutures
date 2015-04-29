@@ -10,7 +10,7 @@ class OKCoinShell extends Shell
 {   
     public function initialize() {
         parent::initialize();
-        $this->loadModel('SpotPrices');
+        $this->loadModel('Spotprices');
         $this->loadModel('Currencies');
         $this->loadModel('Sources');
     }
@@ -50,7 +50,7 @@ class OKCoinShell extends Shell
             }
         }           
         
-        $spotprice = $this->SpotPrices->newEntity();      
+        $spotprice = $this->spotprices->newEntity();      
         $spotprice->currency_id = $bitcoin->id;
         $spotprice->source_id = $okcoin->id;
         $spotprice->low = $btc_ticker->ticker->low;
