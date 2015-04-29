@@ -8,6 +8,10 @@ class HelloShell extends Shell
     public function main()
     {
         $this->out('Hello world.');
-        error_log('Hello world');
+    }
+    
+    public function heyThere($name = 'Anonymous')
+    {
+        $this->out('Hey there ' . $name);
     }
 }

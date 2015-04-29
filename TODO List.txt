@@ -1,24 +1,35 @@
-aODO:: Back To The Futures.
+TODO:: Back To The Futures.
 -------------------------------------------------------------------------------
+Create Schema for Fetched Results
+OKCoin:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+GET /api/v1/future_ticker           Get OKCoin Future Price
 
-1. Fetch Spot Prices Every X Minutes
-    - Setup Cron / Shell to do this?
-    - On Fetch Save Results witgh PK of Timestamp to database.
+Request Parameters
+    symbol                          btc_usd    ltc_usd
+    contract_type                   this_week   next_week   quarter
+
+Return Values
+    buy: best bid
+    contract_id: contract ID
+    high: highest price
+    last: latest price
+    low: lowest price
+    sell: best ask
+    unit_amount: contract par value
+    vol: volume (in last 24 hours)
     
-2. Depth API vs Depth (Future) API??
+    
 
-3. Start Logging Price Changes.
-    IF New Price >= 1% +/- last fetched price then...  
-   SELECT * [if lONG -> Sell Short
-4. ]mplement Decision Based Strategy Functions:
-    1. Long / Short Equity
-    2. Market Neutral
-    3. Merger Arbitrage 
-    4. Convertible Arbitrage
-    5. Event Driven   
+
+796.com::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Create Shell Scripts to Update Database:
+
+
+
 
 Example of Historical Price Changes:
-0: 100.00 (Initial Price).
-1: 101.00 (Keep OKC, Close 796 and Reopen at 101$)
-2: 105.00 (Keep OKC, Close 796 and Reopen at 105$)
-3: 98     (Keep 796, Close  OKC, Reopen @ 98$)
+0: $100.00 (Initial Price).
+1: $101.00 (Keep OKC, Close 796 and Reopen at $101.00)
+2: $105.00 (Keep OKC, Close 796 and Reopen at $105.00)
+3: $ 98.00 (Keep 796, Close  OKC, Reopen at $98.00)
