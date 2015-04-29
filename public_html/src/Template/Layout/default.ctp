@@ -62,11 +62,12 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
 		<ul class="nav menu">
 			<li class="active"><a href="index.html"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
-			<li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'tickers']); ?>"><span class="glyphicon glyphicon-th"></span> Tickers</a></li>
+            <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'tickers']); ?>"><span class="glyphicon glyphicon-th"></span> Tickers</a></li>
             <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'depths']); ?>"><span class="glyphicon glyphicon-list-alt"></span> Market Depth</a></li>
             <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'positions']); ?>"><span class="glyphicon glyphicon-list-alt"></span> Positions </a></li>
 			<li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'trades']); ?>"><span class="glyphicon glyphicon-stats"></span> Trades</a></li>
 			<li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'settlements']); ?>"><span class="glyphicon glyphicon-list-alt"></span> Settlements</a></li>
+            <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'decisions']); ?>"></span class="glyphicon glyphicon-list-alt"></span> Decisions </a></li>
             
 			<li role="presentation" class="divider"></li>
 			<li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'settings']); ?>"><span class="glyphicon glyphicon-pencil"></span> Settings</a></li>
