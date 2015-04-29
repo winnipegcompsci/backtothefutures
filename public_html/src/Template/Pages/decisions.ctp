@@ -52,8 +52,8 @@ $ltcId = TableRegistry::get('Currencies')->find('all', [
     'conditions' => ['currency_name' => 'Litecoin']
 ]);
 
-echo "<pre> BTC ID:: " . print_r($btcId, TRUE) . "</pre>";
-echo "<pre> LTC ID:: " . print_r($ltcId, TRUE) . "</pre>";
+echo "<pre> BTC ID:: " . print_r($btcId->id, TRUE) . "</pre>";
+echo "<pre> LTC ID:: " . print_r($ltcId->id, TRUE) . "</pre>";
 
 $btcprices = TableRegistry::get('Spotprices')->find('all', [
     'conditions' => ['currency_id' => '1']
