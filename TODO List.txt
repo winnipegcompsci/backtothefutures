@@ -2,21 +2,8 @@ TODO:: Back To The Futures.
 -------------------------------------------------------------------------------
 Create Schema for Fetched Results
 OKCoin:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-GET /api/v1/future_ticker           Get OKCoin Future Price
-
-Request Parameters
-    symbol                          btc_usd    ltc_usd
-    contract_type                   this_week   next_week   quarter
-
-Return Values
-    buy: best bid
-    contract_id: contract ID
-    high: highest price
-    last: latest price
-    low: lowest price
-    sell: best ask
-    unit_amount: contract par value
-    vol: volume (in last 24 hours)
+    Get Future Price Ticker:: 
+    Setup Cron Job: 'sh cake O_K_Coin' on Whiskey.
     
     
 
