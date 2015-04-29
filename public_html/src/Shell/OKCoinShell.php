@@ -4,6 +4,7 @@ namespace App\Shell;
 use Cake\Console\Shell;
 use Cake\Core\Configure;
 use Cake\Core\App;
+use Cake\ORM\TableRegistry;
 
 
 class OKCoinShell extends Shell 
@@ -50,7 +51,9 @@ class OKCoinShell extends Shell
             }
         }           
         
-        $spotprice = $this->Spotprices->newEntity();      
+        $spotprices = TableRegistry::get('SpotPrices');
+        
+        $spotprice = $spotprices->newEntity();      
         $spotprice->currency_id = $bitcoin->id;
         $spotprice->source_id = $okcoin->id;
         $spotprice->low = $btc_ticker->ticker->low;
@@ -61,13 +64,13 @@ class OKCoinShell extends Shell
         $spotprice->volume = $btc_ticker->ticker->vol;
         $spotprice->timestamp = date('Y-m-d H:i:s', $btc_ticker->date);
                 
-        if($this->Spotprices->save($spotprice)) {
+        if($spotprices->save($spotprice)) {
             $this->out('Saved New BTC Spotprice');
         } else {
             $this->out('Failed to save BTC Spotprice');
         }
         
-        $spotprice = $this->Spotprices->newEntity();
+        $spotprice = $spotprices->newEntity();
         $spotprice->currency_id = $litecoin->id;
         $spotprice->source_id = $okcoin->id;
         $spotprice->low = $ltc_ticker->ticker->low;
@@ -78,7 +81,7 @@ class OKCoinShell extends Shell
         $spotprice->volume = $ltc_ticker->ticker->vol;
         $spotprice->timestamp = date('Y-m-d H:i:s', $ltc_ticker->date);
         
-        if($this->Spotprices->save($spotprice)) {
+        if($spotprices->save($spotprice)) {
             $this->out('Saved New LTC Spotprice');
         } else {
             $this->out('Failed to save LTC Spotprice');
