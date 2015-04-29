@@ -6,7 +6,7 @@ use Cake\Core\Configure;
 use Cake\Core\App;
 
 
-class OKCoinShell extends Shell 
+class OkCoinShell extends Shell 
 {   
     public function initialize() {
         parent::initialize();
@@ -20,7 +20,7 @@ class OKCoinShell extends Shell
         $this->out('OKCoin Secret Key: ' . Configure::read('okcoin.secretkey'));
     }
     
-    public function main() {
+    public function main() {    
         $this->out('OKCoin Keys:');
         $this->showKeys();
         
@@ -83,7 +83,7 @@ class OKCoinShell extends Shell
         } else {
             $this->out('Failed to save LTC Spotprice');
         }
-    }
+    } // end getPrice().
     
     
 }
