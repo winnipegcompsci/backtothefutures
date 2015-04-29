@@ -11,7 +11,7 @@ $btcprices = TableRegistry::get('Spotprices')->find('all', [
 ?>
 <div class="columns col-lg-12">
 <?php 
-echo "<table width='100%'>";
+echo "<table id=\"datatable\" width='100%'>";
 echo "<tr>";
 echo "<th>Low</th>";
 echo "<th>High</th>";
