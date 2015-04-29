@@ -52,12 +52,15 @@ foreach(TableRegistry::get('Currencies')->find('all') as $currency) {
     }
 }
 
+echo "BTCID: " . $btcID;
+echo "LTCID: " . $ltcID;
+
 
 $btcprices = TableRegistry::get('Spotprices')->find('all', [
-    'conditions' => ['currency_id' => $btcID]
+    'conditions' => ['currency_id' => 1]
 ]);
 $ltcprices = TableRegistry::get('Spotprices')->find('all', [
-    'conditions' => ['currency_id' => $ltcID]
+    'conditions' => ['currency_id' => 2]
 ]);
 
 ?>
