@@ -53,9 +53,26 @@ class OKCoinShell extends Shell
         $spotprice->timestamp = date('Y-m-d H:i:s', $btc_ticker->date);
                 
         if($this->SpotPrices->save($spotprice)) {
-            $this->out('Saved New Spotprice');
+            $this->out('Saved New BTC Spotprice');
         } else {
-            $this->out('Failed to save Spotprice');
+            $this->out('Failed to save BTC Spotprice');
+        }
+        
+        $spotprice = $this->SpotPrices->newEntity();
+        $spotprice->currency_id = $litecoin->id;
+        $spotprice->source_id = $okcoin->id;
+        $spotprice->low = $ltc_ticker->ticker->low;
+        $spotprice->high = $ltc_ticker->ticker->high;
+        $spotprice->last = $ltc_ticker->ticker->last;
+        $spotprice->buy = $ltc_ticker->ticker->buy;
+        $spotprice->sell = $ltc_ticker->ticker->sell;
+        $spotprice->volume = $ltc_ticker->ticker->vol;
+        $spotprice->timestamp = date('Y-m-d H:i:s', $ltc_ticker->date);
+        
+        if($this->SpotPrices->save($spotprice)) {
+            $this->out('Saved New LTC Spotprice');
+        } else {
+            $this->out('Failed to save LTC Spotprice');
         }
     }
     
