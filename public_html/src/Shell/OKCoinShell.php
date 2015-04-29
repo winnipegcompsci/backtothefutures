@@ -6,7 +6,7 @@ use Cake\Core\Configure;
 use Cake\Core\App;
 
 
-class OkcoinShell extends Shell 
+class OKCoinShell extends Shell 
 {   
     public function initialize() {
         parent::initialize();
