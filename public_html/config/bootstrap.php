@@ -187,6 +187,17 @@ Configure::write(array(
     'okcoin.secretkey' => "C890A97000A0A5102CF6462F4F7BDCC1",
 ));
 
+
+require_once(APP . 'Vendor' . DS  . 'okcoin' . DS . 'OKCoin.php');
+Configure::write(array(
+    'okcoin.client' => new OKCoin(
+        new OKCoin_ApiKeyAuthentication(
+            Configure::read('okcoin.apikey'),
+            Configure::read('okcoin.secretkey') 
+        )
+    )
+));
+
 Configure::write(array(
     'xchange796.appid' => "11378",
     'xchange796.apikey' => "9ff4f593-0fd9-aaf9-b09a-8e2b-6b2f449c",

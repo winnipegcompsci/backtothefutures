@@ -1,9 +1,7 @@
 <?php 
 use Cake\Core\Configure;
 
-$okcoin_client = new OKCoin(
-    new OKCoin_ApiKeyAuthentication($ok_api_key, $ok_secret_key)
-);
+$okcoin_client = Configure::read('okcoin.client');
 
 $okc_btc_ticker = $okcoin_client->tickerFutureApi(array('symbol' => 'btc_usd', 'contract_type' => 'this_week'));
 $okc_ltc_ticker = $okcoin_client->tickerFutureApi(array('symbol' => 'ltc_usd', 'contract_type' => 'this_week'));

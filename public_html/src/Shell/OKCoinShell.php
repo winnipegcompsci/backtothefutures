@@ -31,7 +31,7 @@ class OKCoinShell extends Shell
         );
         */
         
-        $client = $this->SpotPrices->getClient();
+        $client = Configure::read('okcoin.client');
         
         $this->out(print_r($client, TRUE));
       
