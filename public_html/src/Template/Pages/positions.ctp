@@ -1,4 +1,6 @@
 <?php 
+use Cake\Core\Configure;
+
 $okcoin_client =  Configure::read('okcoin.client');
 
 $params = array('api_key' => $ok_api_key, 'symbol' => 'btc_usd', 'contract_type' => 'this_week', 'type' => 1);
