@@ -45,7 +45,7 @@ function printTable($prices) {
 $okcoin_client = Configure::read('okcoin.client');
 
 foreach(TableRegistry::get('Currencies') as $currency) {
-    echo "<pre>" . print_r($currency->currency_name . "</pre>";
+    echo "<pre>" . print_r($currency->currency_name, TRUE) . "</pre>";
 }
 
 
