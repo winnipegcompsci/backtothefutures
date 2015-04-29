@@ -4,6 +4,8 @@ namespace App\Shell;
 use Cake\Console\Shell;
 use Cake\Core\Configure;
 
+
+
 class OKCoinShell extends Shell 
 {   
     public function initialize() {
@@ -17,12 +19,11 @@ class OKCoinShell extends Shell
     }
     
     public function getPrice() {
-        if(App::import('Vendor', 'okcoin/OKCoin.php')) {
-            $this->out("IMPORTED");
-        } else {
-            $this->err("FAILED TO INPUT";
-        }
-        // include(APP . 'Vendor' . DS  . 'okcoin' . DS . 'OKCoin.php');
+        // require_once(APP . 'Vendor' . DS  . 'okcoin' . DS . 'OKCoin.php');
+        App::import('AppController', 'Controller');
+        App::import('Core', 'Component');
+        App::import('Vendor', 'OKCoin', array('file' => 'okcoin' . DS . 'OKCoin.php'));
+
         
         $client = new OKCoin(
             new OKCoin_ApiKeyAuthentication(
