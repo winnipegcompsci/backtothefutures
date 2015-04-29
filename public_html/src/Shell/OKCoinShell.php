@@ -20,6 +20,14 @@ class OKCoinShell extends Shell
         $this->out('OKCoin Secret Key: ' . Configure::read('okcoin.secretkey'));
     }
     
+    public function main() {
+        $this->out('OKCoin Keys:');
+        $this->showKeys();
+        
+        $this->out('OKCoin Data: ');
+        $this->getPrice();
+    }
+    
     public function getPrice() {
         $client = Configure::read('okcoin.client');      
         // $this->out(print_r($client, TRUE));
