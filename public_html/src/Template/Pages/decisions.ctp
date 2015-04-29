@@ -21,9 +21,7 @@ echo "<th>Timestamp</th>";
 echo "<th>Action</th>";
 echo "</tr>";
 
-foreach($btcprices as $spotprice) {
-    echo "<pre>" . print_r($spotprice, TRUE) . "</pre>";
-    
+foreach($btcprices as $spotprice) {    
     echo "<tr>";
     echo "<td>" . $spotprice->low . "</td>";
     echo "<td>" . $spotprice->high . "</td>";
