@@ -9,7 +9,7 @@ use Cake\Core\App;
 class OKCoinShell extends Shell 
 {   
     public function initialize() {
-        
+        parent::initialize();
         $this->loadModel('SpotPrices');
     }
         
@@ -21,17 +21,20 @@ class OKCoinShell extends Shell
     public function getPrice() {
         require_once(APP . 'Vendor' . DS  . 'okcoin' . DS . 'OKCoin.php');
         // App::import('Vendor', 'OKCoin', array('file' => 'okcoin' . DS . 'OKCoin.php'));
-    
         
+        /*
         $client = new OKCoin(
             new OKCoin_ApiKeyAuthentication(
                 Configure::read('okcoin.apikey'), 
                 Configure::read('okcoin.secretkey')
             )
         );
+        */
+        
+        $client = $this->SpotPrices->getClient();
         
         $this->out(print_r($client, TRUE));
-       
+      
         
     }
     

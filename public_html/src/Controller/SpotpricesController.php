@@ -110,6 +110,7 @@ class SpotpricesController extends AppController
         return $this->redirect(['action' => 'index']);
     }
     
+    
 
     // Spot Price Cron Tab for BTC / LTC.
     

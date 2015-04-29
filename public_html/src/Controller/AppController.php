@@ -53,7 +53,20 @@ class AppController extends Controller
         parent::initialize();
         $this->loadComponent('Flash');
         
+        require_once(APP . 'Vendor' . DS  . 'okcoin' . DS . 'OKCoin.php');        
+    }
+    
+    public function getClient() 
+    {
         require_once(APP . 'Vendor' . DS  . 'okcoin' . DS . 'OKCoin.php');
         
+        $client = new OKCoin(
+            new OKCoin_ApiKeyAuthentication(
+                Configure::read('okcoin.apikey'),  
+                Configure::read('okcoin.secretkey')
+            )
+        );
+        
+        return $client;
     }
 }
