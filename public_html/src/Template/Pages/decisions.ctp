@@ -8,7 +8,9 @@ $btcprices = TableRegistry::get('Spotprices')->find('all', [
     'condition' => ['currency_id' => '1']
 ]);
 
-
+?>
+<div class="columns col-lg-12">
+<?php 
 echo "<table width='100%'>";
 echo "<tr>";
 echo "<th>Low</th>";
@@ -34,3 +36,5 @@ foreach($btcprices as $spotprice) {
     echo "</tr>";
 }
 echo "</table>";
+?>
+</div>
