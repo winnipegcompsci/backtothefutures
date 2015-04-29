@@ -45,11 +45,11 @@ function printTable($prices) {
 $okcoin_client = Configure::read('okcoin.client');
 
 $btcId = TableRegistry::get('Currencies')->find('all', [
-    'conditions' => ['currency_name' => 'Bitcoin']
+    'conditions' => ['abbreviation' => 'btc']
 ]);
     
 $ltcId = TableRegistry::get('Currencies')->find('all', [
-    'conditions' => ['currency_name' => 'Litecoin']
+    'conditions' => ['abbreviation' => 'ltc']
 ]);
 
 echo "<pre> BTC ID:: " . print_r($btcId->id, TRUE) . "</pre>";
