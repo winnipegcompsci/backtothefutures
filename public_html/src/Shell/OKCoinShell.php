@@ -24,6 +24,7 @@ class OKCoinShell extends Shell
         $this->out('OKCoin Keys:');
         $this->showKeys();
         
+        $this->out('');
         $this->out('OKCoin Data: ');
         $this->getPrice();
     }
