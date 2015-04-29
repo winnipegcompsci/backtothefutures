@@ -35,7 +35,11 @@ foreach($btcprices as $spotprice) {
     
     
     echo "<td>";
-    echo $spotprice->last - $lastprice->last;   
+    if(isset($lastprice)) {
+        echo $spotprice->last - $lastprice->last;   
+    } else {
+        echo 0;
+    }
     echo "</td>";
     echo "</tr>";
     
