@@ -21,6 +21,7 @@ echo "<th>Buy </th>";
 echo "<th>Sell</th>";
 echo "<th>Volume</th>";
 echo "<th>Timestamp</th>";
+echo "<th>Change (Last) </th>";
 echo "<th>Action</th>";
 echo "</tr>";
 
@@ -32,9 +33,7 @@ foreach($btcprices as $spotprice) {
     echo "<td>" . $spotprice->buy . "</td>";
     echo "<td>" . $spotprice->sell . "</td>";
     echo "<td>" . $spotprice->volume . "</td>";
-    echo "<td>" . $spotprice->timestamp . "</td>";
-    
-    
+    echo "<td>" . $spotprice->timestamp . "</td>";      
     echo "<td>";
     if(isset($lastprice)) {
         echo $spotprice->last - $lastprice->last;   
@@ -42,6 +41,7 @@ foreach($btcprices as $spotprice) {
         echo 0;
     }
     echo "</td>";
+    echo "<td>Action</td>";
     echo "</tr>";
     
     
