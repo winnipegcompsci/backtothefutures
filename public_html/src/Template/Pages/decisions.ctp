@@ -32,8 +32,16 @@ foreach($btcprices as $spotprice) {
     echo "<td>" . $spotprice->sell . "</td>";
     echo "<td>" . $spotprice->volume . "</td>";
     echo "<td>" . $spotprice->timestamp . "</td>";
-    echo "<td></td>";
+    
+    
+    echo "<td>";
+    echo $spotprice->last - $lastprice->last;   
+    echo "</td>";
     echo "</tr>";
+    
+    
+    
+    $lastprice = $spotprice;
 }
 echo "</table>";
 ?>
