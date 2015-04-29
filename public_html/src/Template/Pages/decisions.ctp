@@ -12,7 +12,7 @@ $btcprices = TableRegistry::get('Spotprices')->find('all', [
 <div class="columns col-lg-12 col-lg-offset-1">
 <H1> Bitcoin Decisions </H1>
 <?php 
-echo "<table id=\"datatable\" width='100%'>";
+echo "<table id=\"datatable\" class='columns col-lg-11'>";
 echo "<tr>";
 echo "<th>Low</th>";
 echo "<th>High</th>";
