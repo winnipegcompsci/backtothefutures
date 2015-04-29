@@ -6,4 +6,6 @@ $okcoin_client = Configure::read('okcoin.client');
 
 $spotprices = TableRegistry::get('Spotprices')->find('all');
 
-echo "<pre>" . print_r($spotprices,  TRUE) . "</pre>";
+foreach($spotprices as $spotprice) {
+    echo "<pre>" . print_r($spotprice, TRUE) . "</pre>";
+}
