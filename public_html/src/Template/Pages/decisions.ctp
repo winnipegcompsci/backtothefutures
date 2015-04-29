@@ -53,21 +53,17 @@ foreach(TableRegistry::get('Currencies')->find('all') as $currency) {
     }
 }
 
-echo "BTCID: " . $btcID;
-echo "LTCID: " . $ltcID;
-
-
 $btcprices = TableRegistry::get('Spotprices')->find('all', [
-    'conditions' => ['currency_id' => 1]
+    'conditions' => ['currency_id' => $btcID]
 ]);
 $ltcprices = TableRegistry::get('Spotprices')->find('all', [
-    'conditions' => ['currency_id' => 2]
+    'conditions' => ['currency_id' => $ltcID]
 ]);
 
 ?>
 <div class="columns col-lg-12 col-lg-offset-1">
 <H1> Bitcoin Decisions </H1>
-<? printTable($btcPrices); ?>
+<?php printTable($btcPrices); ?>
 <H1> Litecoin Decisions </H1>
-<? printTable($ltcPrices); ?>
+<?php printTable($ltcPrices); ?>
 </div>
