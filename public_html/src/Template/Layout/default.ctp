@@ -65,19 +65,19 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             
             <li role="presentation" class="divider"></li>
             <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'tickers']); ?>"><span class="glyphicon glyphicon-stats"></span> Market Tickers</a></li>
-            <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'depths']); ?>"><span class="glyphicon glyphicon-list-alt"></span> Market Depth</a></li>
+            <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'depths']); ?>"><span class="glyphicon glyphicon-signal"></span> Market Depth</a></li>
   			<li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'trades']); ?>"><span class="glyphicon glyphicon-stats"></span> Market Trades</a></li>
 			<li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'settlements']); ?>"><span class="glyphicon glyphicon-list-alt"></span> Market Settlements</a></li>
             <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'decisions']); ?>"><span class="glyphicon glyphicon-th"></span> Market Decisions </a></li>
             
             <li role="presentation" class="divider"></li>
-            <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'contracts']); ?>"><span class="glyphicon glyphicon-list-alt"></span> My Contracts </a></li>
-            <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'settings']); ?>"><span class="glyphicon glyphicon-pencil"></span> My Profit/Loss</a></li>
-            <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'positions']); ?>"><span class="glyphicon glyphicon-list-alt"></span> My Positions Held </a></li>
-            <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'transactions']); ?>"><span class="glyphicon glyphicon-list-alt"></span> My Transactions </a></li>
+            <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'contracts']); ?>"><span class="glyphicon glyphicon-file"></span> My Contracts </a></li>
+            <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'settings']); ?>"><span class="glyphicon glyphicon-btc"></span> My Profit/Loss</a></li>
+            <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'positions']); ?>"><span class="glyphicon glyphicon-sort-by-order"></span> My Positions Held </a></li>
+            <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'transactions']); ?>"><span class="glyphicon glyphicon-transfer"></span> My Transactions </a></li>
              
 			<li role="presentation" class="divider"></li>
-			<li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'settings']); ?>"><span class="glyphicon glyphicon-pencil"></span> Settings</a></li>
+			<li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'settings']); ?>"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
 		</ul>
 	</div><!--/.sidebar-->
 		
