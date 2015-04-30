@@ -109,28 +109,28 @@ usort($x796_btc, 'sortOnID');
         <div class="panel panel-warning">
             <div class="panel-heading"> Latest Statistics: </div>
             <div class="panel-body">
-                <table with="100%">
+                <table width="100%">
                 <tr><th colspan=2> OKCoin </th></tr>
                 <tr>
-                    <td>Low</td> <td><?= end($okcoin_btc)['low'] ?></td>
+                    <td>Low</td> <td class="pull-right">$<?= end($okcoin_btc)['low'] ?></td>
                 </tr>
                 <tr>
-                    <td>High</td> <td><?= end($okcoin_btc)['high'] ?></td>
+                    <td>High</td> <td class="pull-right">$<?= end($okcoin_btc)['high'] ?></td>
                 </tr>
                 <tr>
-                    <td>Last</td> <td><?= end($okcoin_btc)['last'] ?></td>
+                    <td>Last</td> <td class="pull-right">$<?= end($okcoin_btc)['last'] ?></td>
                 </tr>
                 <tr>
-                    <td>Buy</td> <td><?= end($okcoin_btc)['buy'] ?></td>
+                    <td>Buy</td> <td class="pull-right">$<?= end($okcoin_btc)['buy'] ?></td>
                 </tr>
                 <tr>
-                    <td>Sell</td> <td><?= end($okcoin_btc)['sell'] ?></td>
+                    <td>Sell</td> <td class="pull-right">$<?= end($okcoin_btc)['sell'] ?></td>
                 </tr>
                 <tr>
-                    <td>Volume</td> <td><?= end($okcoin_btc)['volume'] ?></td>
+                    <td>Volume</td> <td class="pull-right"><?= end($okcoin_btc)['volume'] ?></td>
                 </tr>
                 <tr>
-                    <td>Time</td> <td><?= end($okcoin_btc)['timestamp'] ?></td>
+                    <td>Time</td> <td class="pull-right"><?= end($okcoin_btc)['timestamp'] ?></td>
                 </tr>
                 
                 </table>
