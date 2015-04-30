@@ -95,7 +95,7 @@ var lineChartData = {
     labels : [
         <?php 
             foreach($okcoin_btc as $price) {
-                echo $price->timestamp . ",";
+                echo "\"" . $price->timestamp . "\",";
             }
         ?>
     ],
