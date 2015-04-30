@@ -3,7 +3,18 @@
         <div class="panel panel-primary">
             <div class="panel-heading">OKCoin (BTC)</div>
             <div class="panel-body">
-
+                <table>
+                    <tr>
+                        <th> Item </th> <th> Value </th>
+                    </tr>
+                    <tr><td>Low</td> <td></td></tr>
+                    <tr><td>High</td> <td></td></tr>
+                    <tr><td>Last</td> <td></td></tr>
+                    <tr><td>Buy</td> <td></td></tr>
+                    <tr><td>Sell</td> <td></td></tr>
+                    <tr><td>Volume</td> <td> </td></tr>
+                    <tr><td colspan=2>Last Updated: </td></tr>
+                </table>
             </div>
         </div>
     </div>
