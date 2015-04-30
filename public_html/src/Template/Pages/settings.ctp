@@ -7,7 +7,7 @@
     );        
 ?>
 <div class="row">
-    <div class="columns col-md-6 col-lg-5 col-lg-offset-1">
+    <div class="columns col-md-6 col-lg-6">
         <h2> Terms </h2>
         <dl>
             <dt>Recalculation Period</dt>
@@ -30,7 +30,7 @@
         </dl>  
 
     </div>
-    <div class="columns col-md-6 col-lg-5 col-lg-offset-1">
+    <div class="columns col-md-6 col-lg-6">
         <div class="panel panel-primary">
             <div class="panel-heading"> OKCoin.com </div>
             <div class="panel-body">
@@ -53,7 +53,7 @@
 </div>
 
 <div class="row">
-    <div class="columns col-md-6 col-lg-5 col-lg-offset-1">     
+    <div class="columns col-md-6 col-lg-6">     
         <div class="panel panel-orange">
             <div class="panel-heading"> 796.com </div>
             <div class="panel-body">
@@ -74,7 +74,7 @@
         </div>
     </div>
 
-    <div class="columns col-md-6 col-lg-5 col-lg-offset-1">
+    <div class="columns col-md-6 col-lg-6">
         <div class="panel panel-teal">
             <div class="panel-heading"> BitVC.com </div>
             <div class="panel-body">
