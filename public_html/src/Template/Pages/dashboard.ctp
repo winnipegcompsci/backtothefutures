@@ -200,7 +200,7 @@ var lineChartData = {
         },
         
         {
-            label: "796 Futures - Last Price"
+            label: "796 Futures - Last Price",
             fillColor : "rgba(220,220,220,0.2)",
             strokeColor : "rgba(220,220,220,1)",
             pointColor : "rgba(220,220,220,1)",
