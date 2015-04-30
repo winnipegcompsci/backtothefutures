@@ -38,6 +38,21 @@ usort($okcoin_btc, 'sortOnID');
 usort($x796_btc, 'sortOnID');
 
 ?>
+<script>
+    function redraw() {
+        alert('Redrawing...');
+        
+        var chart1 = document.getElementById("btc-chart").getContext("2d");
+        window.myBTCLine = new Chart(chart1).Line(btcChartData, {
+            responsive: true
+        });
+    
+        var chart2 = document.getElementById("ltc-chart").getContext("2d");
+        window.myLTCLine = new Chart(chart2).Line(ltcChartData, {
+            responsive: true
+        });
+    }
+</script>
 
 <!-- BUTTONS ROW -->
 <div class="row">
@@ -360,19 +375,5 @@ window.onload = function(){
            barColor: '#30a5ff'
        });
     });
-
-    function redraw() {
-        alert('Redrawing...');
-        
-        var chart1 = document.getElementById("btc-chart").getContext("2d");
-        window.myBTCLine = new Chart(chart1).Line(btcChartData, {
-            responsive: true
-        });
-    
-        var chart2 = document.getElementById("ltc-chart").getContext("2d");
-        window.myLTCLine = new Chart(chart2).Line(ltcChartData, {
-            responsive: true
-        });
-    }
 }
 </script>
