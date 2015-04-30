@@ -108,7 +108,7 @@ usort($x796_btc, 'sortOnID');
     <div class="col-xs-12 col-md-6 col-lg-3">
         <div class="row">
             <div class="panel panel-warning">
-                <div class="panel-heading"> OK Coin: </div>
+                <div class="panel-heading"> OKCoin: </div>
                 <div class="panel-body">
                     <table width="100%">
                         <tr>
@@ -139,7 +139,7 @@ usort($x796_btc, 'sortOnID');
         
         <div class="row">
             <div class="panel panel-warning">
-                <div class="panel-heading"> 796: </div>
+                <div class="panel-heading"> 796.com: </div>
                 <div class="panel-body">
                     <table width="100%">
                         <tr>
