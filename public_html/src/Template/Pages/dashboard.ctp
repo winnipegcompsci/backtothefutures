@@ -108,7 +108,7 @@ usort($x796_btc, 'sortOnID');
                 <div class="tab-content">
                     <div class="tab-pane fade in active" id="tab1">
                         <div class="canvas-wrapper">
-                            <canvas class="main-chart" id="line-chart" height="200" width="600"></canvas>
+                            <canvas class="main-chart" id="btc-chart" height="200" width="600"></canvas>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="tab2">
@@ -278,10 +278,15 @@ var lineChartData = {
 
         
 window.onload = function(){
-	var chart1 = document.getElementById("line-chart").getContext("2d");
+	var chart1 = document.getElementById("btc-chart").getContext("2d");
 	window.myLine = new Chart(chart1).Line(lineChartData, {
 		responsive: true
 	});
+    
+    var chart2 = document.getElementById("ltc-chart").getContext("2d");
+    window.myLine = new Chart(chart2).Line(lineChartData, {
+        responsive: true
+    });
     
     $(function() {
         $('#easypiechart-teal').easyPieChart({
