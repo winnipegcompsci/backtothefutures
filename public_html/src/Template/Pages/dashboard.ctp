@@ -48,8 +48,10 @@ usort($x796_btc, 'sortOnID');
                     <em class="glyphicon glyphicon-shopping-cart glyphicon-l"></em>
                 </div>
                 <div class="col-sm-9 col-lg-7 widget-right">
+                    <a href="#"> 
                     <div class="large">120</div>
                     <div class="text-muted">New Futures Contracts</div>
+                    </a>
                 </div>
             </div>
         </div>
