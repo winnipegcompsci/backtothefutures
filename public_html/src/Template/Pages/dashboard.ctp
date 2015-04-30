@@ -40,16 +40,16 @@ usort($x796_btc, 'sortOnID');
 ?>
 <script>
     function redraw() {
-        alert('Redrawing...');
+        $(document).ready(function() {
+            var chart1 = document.getElementById("btc-chart").getContext("2d");
+            window.myBTCLine = new Chart(chart1).Line(btcChartData, {
+                responsive: true
+            });
         
-        var chart1 = document.getElementById("btc-chart").getContext("2d");
-        window.myBTCLine = new Chart(chart1).Line(btcChartData, {
-            responsive: true
-        });
-    
-        var chart2 = document.getElementById("ltc-chart").getContext("2d");
-        window.myLTCLine = new Chart(chart2).Line(ltcChartData, {
-            responsive: true
+            var chart2 = document.getElementById("ltc-chart").getContext("2d");
+            window.myLTCLine = new Chart(chart2).Line(ltcChartData, {
+                responsive: true
+            });
         });
     }
 </script>
