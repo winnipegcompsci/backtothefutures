@@ -227,7 +227,7 @@ var lineChartData = {
     ],
     datasets : [
         {
-            label: "OKCoin Futures - Last Price",
+            label: "OKCoin Futures - High Price",
             fillColor : "rgba(48, 164, 255, 0.2)",
 			strokeColor : "rgba(48, 164, 255, 0.8)",
 			highlightFill : "rgba(48, 164, 255, 0.75)",
@@ -235,13 +235,13 @@ var lineChartData = {
             data : [
                 <?php 
                 foreach($okcoin_btc as $price) {
-                    echo number_format($price->last, 2) . ",";
+                    echo number_format($price->high, 2) . ",";
                 }
                 ?>
             ]
         },
         {
-            label: "796 Futures - Last Price",
+            label: "796 Futures - Low Price",
             fillColor : "rgba(220,220,220,0.2)",
             strokeColor : "rgba(220,220,220,1)",
             pointColor : "rgba(220,220,220,1)",
@@ -251,7 +251,7 @@ var lineChartData = {
             data : [
                <?php
                 foreach($okcoin_btc as $price) {
-                    echo $price->volume / $price->sell . ", ";
+                    echo $price->volume / $price->low . ", ";
                 }
                ?>
             ]
