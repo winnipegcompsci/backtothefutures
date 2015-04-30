@@ -366,7 +366,7 @@ window.onload = function(){
 
 <script>
     document.ready = function() {
-        $('.redraw').on('click', function() {
+        $('.redraw').click(function() {
             alert('Clicked');
         });
     };
