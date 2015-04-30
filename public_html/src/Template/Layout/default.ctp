@@ -84,7 +84,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">			
         <div class="row">   <!-- Breadcrum Row -->
 			<ol class="breadcrumb">
-				<li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+				<li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'dashboard']); ?>"><span class="glyphicon glyphicon-home"></span></a></li>
 				<li class="active"><?= isset($this->request->params['pass'][0]) ? ucwords($this->request->params['pass'][0]) : $this->fetch('title') ?></li>
 			</ol>
 		</div><!--/.row-->
