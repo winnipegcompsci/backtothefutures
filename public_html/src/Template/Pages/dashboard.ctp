@@ -19,8 +19,8 @@ foreach(TableRegistry::get('Sources')->find('all') as $source) {
 
 $okcoin_btc = TableRegistry::get('Spotprices')->find('all', [
     'conditions' => ['currency_id' => $btcID, 'source_id' => $OKCOIN_ID],
-    'limit' => 200
-]);
+    'limit' => 200,
+])->order(['timestamp' => 'DESC']);
 ?>
 
 <div class="row">
@@ -81,7 +81,7 @@ $okcoin_btc = TableRegistry::get('Spotprices')->find('all', [
 <div class="row">
 	<div class="col-lg-12">
         <div class="panel panel-default">
-            <div class="panel-heading">Bitcoin Futures Stock Prices</div>
+            <div class="panel-heading">Bitcoin Stock Prices (OKCoin vs. 796)</div>
 			<div class="panel-body">
 				<div class="canvas-wrapper">
 					<canvas class="main-chart" id="line-chart" height="200" width="600"></canvas>
@@ -116,7 +116,7 @@ var lineChartData = {
             data : [
                 <?php 
                 foreach($okcoin_btc as $price) {
-                    echo $price->buy . ",";
+                    echo $price->last . ",";
                 }
                 ?>
             ]
@@ -129,7 +129,7 @@ var lineChartData = {
             data : [
                 <?php 
                 foreach($okcoin_btc as $price) {
-                    echo $price->sell . ",";
+                    echo $price->volume . ",";
                 }
                 ?>
             ]
