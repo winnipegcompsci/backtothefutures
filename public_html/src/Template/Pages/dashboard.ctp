@@ -126,6 +126,7 @@ var lineChartData = {
                 ?>
             ]
         },
+        /*
         {
             label: "796 Futures - Last Price"
             fillColor : "rgba(220,220,220,0.2)",
@@ -141,6 +142,7 @@ var lineChartData = {
                 ?>
             ]
         }
+        */
     ]
 }
         
