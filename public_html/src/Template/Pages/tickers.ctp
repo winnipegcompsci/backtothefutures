@@ -200,7 +200,7 @@ var x796data = {
 }
 
 var bitvcdata = {
-    labels = [
+    labels : [
         "A", "B", "C", "D"
     ],
     datasets : [
