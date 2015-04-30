@@ -109,7 +109,7 @@ usort($x796_btc, 'sortOnID');
         <div class="panel panel-warning">
             <div class="panel-heading"> Latest Statistics: </div>
             <div class="panel-body">
-                <table>
+                <table with="100%">
                 <tr><th colspan=2> OKCoin </th></tr>
                 <tr>
                     <td>Low</td> <td><?= end($okcoin_btc)['low'] ?></td>
@@ -130,7 +130,7 @@ usort($x796_btc, 'sortOnID');
                     <td>Volume</td> <td><?= end($okcoin_btc)['volume'] ?></td>
                 </tr>
                 <tr>
-                    <td>Time</td> <?= end($okcoin_btc)['timestamp'] ?><td></td>
+                    <td>Time</td> <td><?= end($okcoin_btc)['timestamp'] ?></td>
                 </tr>
                 
                 </table>
