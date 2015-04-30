@@ -143,25 +143,25 @@ usort($x796_btc, 'sortOnID');
                 <div class="panel-body">
                     <table width="100%">
                         <tr>
-                            <td>Low</td> <td class="pull-right">$<?= end($okcoin_btc)['low'] ?></td>
+                            <td>Low</td> <td class="pull-right">$<?= end($x796_btc)['low'] ?></td>
                         </tr>
                         <tr>
-                            <td>High</td> <td class="pull-right">$<?= end($okcoin_btc)['high'] ?></td>
+                            <td>High</td> <td class="pull-right">$<?= end($x796_btc)['high'] ?></td>
                         </tr>
                         <tr>
-                            <td>Last</td> <td class="pull-right">$<?= end($okcoin_btc)['last'] ?></td>
+                            <td>Last</td> <td class="pull-right">$<?= end($x796_btc)['last'] ?></td>
                         </tr>
                         <tr>
-                            <td>Buy</td> <td class="pull-right">$<?= end($okcoin_btc)['buy'] ?></td>
+                            <td>Buy</td> <td class="pull-right">$<?= end($x796_btc)['buy'] ?></td>
                         </tr>
                         <tr>
-                            <td>Sell</td> <td class="pull-right">$<?= end($okcoin_btc)['sell'] ?></td>
+                            <td>Sell</td> <td class="pull-right">$<?= end($x796_btc)['sell'] ?></td>
                         </tr>
                         <tr>
-                            <td>Volume</td> <td class="pull-right"><?= end($okcoin_btc)['volume'] ?></td>
+                            <td>Volume</td> <td class="pull-right"><?= end($x796_btc)['volume'] ?></td>
                         </tr>
                         <tr>
-                            <td>Time</td> <td class="pull-right"><?= end($okcoin_btc)['timestamp'] ?></td>
+                            <td>Time</td> <td class="pull-right"><?= end($x796_btc)['timestamp'] ?></td>
                         </tr>                   
                     </table>
                 </div>
