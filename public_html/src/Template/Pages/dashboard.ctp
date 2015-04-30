@@ -208,7 +208,7 @@ var lineChartData = {
             pointHighlightFill : "#fff",
             pointHighlightStroke : "rgba(220,220,220,1)",
             data : [
-                200,225,250,275,300,325,350,325,300,325,350
+               
             ]
         }
         
