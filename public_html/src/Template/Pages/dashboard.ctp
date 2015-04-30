@@ -92,7 +92,13 @@ $okcoin_btc = TableRegistry::get('Spotprices')->find('all', [
 
 <script>
 var lineChartData = {
-    labels : ["January","February","March","April","May","June","July"],
+    labels : [
+        <?php 
+            foreach($okcoin_btc as $price) {
+                echo $price->timestamp . ",";
+            }
+        ?>
+    ],
     datasets : [
         {
             label: "OKCoin Futures - Buy Price",
