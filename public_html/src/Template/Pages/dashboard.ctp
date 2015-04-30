@@ -19,7 +19,7 @@ foreach(TableRegistry::get('Sources')->find('all') as $source) {
 
 $okcoin_btc = TableRegistry::get('Spotprices')->find('all', [
     'conditions' => ['currency_id' => $btcID, 'source_id' => $OKCOIN_ID],
-    'limit' => 5
+    'limit' => 40
 ]);
 ?>
 
