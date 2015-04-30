@@ -9,7 +9,7 @@
     </div>
     <div class="columns col-lg-6 col-md-6">
         <div class="canvas-wrapper">
-            <canvas class="main-chart" id="okcoin-chart" height="200" width="600"></canvas>
+            <canvas class="main-chart col-lg-12" id="okcoin-chart" height="200" width="600"></canvas>
         </div>
     </div>
     <div class="columns col-lg-3 col-md-6">
@@ -33,7 +33,7 @@
     </div>
     <div class="columns col-lg-6 col-md-6">
         <div class="canvas-wrapper">
-            <canvas class="main-chart" id="796-chart" height="200" width="600"></canvas>
+            <canvas class="main-chart col-lg-12" id="796-chart" height="200" width="600"></canvas>
         </div>
     </div>
     <div class="columns col-lg-3 col-md-6">
@@ -57,7 +57,7 @@
     </div>
     <div class="columns col-lg-6 col-md-6">
         <div class="canvas-wrapper">
-            <canvas class="main-chart" id="bitvc-chart" height="200" width="600"></canvas>
+            <canvas class="main-chart col-lg-12" id="bitvc-chart" height="200" width="600"></canvas>
         </div>
     </div>
     <div class="columns col-lg-3 col-md-6">
