@@ -139,7 +139,7 @@
 
 
 <script>
-window.okcoindata = {
+var okcoindata = {
     labels : [
         "A", "B", "C", "D"
     ],
@@ -169,7 +169,7 @@ window.okcoindata = {
     ]
 }
 
-window.796data = {
+var x796data = {
     labels : [
         "A", "B", "C", "D"
     ],
@@ -199,7 +199,7 @@ window.796data = {
     ]
 }
 
-window.bitvcdata = {
+var bitvcdata = {
     labels = [
         "A", "B", "C", "D"
     ],
@@ -231,17 +231,17 @@ window.bitvcdata = {
 
 window.onload = function() {
 	var chart1 = document.getElementById("okcoin-chart").getContext("2d");
-	window.myOKCoinChart = new Chart(chart1).Line(window.okcoindata, {
+	window.myOKCoinChart = new Chart(chart1).Line(okcoindata, {
 		responsive: true
 	});
     
     var chart2 = document.getElementById("796-chart").getContext("2d");
-    window.my796Chart = new Chart(chart2).Line(window.796data, {
+    window.my796Chart = new Chart(chart2).Line(x796data, {
         responsive: true
     });
     
     var chart3 = document.getElementById("bitvc-chart").getContext("2d");
-    window.myBitVCChart = new Chart(chart3).Line(window.bitvcdata, {
+    window.myBitVCChart = new Chart(chart3).Line(bitvcdata, {
         responsive: true
     });
 }
