@@ -3,7 +3,7 @@
         <div class="panel panel-primary">
             <div class="panel-heading">OKCoin (BTC)</div>
             <div class="panel-body">
-                <table>
+                <table width="100%">
                     <tr>
                         <th> Item </th> <th> Value </th>
                     </tr>
@@ -27,7 +27,18 @@
         <div class="panel panel-primary">
             <div class="panel-heading">OKCoin (LTC)</div>
             <div class="panel-body">
-
+                <table width="100%">
+                    <tr>
+                        <th> Item </th> <th> Value </th>
+                    </tr>
+                    <tr><td>Low</td> <td></td></tr>
+                    <tr><td>High</td> <td></td></tr>
+                    <tr><td>Last</td> <td></td></tr>
+                    <tr><td>Buy</td> <td></td></tr>
+                    <tr><td>Sell</td> <td></td></tr>
+                    <tr><td>Volume</td> <td> </td></tr>
+                    <tr><td colspan=2>Last Updated: </td></tr>
+                </table>
             </div>
         </div>
     </div>
@@ -38,7 +49,18 @@
         <div class="panel panel-primary">
             <div class="panel-heading">796 (BTC)</div>
             <div class="panel-body">
-            
+                <table width="100%">
+                    <tr>
+                        <th> Item </th> <th> Value </th>
+                    </tr>
+                    <tr><td>Low</td> <td></td></tr>
+                    <tr><td>High</td> <td></td></tr>
+                    <tr><td>Last</td> <td></td></tr>
+                    <tr><td>Buy</td> <td></td></tr>
+                    <tr><td>Sell</td> <td></td></tr>
+                    <tr><td>Volume</td> <td> </td></tr>
+                    <tr><td colspan=2>Last Updated: </td></tr>
+                </table>            
             </div>
         </div>
     </div>
@@ -51,7 +73,18 @@
         <div class="panel panel-primary">
             <div class="panel-heading">796 (LTC)</div>
             <div class="panel-body">
-
+                <table width="100%">
+                    <tr>
+                        <th> Item </th> <th> Value </th>
+                    </tr>
+                    <tr><td>Low</td> <td></td></tr>
+                    <tr><td>High</td> <td></td></tr>
+                    <tr><td>Last</td> <td></td></tr>
+                    <tr><td>Buy</td> <td></td></tr>
+                    <tr><td>Sell</td> <td></td></tr>
+                    <tr><td>Volume</td> <td> </td></tr>
+                    <tr><td colspan=2>Last Updated: </td></tr>
+                </table>
             </div>
         </div>
     </div>
@@ -62,7 +95,18 @@
         <div class="panel panel-primary">
             <div class="panel-heading">BitVC (BTC)</div>
             <div class="panel-body">
-            
+                <table width="100%">
+                    <tr>
+                        <th> Item </th> <th> Value </th>
+                    </tr>
+                    <tr><td>Low</td> <td></td></tr>
+                    <tr><td>High</td> <td></td></tr>
+                    <tr><td>Last</td> <td></td></tr>
+                    <tr><td>Buy</td> <td></td></tr>
+                    <tr><td>Sell</td> <td></td></tr>
+                    <tr><td>Volume</td> <td> </td></tr>
+                    <tr><td colspan=2>Last Updated: </td></tr>
+                </table>            
             </div>
         </div>
     </div>
@@ -75,7 +119,18 @@
         <div class="panel panel-primary">
             <div class="panel-heading">BitVC (LTC)</div>
             <div class="panel-body">
-
+                <table width="100%">
+                    <tr>
+                        <th> Item </th> <th> Value </th>
+                    </tr>
+                    <tr><td>Low</td> <td></td></tr>
+                    <tr><td>High</td> <td></td></tr>
+                    <tr><td>Last</td> <td></td></tr>
+                    <tr><td>Buy</td> <td></td></tr>
+                    <tr><td>Sell</td> <td></td></tr>
+                    <tr><td>Volume</td> <td> </td></tr>
+                    <tr><td colspan=2>Last Updated: </td></tr>
+                </table>
             </div>
         </div>
     </div>
