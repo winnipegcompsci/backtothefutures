@@ -99,7 +99,7 @@ usort($x796_btc, 'sortOnID');
 <div class="row">
 	<div class="col-xs-12 col-md-6 col-lg-9">
         <div class="panel panel-info">
-            <div class="panel-heading">Bitcoin Prices (OKCoin vs. 796)</div>
+            <div class="panel-heading">Market Spot Prices</div>
 			<div class="panel-body tabs">
                 <ul class="nav nav-tabs">
 					<li class="active"><a href="#tab1" data-toggle="tab">Bitcoin</a></li>
@@ -107,13 +107,11 @@ usort($x796_btc, 'sortOnID');
 				</ul>
                 <div class="tab-content">
                     <div class="tab-pane fade in active" id="tab1">
-                        <h4>Bitcoin</h4>
                         <div class="canvas-wrapper">
                             <canvas class="main-chart" id="line-chart" height="200" width="600"></canvas>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="tab2">
-                        <h4>Linecoin</h4>
                         <div class="canvas-wrapper">
                             <canvas class="main-chart" id="ltc-chart" height="200" width="600"></canvas>
                         </div>
