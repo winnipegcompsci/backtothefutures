@@ -1,3 +1,27 @@
+<?php 
+use Cake\ORM\TableRegistry;
+use Cake\Core\Configure;
+
+foreach(TableRegistry::get('Currencies')->find('all') as $currency) {
+    if($currency->currency_name == "Bitcoin") {
+        $btcID = $currency->id;
+    } else if($currency->currency_name == "Litecoin") {
+        $ltcID = $currency->id;
+    }
+}
+
+foreach(TableRegistry::get('Sources')->find('all') as $source) {
+    if(strtoupper($source->source_name) == "OKCOIN") {
+        $OKCOIN_ID = $source->id;
+    }   
+}
+
+
+$okcoin_btc = TableRegistry::get('Spotprices')->find('all', [
+    'conditions' => ['currency_id' => $btcID, 'source_id' => $OKCOIN_ID]
+]);
+?>
+
 <div class="row">
     <div class="col-xs-12 col-md-6 col-lg-3">
         <div class="panel panel-blue panel-widget ">
@@ -65,28 +89,6 @@
         </div>
 	</div>
 </div><!--/.row-->
-
-<?php 
-foreach(TableRegistry::get('Currencies')->find('all') as $currency) {
-    if($currency->currency_name == "Bitcoin") {
-        $btcID = $currency->id;
-    } else if($currency->currency_name == "Litecoin") {
-        $ltcID = $currency->id;
-    }
-}
-
-foreach(TableRegistry::get('Sources')->find('all') as $source) {
-    if(strtoupper($source->source_name) == "OKCOIN") {
-        $OKCOIN_ID = $source->id;
-    }   
-}
-
-
-$okcoin_btc = TableRegistry::get('Spotprices')->find('all', [
-    'conditions' => ['currency_id' => $btcID, 'source_id' => $OKCOIN_ID]
-]);
-?>
-
 
 <script>
 var lineChartData = {
