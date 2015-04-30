@@ -231,9 +231,6 @@ usort($x796_btc, 'sortOnID');
             </div>
         </div>
     </div>
-
-
-
 </div>
 
 <script>
