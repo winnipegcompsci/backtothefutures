@@ -240,7 +240,6 @@ var lineChartData = {
                 ?>
             ]
         },
-        
         {
             label: "796 Futures - Last Price",
             fillColor : "rgba(220,220,220,0.2)",
@@ -253,11 +252,18 @@ var lineChartData = {
                
             ]
         }
-        
     ]
 }
 
-$(function() {
+
+        
+window.onload = function(){
+	var chart1 = document.getElementById("line-chart").getContext("2d");
+	window.myLine = new Chart(chart1).Line(lineChartData, {
+		responsive: true
+	});
+    
+    $(function() {
     $('#easypiechart-teal').easyPieChart({
         scaleColor: false,
         barColor: '#1ebfae'
@@ -285,11 +291,5 @@ $(function() {
    });
 });
 
-        
-window.onload = function(){
-	var chart1 = document.getElementById("line-chart").getContext("2d");
-	window.myLine = new Chart(chart1).Line(lineChartData, {
-		responsive: true
-	});
 }
 </script>
