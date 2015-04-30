@@ -1,3 +1,73 @@
+<div class="columns col-lg-5"> 
+
+<?php
+    $biases = array('L' => 'Long', 'S' => 'Short');
+    
+    $leverages = array(
+        '20' => '20x Leverage - 5% Market Movement',
+        '50' => '50x Leverage - 2% Market Movement',
+    );
+        
+    ?>
+    <div class="panel panel-primary">
+        <div class="panel-heading"> OKCoin.com </div>
+        <div class="panel-body">
+        <?php
+            echo $this->Form->create();
+            echo $this->Form->input('recalc_period');
+            echo $this->Form->input('hedge_amount');
+            echo $this->Form->input('cover_ratio');
+            echo $this->Form->label('Position Bias');
+            echo $this->Form->select('position_bias', $biases, ['default' => 'L'] );
+            echo $this->Form->input('slippage_stop_percentage');
+            echo $this->Form->label('Select Your Leverage');
+            echo $this->Form->select('leverage', $leverages, ['default' => '20']);
+            echo $this->Form->button('Save');
+            echo $this->Form->end(); 
+        ?>
+        </div>
+    </div>
+    
+    <div class="panel panel-orange">
+        <div class="panel-heading"> 796.com </div>
+        <div class="panel-body">
+        <?php
+            echo $this->Form->create();
+            echo $this->Form->input('recalc_period');
+            echo $this->Form->input('hedge_amount');
+            echo $this->Form->input('cover_ratio');
+            echo $this->Form->label('Position Bias');
+            echo $this->Form->select('position_bias', $biases, ['default' => 'L'] );
+            echo $this->Form->input('slippage_stop_percentage');
+            echo $this->Form->label('Select Your Leverage');
+            echo $this->Form->select('leverage', $leverages, ['default' => '20']);
+            echo $this->Form->button('Save');
+            echo $this->Form->end(); 
+        ?>
+        </div>
+    </div>
+    
+    <div class="panel panel-teal">
+        <div class="panel-heading"> BitVC.com </div>
+        <div class="panel-body">
+        <?php
+            echo $this->Form->create();
+            echo $this->Form->input('recalc_period');
+            echo $this->Form->input('hedge_amount');
+            echo $this->Form->input('cover_ratio');
+            echo $this->Form->label('Position Bias');
+            echo $this->Form->select('position_bias', $biases, ['default' => 'L'] );
+            echo $this->Form->input('slippage_stop_percentage');
+            echo $this->Form->label('Select Your Leverage');
+            echo $this->Form->select('leverage', $leverages, ['default' => '20']);
+            echo $this->Form->button('Save');
+            echo $this->Form->end(); 
+        ?>
+        </div>
+    </div>
+
+</div>
+
 <div class="columns col-lg-5 col-lg-offset-1">
 
 <h2> Terms </h2>
@@ -23,27 +93,3 @@
     
 </div>
 
-<div class="columns col-lg-5"> 
-
-<?php
-    $biases = array('L' => 'Long', 'S' => 'Short');
-    
-    $leverages = array(
-        '20' => '20x Leverage - 5% Market Movement',
-        '50' => '50x Leverage - 2% Market Movement',
-    );
-    
-    echo $this->Form->create();
-    echo $this->Form->input('recalc_period');
-    echo $this->Form->input('hedge_amount');
-    echo $this->Form->input('cover_ratio');
-    echo $this->Form->label('Position Bias');
-    echo $this->Form->select('position_bias', $biases, ['default' => 'L'] );
-    echo $this->Form->input('slippage_stop_percentage');
-    echo $this->Form->label('Select Your Leverage');
-    echo $this->Form->select('leverage', $leverages, ['default' => '20']);
-    echo $this->Form->button('Save');
-    echo $this->Form->end();  
-?>
-
-</div>
