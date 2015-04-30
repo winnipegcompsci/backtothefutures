@@ -330,7 +330,7 @@ window.onload = function(){
     
     var chart2 = document.getElementById("ltc-chart").getContext("2d");
     window.myLTCLine = new Chart(chart2).Line(ltcChartData, {
-        responsive: false
+        responsive: true
     });
     
     $(function() {
