@@ -100,12 +100,11 @@ usort($x796_btc, 'sortOnID');
 	<div class="col-xs-12 col-md-6 col-lg-9">
         <div class="panel panel-info">
             <div class="panel-heading">
-                <ul class="nav nav-tabs">
+                <ul class="nav nav-pills">
 					<li class="active"><a href="#tab1" data-toggle="tab">Bitcoin</a></li>
 					<li><a href="#tab2" data-toggle="tab">Litecoin</a></li>
-                    <span class="pull-right">Market Spot Prices </span>
+                    <!-- <span class="pull-right">Market Spot Prices </span> -->
 				</ul>
-
             </div>
 			<div class="panel-body tabs">
                 <div class="tab-content">
