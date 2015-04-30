@@ -229,7 +229,7 @@ usort($x796_btc, 'sortOnID');
 </div>
 
 <script>
-var lineChartData = {
+var btcChartData = {
     labels : [
         <?php 
             $i=0;
@@ -275,16 +275,61 @@ var lineChartData = {
     ]
 }
 
+var ltcChartData = {
+    labels : [
+        <?php 
+            $i=0;
+            foreach($okcoin_btc as $key => $price) {
+                if($i % 6 == 0) {
+                    echo "\"" . $price->timestamp . "\",";
+                }
+                $i++;
+            }
+        ?>
+    ],
+    datasets : [
+        {
+            label: "OKCoin Futures - Buy Price",
+            fillColor : "rgba(48, 164, 255, 0.2)",
+			strokeColor : "rgba(48, 164, 255, 0.8)",
+			highlightFill : "rgba(48, 164, 255, 0.75)",
+			highlightStroke : "rgba(48, 164, 255, 1)",
+            data : [
+                <?php 
+                foreach($okcoin_btc as $price) {
+                    echo $price->volume . ",";
+                }
+                ?>
+            ]
+        },
+        {
+            label: "OKCoin Futures - Sell Price",
+            fillColor : "rgba(220,220,220,0.2)",
+            strokeColor : "rgba(220,220,220,1)",
+            pointColor : "rgba(220,220,220,1)",
+            pointStrokeColor : "#fff",
+            pointHighlightFill : "#fff",
+            pointHighlightStroke : "rgba(220,220,220,1)",
+            data : [
+               <?php
+                foreach($okcoin_btc as $price) {
+                    echo number_format($price->sell, 2) . ", ";
+                }
+               ?>
+            ]
+        }
+    ]
+}
 
         
 window.onload = function(){
 	var chart1 = document.getElementById("btc-chart").getContext("2d");
-	window.myLine = new Chart(chart1).Line(lineChartData, {
+	window.myLine = new Chart(chart1).Line(btcChartData, {
 		responsive: true
 	});
     
     var chart2 = document.getElementById("ltc-chart").getContext("2d");
-    window.myLine2 = new Chart(chart2).Bar(lineChartData, {
+    window.myLine2 = new Chart(chart2).Line(ltcChartData, {
         responsive: true
     });
     
