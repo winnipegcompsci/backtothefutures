@@ -94,8 +94,12 @@ $okcoin_btc = TableRegistry::get('Spotprices')->find('all', [
 var lineChartData = {
     labels : [
         <?php 
-            foreach($okcoin_btc as $price) {
-                echo "\"" . $price->timestamp . "\",";
+            $i=0;
+            foreach($okcoin_btc as $key => $price) {
+                if($i % 10 == 0) {
+                    echo "\"" . $price->timestamp . "\",";
+                }
+                $i++;
             }
         ?>
     ],
