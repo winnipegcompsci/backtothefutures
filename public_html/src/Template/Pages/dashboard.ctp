@@ -113,7 +113,7 @@ var lineChartData = {
         <?php 
             $i=0;
             foreach($okcoin_btc as $key => $price) {
-                if($i % 10 == 0) {
+                if($i % 5 == 0) {
                     echo "\"" . $price->timestamp . "\",";
                 }
                 $i++;
