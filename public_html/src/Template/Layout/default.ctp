@@ -71,10 +71,10 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'decisions']); ?>"><span class="glyphicon glyphicon-retweet"></span> Market Decisions </a></li>
             
             <li role="presentation" class="divider"></li>
-            <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'contracts']); ?>"><span class="glyphicon glyphicon-file"></span> My Futures Contracts </a></li>
-            <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'profitandloss']); ?>"><span class="glyphicon glyphicon-usd"></span> My Profits & Losses</a></li>
-            <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'positions']); ?>"><span class="glyphicon glyphicon-sort-by-order"></span> My Positions Held </a></li>
-            <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'transactions']); ?>"><span class="glyphicon glyphicon-transfer"></span> My Transactions </a></li>
+            <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'contracts']); ?>"><span class="glyphicon glyphicon-file"></span> My Futures Contracts </a> <span class="pull-right badge">0</span></li>
+            <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'profitandloss']); ?>"><span class="glyphicon glyphicon-usd"></span> My Profits & Losses</a> <span class="pull-right badge">0</span></li>
+            <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'positions']); ?>"><span class="glyphicon glyphicon-sort-by-order"></span> My Positions Held </a> <span class="pull-right badge">0</span></li>
+            <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'transactions']); ?>"><span class="glyphicon glyphicon-transfer"></span> My Transactions </a> <span class="pull-right badge">0</span></li>
              
 			<li role="presentation" class="divider"></li>
 			<li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'settings']); ?>"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
