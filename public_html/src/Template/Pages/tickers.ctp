@@ -21,7 +21,7 @@
         </div>
     </div>
 </div>
-
+<li role="presentation" class="divider"></li>
 <div class="row">
     <div class="columns col-lg-3 col-md-6">
         <div class="panel panel-primary">
@@ -45,7 +45,7 @@
         </div>
     </div>
 </div>
-
+<li role="presentation" class="divider"></li>
 <div class="row">
     <div class="columns col-lg-3 col-md-6">
         <div class="panel panel-primary">
