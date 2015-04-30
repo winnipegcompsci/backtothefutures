@@ -109,7 +109,7 @@ usort($x796_btc, 'sortOnID');
         <div class="panel panel-warning">
             <div class="panel-heading"> Latest Statistics: </div>
             <div class="panel-body">
-                Some Table Here
+                <?php echo "<pre>" . print_r(end($okcoin_btc), TRUE) . "</pre>" ?>
             </div>
         </div>
     </div>
