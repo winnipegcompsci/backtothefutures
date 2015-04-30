@@ -7,7 +7,7 @@
                 </div>
                 <div class="col-sm-9 col-lg-7 widget-right">
                     <div class="large">120</div>
-                    <div class="text-muted">New Orders</div>
+                    <div class="text-muted">New Futures Contracts</div>
                 </div>
             </div>
         </div>
@@ -20,7 +20,7 @@
                 </div>
                 <div class="col-sm-9 col-lg-7 widget-right">
                     <div class="large">52</div>
-                    <div class="text-muted">Actions</div>
+                    <div class="text-muted">Transactions Made</div>
                 </div>
             </div>
         </div>
@@ -66,5 +66,62 @@
 	</div>
 </div><!--/.row-->
 
-<script src="../js/chart.min.js"></script>
-<script src="../js/chart-data.js"></script>
+<?php 
+foreach(TableRegistry::get('Currencies')->find('all') as $currency) {
+    if($currency->currency_name == "Bitcoin") {
+        $btcID = $currency->id;
+    } else if($currency->currency_name == "Litecoin") {
+        $ltcID = $currency->id;
+    }
+}
+
+foreach(TableRegistry::get('Sources')->find('all') as $source) {
+    if(strtoupper($source->source_name) == "OKCOIN") {
+        $OKCOIN_ID = $source->id;
+    }   
+}
+
+
+$okcoin_btc = TableRegistry::get('Spotprices')->find('all', [
+    'conditions' => ['currency_id' => $btcID, 'source_id' => $OKCOIN_ID]
+]);
+?>
+
+
+<script>
+var lineChartData = {
+    labels : ["January","February","March","April","May","June","July"],
+    datasets : [
+    {
+            label: "OKCoin Futures Price Ticker",
+            fillColor : "rgba(220,220,220,0.2)",
+            strokeColor : "rgba(220,220,220,1)",
+            pointColor : "rgba(220,220,220,1)",
+            pointStrokeColor : "#fff",
+            pointHighlightFill : "#fff",
+            pointHighlightStroke : "rgba(220,220,220,1)",
+            data : [
+                <?php 
+                foreach($okcoin_btc as $price) {
+                    echo $price . ",";
+                }
+                ?>
+            ]
+    },
+    {
+            label: "My Second dataset",
+            fillColor : "rgba(48, 164, 255, 0.2)",
+            strokeColor : "rgba(48, 164, 255, 1)",
+            pointColor : "rgba(48, 164, 255, 1)",
+            pointStrokeColor : "#fff",
+            pointHighlightFill : "#fff",
+            pointHighlightStroke : "rgba(48, 164, 255, 1)",
+            data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+    }]
+}
+        
+        window.onload = function(){
+	var chart1 = document.getElementById("line-chart").getContext("2d");
+	window.myLine = new Chart(chart1).Line(lineChartData, {
+		responsive: true
+	});
