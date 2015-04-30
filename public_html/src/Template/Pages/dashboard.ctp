@@ -363,3 +363,20 @@ window.onload = function(){
 
 }
 </script>
+
+
+<script>
+   $('#tab2').on('shown.bs.tab', function (e) {
+        window.myBTCLine.destroy();
+        window.myBTCLine = new Chart(chart1).Line(btcChartData, {
+            responsive: true
+        });
+    });
+
+    $('#tab2').on('shown.bs.tab', function (e) {
+        window.myLTCLine.destroy();
+        window.myLTCLine = new Chart(chart2).Line(ltcChartData, {
+            responsive: true
+        });
+    });
+</script>
