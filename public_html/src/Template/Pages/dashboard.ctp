@@ -106,34 +106,60 @@ usort($x796_btc, 'sortOnID');
         </div>
 	</div>
     <div class="col-xs-12 col-md-6 col-lg-3">
-        <div class="panel panel-warning">
-            <div class="panel-heading"> Latest Statistics: </div>
-            <div class="panel-body">
-                <table width="100%">
-                <tr><th colspan=2> OKCoin </th></tr>
-                <tr>
-                    <td>Low</td> <td class="pull-right">$<?= end($okcoin_btc)['low'] ?></td>
-                </tr>
-                <tr>
-                    <td>High</td> <td class="pull-right">$<?= end($okcoin_btc)['high'] ?></td>
-                </tr>
-                <tr>
-                    <td>Last</td> <td class="pull-right">$<?= end($okcoin_btc)['last'] ?></td>
-                </tr>
-                <tr>
-                    <td>Buy</td> <td class="pull-right">$<?= end($okcoin_btc)['buy'] ?></td>
-                </tr>
-                <tr>
-                    <td>Sell</td> <td class="pull-right">$<?= end($okcoin_btc)['sell'] ?></td>
-                </tr>
-                <tr>
-                    <td>Volume</td> <td class="pull-right"><?= end($okcoin_btc)['volume'] ?></td>
-                </tr>
-                <tr>
-                    <td>Time</td> <td class="pull-right"><?= end($okcoin_btc)['timestamp'] ?></td>
-                </tr>
-                
-                </table>
+        <div class="row">
+            <div class="panel panel-warning">
+                <div class="panel-heading"> Latest Statistics: </div>
+                <div class="panel-body">
+                    <table width="100%">
+                        <tr><th colspan=2> OKCoin </th></tr>
+                        <tr>
+                            <td>Low</td> <td class="pull-right">$<?= end($okcoin_btc)['low'] ?></td>
+                        </tr>
+                        <tr>
+                            <td>High</td> <td class="pull-right">$<?= end($okcoin_btc)['high'] ?></td>
+                        </tr>
+                        <tr>
+                            <td>Last</td> <td class="pull-right">$<?= end($okcoin_btc)['last'] ?></td>
+                        </tr>
+                        <tr>
+                            <td>Buy</td> <td class="pull-right">$<?= end($okcoin_btc)['buy'] ?></td>
+                        </tr>
+                        <tr>
+                            <td>Sell</td> <td class="pull-right">$<?= end($okcoin_btc)['sell'] ?></td>
+                        </tr>
+                        <tr>
+                            <td>Volume</td> <td class="pull-right"><?= end($okcoin_btc)['volume'] ?></td>
+                        </tr>
+                        <tr>
+                            <td>Time</td> <td class="pull-right"><?= end($okcoin_btc)['timestamp'] ?></td>
+                        </tr>                   
+                    </table>
+                    
+                     <table width="100%">
+                        <tr><th colspan=2> 796 </th></tr>
+                        <tr>
+                            <td>Low</td> <td class="pull-right">$<?= end($okcoin_btc)['low'] ?></td>
+                        </tr>
+                        <tr>
+                            <td>High</td> <td class="pull-right">$<?= end($okcoin_btc)['high'] ?></td>
+                        </tr>
+                        <tr>
+                            <td>Last</td> <td class="pull-right">$<?= end($okcoin_btc)['last'] ?></td>
+                        </tr>
+                        <tr>
+                            <td>Buy</td> <td class="pull-right">$<?= end($okcoin_btc)['buy'] ?></td>
+                        </tr>
+                        <tr>
+                            <td>Sell</td> <td class="pull-right">$<?= end($okcoin_btc)['sell'] ?></td>
+                        </tr>
+                        <tr>
+                            <td>Volume</td> <td class="pull-right"><?= end($okcoin_btc)['volume'] ?></td>
+                        </tr>
+                        <tr>
+                            <td>Time</td> <td class="pull-right"><?= end($okcoin_btc)['timestamp'] ?></td>
+                        </tr>                   
+                    </table>
+                </div>
             </div>
         </div>
     </div>
