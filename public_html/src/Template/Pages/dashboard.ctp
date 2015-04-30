@@ -249,7 +249,11 @@ var lineChartData = {
             pointHighlightFill : "#fff",
             pointHighlightStroke : "rgba(220,220,220,1)",
             data : [
-               
+               <?php
+                foreach($okcoin_btc as $price) {
+                    echo $price->volume . ", ";
+                }
+               ?>
             ]
         }
     ]
