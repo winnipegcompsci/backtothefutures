@@ -95,7 +95,7 @@ var lineChartData = {
     labels : ["January","February","March","April","May","June","July"],
     datasets : [
         {
-            label: "OKCoin Futures Price Ticker",
+            label: "OKCoin Futures - Buy Price",
             fillColor : "rgba(220,220,220,0.2)",
             strokeColor : "rgba(220,220,220,1)",
             pointColor : "rgba(220,220,220,1)",
@@ -105,7 +105,20 @@ var lineChartData = {
             data : [
                 <?php 
                 foreach($okcoin_btc as $price) {
-                    echo $price->last . ",";
+                    echo $price->buy . ",";
+                }
+                ?>
+            ]
+        },
+        {
+            fillColor : "rgba(48, 164, 255, 0.2)",
+			strokeColor : "rgba(48, 164, 255, 0.8)",
+			highlightFill : "rgba(48, 164, 255, 0.75)",
+			highlightStroke : "rgba(48, 164, 255, 1)",
+            data : [
+                <?php 
+                foreach($okcoin_btc as $price) {
+                    echo $price->sell . ",";
                 }
                 ?>
             ]
