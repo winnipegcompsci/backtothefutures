@@ -74,7 +74,7 @@
 <div class="row">
     <div class="columns col-md-6 col-lg-12">
         <div class="panel panel-info">
-            <div class="panel-heading"> Terms <span style="font-size: 2em" class="pull-right glyphicon glyphicon-question-sign"></span></div>
+            <div class="panel-heading"> <span style="font-size: 1.5em" class="glyphicon glyphicon-question-sign"></span> Terms </div>
             <div class="panel-body">
                 <div class="columns col-md-6 col-lg-6">
                     <dl>
