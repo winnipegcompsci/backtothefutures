@@ -96,7 +96,7 @@ usort($x796_btc, 'sortOnID');
 
 <div class="row">
 	<div class="col-xs-12 col-md-6 col-lg-9">
-        <div class="panel panel-default">
+        <div class="panel panel-success">
             <div class="panel-heading">Bitcoin Prices (OKCoin vs. 796)</div>
 			<div class="panel-body">
 				<div class="canvas-wrapper">
@@ -106,7 +106,7 @@ usort($x796_btc, 'sortOnID');
         </div>
 	</div>
     <div class="col-xs-12 col-md-6 col-lg-3">
-        <div class="panel panel-teal">
+        <div class="panel panel-warning">
             <div class="panel-heading"> Latest Statistics: </div>
             <div class="panel-body">
                 Some Table Here
