@@ -367,20 +367,16 @@ window.onload = function(){
 
 <script>
 document.onready = function() {
-   $('#tab1').on('shown.bs.tab', function (e) {
-        alert('Tab 1 Clicked');
+    $('li').on("click", function(event) {
         window.myBTCLine.destroy();
         window.myBTCLine = new Chart(chart1).Line(btcChartData, {
             responsive: true
         });
-    });
 
-    $('#tab2').on('shown.bs.tab', function (e) {
-        alert('Tab 2 Clicked');
         window.myLTCLine.destroy();
         window.myLTCLine = new Chart(chart2).Line(ltcChartData, {
             responsive: true
         });
     });
-};
+}
 </script>
