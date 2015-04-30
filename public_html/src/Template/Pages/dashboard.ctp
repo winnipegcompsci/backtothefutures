@@ -48,9 +48,9 @@ usort($x796_btc, 'sortOnID');
                     <em class="glyphicon glyphicon-shopping-cart glyphicon-l"></em>
                 </div>
                 <div class="col-sm-9 col-lg-7 widget-right">
-                    <a href="#"> 
-                    <div class="large">120</div>
-                    <div class="text-muted">New Futures Contracts</div>
+                    <a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'contracts']); ?>"> 
+                        <div class="large">120</div>
+                        <div class="text-muted">New Futures Contracts</div>
                     </a>
                 </div>
             </div>
@@ -63,8 +63,10 @@ usort($x796_btc, 'sortOnID');
                     <em class="glyphicon glyphicon-comment glyphicon-l"></em>
                 </div>
                 <div class="col-sm-9 col-lg-7 widget-right">
-                    <div class="large">52</div>
-                    <div class="text-muted">Transactions Made</div>
+                    <a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'transactions']); ?>">
+                        <div class="large">52</div>
+                        <div class="text-muted">Transactions Made</div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -76,8 +78,10 @@ usort($x796_btc, 'sortOnID');
                     <em class="glyphicon glyphicon-user glyphicon-l"></em>
                 </div>
                 <div class="col-sm-9 col-lg-7 widget-right">
-                    <div class="large">24</div>
-                    <div class="text-muted">Positions Held</div>
+                    <a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'positions']); ?>">
+                        <div class="large">24</div>
+                        <div class="text-muted">Positions Held</div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -89,8 +93,10 @@ usort($x796_btc, 'sortOnID');
                     <em class="glyphicon glyphicon-stats glyphicon-l"></em>
                 </div>
                 <div class="col-sm-9 col-lg-7 widget-right">
-                    <div class="large">25.2k</div>
-                    <div class="text-muted">Profit/Loss</div>
+                    <a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'profitandloss']); ?>">
+                        <div class="large">25.2k</div>
+                        <div class="text-muted">Profit/Loss</div>
+                    </a>
                 </div>
             </div>
         </div>
