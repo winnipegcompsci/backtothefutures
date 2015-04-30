@@ -101,8 +101,8 @@ usort($x796_btc, 'sortOnID');
         <div class="panel panel-info">
 			<div class="panel-body tabs">
                 <ul class="nav nav-pills">
-					<li class="active"><a href="#tab1" data-toggle="tab">Bitcoin</a></li>
-					<li><a href="#tab2" data-toggle="tab">Litecoin</a></li>
+					<li class="redraw active"><a href="#tab1" data-toggle="tab">Bitcoin</a></li>
+					<li class="redraw"><a href="#tab2" data-toggle="tab">Litecoin</a></li>
                     <li class="pull-right"><span><h3>Market Spot Prices</h3></span></li>
 				</ul>
                 <div class="tab-content">
@@ -364,19 +364,10 @@ window.onload = function(){
 }
 </script>
 
-
 <script>
-document.onready = function() {
-    $('li').on("click", function(event) {
-        window.myBTCLine.destroy();
-        window.myBTCLine = new Chart(chart1).Line(btcChartData, {
-            responsive: true
-        });
-
-        window.myLTCLine.destroy();
-        window.myLTCLine = new Chart(chart2).Line(ltcChartData, {
-            responsive: true
+    (document).ready(function() {
+        $('li.redraw').on('click', function() {
+            alert('Clicked');
         });
     });
-}
 </script>
