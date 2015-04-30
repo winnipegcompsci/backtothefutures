@@ -110,6 +110,31 @@ usort($x796_btc, 'sortOnID');
             <div class="panel-heading"> Latest Statistics: </div>
             <div class="panel-body">
                 <?php echo "<pre>" . print_r(end($okcoin_btc), TRUE) . "</pre>" ?>
+                <table>
+                <tr><th colspan=2> OKCoin </th></tr>
+                <tr>
+                    <td>Low</td> <td><?= end($okcoin_btc)['low'] ?></td>
+                </tr>
+                <tr>
+                    <td>High</td> <td><?= end($okcoin_btc)['high'] ?></td>
+                </tr>
+                <tr>
+                    <td>Last</td> <td><?= end($okcoin_btc)['last'] ?></td>
+                </tr>
+                <tr>
+                    <td>Buy</td> <td><?= end($okcoin_btc)['buy'] ?></td>
+                </tr>
+                <tr>
+                    <td>Sell</td> <td><?= end($okcoin_btc)['sell'] ?></td>
+                </tr>
+                <tr>
+                    <td>Volume</td> <td><?= end($okcoin_btc)['volume'] ?></td>
+                </tr>
+                <tr>
+                    <td>Time</td> <?= end($okcoin_btc)['timestamp'] ?><td></td>
+                </tr>
+                
+                </table>
             </div>
         </div>
     </div>
