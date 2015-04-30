@@ -284,7 +284,7 @@ window.onload = function(){
 	});
     
     var chart2 = document.getElementById("ltc-chart").getContext("2d");
-    window.myLine2 = new Chart(chart2).Line(lineChartData, {
+    window.myLine2 = new Chart(chart2).Bar(lineChartData, {
         responsive: true
     });
     
