@@ -1,6 +1,6 @@
 <div class="row">
     <div class="columns col-lg-3 col-md-6">
-        <div class="panel panel-primary">
+        <div class="panel panel-info">
             <div class="panel-heading">OKCoin (BTC)</div>
             <div class="panel-body">
                 <table width="100%">
@@ -24,7 +24,7 @@
         </div>
     </div>
     <div class="columns col-lg-3 col-md-6">
-        <div class="panel panel-primary">
+        <div class="panel panel-info">
             <div class="panel-heading">OKCoin (LTC)</div>
             <div class="panel-body">
                 <table width="100%">
@@ -46,7 +46,7 @@
 
 <div class="row">
     <div class="columns col-lg-3 col-md-6">
-        <div class="panel panel-primary">
+        <div class="panel panel-warning">
             <div class="panel-heading">796 (BTC)</div>
             <div class="panel-body">
                 <table width="100%">
@@ -70,7 +70,7 @@
         </div>
     </div>
     <div class="columns col-lg-3 col-md-6">
-        <div class="panel panel-primary">
+        <div class="panel panel-warning">
             <div class="panel-heading">796 (LTC)</div>
             <div class="panel-body">
                 <table width="100%">
@@ -92,7 +92,7 @@
 
 <div class="row">
     <div class="columns col-lg-3 col-md-6">
-        <div class="panel panel-primary">
+        <div class="panel panel-success">
             <div class="panel-heading">BitVC (BTC)</div>
             <div class="panel-body">
                 <table width="100%">
@@ -116,7 +116,7 @@
         </div>
     </div>
     <div class="columns col-lg-3 col-md-6">
-        <div class="panel panel-primary">
+        <div class="panel panel-success">
             <div class="panel-heading">BitVC (LTC)</div>
             <div class="panel-body">
                 <table width="100%">
