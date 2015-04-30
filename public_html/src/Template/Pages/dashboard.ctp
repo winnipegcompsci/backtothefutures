@@ -40,9 +40,7 @@ usort($x796_btc, 'sortOnID');
 ?>
 <script>
     function redraw() {
-        $(document).ready(function() {
-            alert("TRUE");
-            
+        $(document).ready(function() {            
             var chart1 = document.getElementById("btc-chart").getContext("2d");
             window.myBTCLine = new Chart(chart1).Line(btcChartData, {
                 responsive: true
