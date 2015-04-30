@@ -108,10 +108,9 @@ usort($x796_btc, 'sortOnID');
     <div class="col-xs-12 col-md-6 col-lg-3">
         <div class="row">
             <div class="panel panel-warning">
-                <div class="panel-heading"> Latest Statistics: </div>
+                <div class="panel-heading"> OK Coin: </div>
                 <div class="panel-body">
                     <table width="100%">
-                        <tr><th colspan=2> OKCoin </th></tr>
                         <tr>
                             <td>Low</td> <td class="pull-right">$<?= end($okcoin_btc)['low'] ?></td>
                         </tr>
@@ -134,9 +133,15 @@ usort($x796_btc, 'sortOnID');
                             <td>Time</td> <td class="pull-right"><?= end($okcoin_btc)['timestamp'] ?></td>
                         </tr>                   
                     </table>
-                    
-                     <table width="100%">
-                        <tr><th colspan=2> 796 </th></tr>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="panel panel-warning">
+                <div class="panel-heading"> 796: </div>
+                <div class="panel-body">
+                    <table width="100%">
                         <tr>
                             <td>Low</td> <td class="pull-right">$<?= end($okcoin_btc)['low'] ?></td>
                         </tr>
