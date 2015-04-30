@@ -367,7 +367,7 @@ window.onload = function(){
 
 <script>
 document.onready = function() {
-   $('#tab2').on('shown.bs.tab', function (e) {
+   $('#tab1').on('shown.bs.tab', function (e) {
         window.myBTCLine.destroy();
         window.myBTCLine = new Chart(chart1).Line(btcChartData, {
             responsive: true
