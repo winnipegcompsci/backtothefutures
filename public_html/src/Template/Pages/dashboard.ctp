@@ -94,7 +94,7 @@ $okcoin_btc = TableRegistry::get('Spotprices')->find('all', [
 var lineChartData = {
     labels : ["January","February","March","April","May","June","July"],
     datasets : [
-    {
+        {
             label: "OKCoin Futures Price Ticker",
             fillColor : "rgba(220,220,220,0.2)",
             strokeColor : "rgba(220,220,220,1)",
@@ -109,21 +109,14 @@ var lineChartData = {
                 }
                 ?>
             ]
-    },
-    {
-            label: "My Second dataset",
-            fillColor : "rgba(48, 164, 255, 0.2)",
-            strokeColor : "rgba(48, 164, 255, 1)",
-            pointColor : "rgba(48, 164, 255, 1)",
-            pointStrokeColor : "#fff",
-            pointHighlightFill : "#fff",
-            pointHighlightStroke : "rgba(48, 164, 255, 1)",
-            data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
-    }]
+        }
+    ]
 }
         
-        window.onload = function(){
+window.onload = function(){
 	var chart1 = document.getElementById("line-chart").getContext("2d");
 	window.myLine = new Chart(chart1).Line(lineChartData, {
 		responsive: true
 	});
+}
+</script>
