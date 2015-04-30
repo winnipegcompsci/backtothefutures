@@ -251,7 +251,7 @@ var lineChartData = {
             data : [
                <?php
                 foreach($okcoin_btc as $price) {
-                    echo $price->sell, 2 . ", ";
+                    echo number_format($price->sell, 2) . ", ";
                 }
                ?>
             ]
