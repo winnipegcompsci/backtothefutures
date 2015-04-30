@@ -244,7 +244,7 @@ usort($x796_btc, 'sortOnID');
 </div>
 
 <script>
-var window.btcChartData = {
+window.btcChartData = {
     labels : [
         <?php 
             $i=0;
@@ -290,7 +290,7 @@ var window.btcChartData = {
     ]
 }
 
-var window.ltcChartData = {
+window.ltcChartData = {
     labels : [
         <?php 
             $i=0;
