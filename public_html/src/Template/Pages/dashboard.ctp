@@ -198,7 +198,7 @@ var lineChartData = {
                 ?>
             ]
         },
-        /*
+        
         {
             label: "796 Futures - Last Price"
             fillColor : "rgba(220,220,220,0.2)",
@@ -208,13 +208,10 @@ var lineChartData = {
             pointHighlightFill : "#fff",
             pointHighlightStroke : "rgba(220,220,220,1)",
             data : [
-                <?php 
-                foreach($x796_btc as $price) {
-                }
-                ?>
+                200,225,250,275,300,325,350,325,300,325,350
             ]
         }
-        */
+        
     ]
 }
         
