@@ -139,9 +139,11 @@
 
 
 <script>
+var randomScalingFactor = function(){ return Math.round(Math.random()*1000)};
+
 var okcoindata = {
     labels : [
-        "A", "B", "C", "D"
+        "A", "B", "C", "D", "E", "F", "G"
     ],
     datasets : [
         {
@@ -151,7 +153,7 @@ var okcoindata = {
 			highlightFill : "rgba(48, 164, 255, 0.75)",
 			highlightStroke : "rgba(48, 164, 255, 1)",
             data : [
-                1,2,3,4
+                randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()
             ]
         },
         {
@@ -163,7 +165,7 @@ var okcoindata = {
             pointHighlightFill : "#fff",
             pointHighlightStroke : "rgba(220,220,220,1)",
             data : [
-               4,3,2,1
+               randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()
             ]
         }
     ]
@@ -171,7 +173,7 @@ var okcoindata = {
 
 var x796data = {
     labels : [
-        "A", "B", "C", "D"
+        "A", "B", "C", "D", "E", "F", "G"
     ],
     datasets : [
         {
@@ -181,7 +183,7 @@ var x796data = {
 			highlightFill : "rgba(48, 164, 255, 0.75)",
 			highlightStroke : "rgba(48, 164, 255, 1)",
             data : [
-                1,2,3,4
+                randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()
             ]
         },
         {
@@ -193,7 +195,7 @@ var x796data = {
             pointHighlightFill : "#fff",
             pointHighlightStroke : "rgba(220,220,220,1)",
             data : [
-               4,3,2,1
+               randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()
             ]
         }
     ]
@@ -201,7 +203,7 @@ var x796data = {
 
 var bitvcdata = {
     labels : [
-        "A", "B", "C", "D"
+        "A", "B", "C", "D", "E", "F", "G"
     ],
     datasets : [
         {
@@ -211,7 +213,7 @@ var bitvcdata = {
 			highlightFill : "rgba(48, 164, 255, 0.75)",
 			highlightStroke : "rgba(48, 164, 255, 1)",
             data : [
-                1,2,3,4
+                randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()
             ]
         },
         {
@@ -223,7 +225,7 @@ var bitvcdata = {
             pointHighlightFill : "#fff",
             pointHighlightStroke : "rgba(220,220,220,1)",
             data : [
-               4,3,2,1
+               randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()
             ]
         }    
     ]
