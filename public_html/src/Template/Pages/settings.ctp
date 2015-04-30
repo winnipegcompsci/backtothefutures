@@ -82,9 +82,9 @@
                         <dt>Recalculation Period</dt>
                         <dd>Interval on which positions get recalculated.</dd> <br />
                         <dt>Hedge Amount </dt>
-                        <dd>Amount to be hedged.</dd>
+                        <dd>Amount to be hedged.</dd> <br />
                         <dt>Cover Ratio</dt>
-                        <dd>The Ratio of collateral left exposed to vs unexposed. </dd> <br />
+                        <dd>The Ratio of collateral left exposed to vs unexposed. </dd>
                     </dl>
                 </div>
                 
