@@ -42,12 +42,12 @@ usort($x796_btc, 'sortOnID');
     function redraw() {
         $(document).ready(function() {            
             var chart1 = document.getElementById("btc-chart").getContext("2d");
-            window.myBTCLine = new Chart(chart1).Line(btcChartData, {
+            window.myBTCLine = new Chart(chart1).Line(window.btcChartData, {
                 responsive: true
             });
         
             var chart2 = document.getElementById("ltc-chart").getContext("2d");
-            window.myLTCLine = new Chart(chart2).Line(ltcChartData, {
+            window.myLTCLine = new Chart(chart2).Line(window.ltcChartData, {
                 responsive: true
             });
         });
@@ -244,7 +244,7 @@ usort($x796_btc, 'sortOnID');
 </div>
 
 <script>
-var btcChartData = {
+var window.btcChartData = {
     labels : [
         <?php 
             $i=0;
@@ -290,7 +290,7 @@ var btcChartData = {
     ]
 }
 
-var ltcChartData = {
+var window.ltcChartData = {
     labels : [
         <?php 
             $i=0;
@@ -339,12 +339,12 @@ var ltcChartData = {
         
 window.onload = function(){
 	var chart1 = document.getElementById("btc-chart").getContext("2d");
-	window.myBTCLine = new Chart(chart1).Line(btcChartData, {
+	window.myBTCLine = new Chart(chart1).Line(window.btcChartData, {
 		responsive: true
 	});
     
     var chart2 = document.getElementById("ltc-chart").getContext("2d");
-    window.myLTCLine = new Chart(chart2).Line(ltcChartData, {
+    window.myLTCLine = new Chart(chart2).Line(window.ltcChartData, {
         responsive: true
     });
     
