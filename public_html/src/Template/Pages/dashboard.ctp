@@ -324,13 +324,13 @@ var ltcChartData = {
         
 window.onload = function(){
 	var chart1 = document.getElementById("btc-chart").getContext("2d");
-	window.myLine = new Chart(chart1).Line(btcChartData, {
+	window.myBTCLine = new Chart(chart1).Line(btcChartData, {
 		responsive: true
 	});
     
     var chart2 = document.getElementById("ltc-chart").getContext("2d");
-    window.myLine2 = new Chart(chart2).Line(ltcChartData, {
-        responsive: true
+    window.myLTCLine = new Chart(chart2).Line(ltcChartData, {
+        responsive: false
     });
     
     $(function() {
