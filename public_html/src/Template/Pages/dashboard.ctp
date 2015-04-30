@@ -39,6 +39,7 @@ usort($x796_btc, 'sortOnID');
 
 ?>
 
+<!-- BUTTONS ROW -->
 <div class="row">
     <div class="col-xs-12 col-md-6 col-lg-3">
         <div class="panel panel-blue panel-widget ">
@@ -94,6 +95,7 @@ usort($x796_btc, 'sortOnID');
     </div>
 </div>
 
+<!-- LARGE BTC Ticker Graph -->
 <div class="row">
 	<div class="col-xs-12 col-md-6 col-lg-9">
         <div class="panel panel-info">
@@ -169,6 +171,46 @@ usort($x796_btc, 'sortOnID');
         </div>
     </div>
 </div><!--/.row-->
+
+<!-- Pie Charts --> 
+<div class="row">
+    <div class="col-xs-6 col-md-3">
+        <div class="panel panel-default">
+            <div class="panel-body easypiechart-panel">
+                <h4>Label:</h4>
+                <div class="easypiechart" id="easypiechart-blue" data-percent="92"><span class="percent">92%</span>
+                <canvas height="110" width="110"></canvas></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-6 col-md-3">
+        <div class="panel panel-default">
+            <div class="panel-body easypiechart-panel">
+                <h4>Label:</h4>
+                <div class="easypiechart" id="easypiechart-orange" data-percent="65"><span class="percent">65%</span>
+                <canvas height="110" width="110"></canvas></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-6 col-md-3">
+        <div class="panel panel-default">
+            <div class="panel-body easypiechart-panel">
+                <h4>Label:</h4>
+                <div class="easypiechart" id="easypiechart-teal" data-percent="56"><span class="percent">56%</span>
+                <canvas height="110" width="110"></canvas></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-6 col-md-3">
+        <div class="panel panel-default">
+            <div class="panel-body easypiechart-panel">
+                <h4>Label:</h4>
+                <div class="easypiechart" id="easypiechart-red" data-percent="27"><span class="percent">27%</span>
+                <canvas height="110" width="110"></canvas></div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script>
 var lineChartData = {
