@@ -3,7 +3,7 @@ use Cake\ORM\TableRegistry;
 use Cake\Core\Configure;
 
 function sortOnID($a, $b) {
-    return strcmp($a->timestamp, $b->timestamp);
+    return $a['id'] - $b['id'];
 }
 
 
@@ -27,12 +27,12 @@ foreach(TableRegistry::get('Sources')->find('all') as $source) {
 $okcoin_btc = TableRegistry::get('Spotprices')->find('all', [
     'conditions' => ['currency_id' => $btcID, 'source_id' => $OKCOIN_ID],
     'limit' => 200,
-])->order(['id' => 'DESC']);
+])->order(['id' => 'DESC'])->toArray();
 
 $x796_btc = TableRegistry::get('Spotprices')->find('all', [
     'conditions' => ['currency_id' => $btcID, 'source_id' => $X796_ID],
     'limit' => 200,
-])->order(['id' => 'DESC']);
+])->order(['id' => 'DESC'])->toArray();
 
 usort($okcoin_btc, 'sortOnID');
 usort($x796_btc, 'sortOnID');
