@@ -106,7 +106,12 @@ usort($x796_btc, 'sortOnID');
         </div>
 	</div>
     <div class="col-xs-12 col-md-6 col-lg-3">
-        Side PANEL hERE!!!!
+        <div class="panel panel-teal">
+            <div class="panel-heading"> Latest Statistics: </div>
+            <div class="panel-body">
+                Some Table Here
+            </div>
+        </div>
     </div>
 </div><!--/.row-->
 
