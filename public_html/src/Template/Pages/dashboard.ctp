@@ -3,7 +3,7 @@ use Cake\ORM\TableRegistry;
 use Cake\Core\Configure;
 
 function sortOnID($a, $b) {
-    return $b->id - $a->id;
+    return strcmp($a->timestamp, $b->timestamp);
 }
 
 
