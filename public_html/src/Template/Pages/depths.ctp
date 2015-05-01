@@ -225,7 +225,7 @@ window.onload = function() {
         responsive: true,
         scaleOverride: true,
         scaleSteps: steps,
-        scaleStepWidth:  Math.ceil(max_price / steps),
+        scaleStepWidth:  Math.ceil(max_depth / steps),
         scaleStartValue: 0, 
     });
     
@@ -234,7 +234,7 @@ window.onload = function() {
 		responsive: true,
         scaleOverride: true,
         scaleSteps: steps,
-        scaleStepWidth:  Math.ceil(max_price / steps),
+        scaleStepWidth:  Math.ceil(max_depth / steps),
         scaleStartValue: 0, 
         
     });
@@ -244,7 +244,7 @@ window.onload = function() {
         responsive: true,
         scaleOverride: true,
         scaleSteps: steps,
-        scaleStepWidth:  Math.ceil(max_depth / steps),
+        scaleStepWidth:  Math.ceil(max_price / steps),
         scaleStartValue: 0, 
     });
     var chart4 = document.getElementById("okcoin-bids-prices-chart").getContext("2d");
@@ -252,7 +252,7 @@ window.onload = function() {
         responsive: true,
         scaleOverride: true,
         scaleSteps: steps,
-        scaleStepWidth:  Math.ceil(max_depth / steps),
+        scaleStepWidth:  Math.ceil(max_price / steps),
         scaleStartValue: 0, 
     });
     
