@@ -36,12 +36,26 @@ foreach($okc_btc_future_depth->bids as $bid) {
 
 <div class="panel panel-info">
     <div class="panel-body tabs">
-        <ul class="nav nav-pills">
-            <li class="active"><a href="#tab1" data-toggle="tab" onclick="redraw()">OKCoin</a></li>
-			<li><a href="#tab2" data-toggle="tab" onclick="redraw()">796.com</a></li>
-            <li><a href="#tab3" data-toggle="tab" onclick="redraw()">BitVC</a></li>
-            <li class="pull-right"><span><h3>Futures Market Depths</h3></span></li>
-		</ul>
+        <div class="col-lg-4">
+            <ul class="nav nav-pills">
+                <li class="pull-left"><span><h4> Bitcoin </h4></span></li>
+                <li class="active"><a href="#tab1" data-toggle="tab" onclick="redraw()">OKCoin</a></li>
+                <li><a href="#tab2" data-toggle="tab" onclick="redraw()">796.com</a></li>
+                <li><a href="#tab3" data-toggle="tab" onclick="redraw()">BitVC</a></li>
+            </ul>
+        </div>
+        
+        <div class="col-lg-4">
+            <ul class="nav nav-pills">
+                <li class="pull-left"><span><h4> Litecoin </h4></span></li>
+                <li><a href="#tab4" data-toggle="tab" onclick="redraw()">OKCoin</a></li>
+                <li><a href="#tab5" data-toggle="tab" onclick="redraw()">796.com</a></li>
+                <li><a href="#tab6" data-toggle="tab" onclick="redraw()">BitVC</a></li>
+            </div>
+        </div>
+        
+         <li class="pull-right"><span><h3>Futures Market Depth</h3></span></li>
+        
         <div class="tab-content">
             <div class="tab-pane fade in active" id="tab1">
                 <div class="row">
