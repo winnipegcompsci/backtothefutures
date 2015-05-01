@@ -46,8 +46,11 @@ foreach($okc_btc_future_depth->bids as $bid) {
         $max_price = $bid[0];
     }
 }
-?>
 
+
+echo "MAX PRICE: " . $max_price;
+echo "MAX DEPTH: " . $max_depth;
+?>
 
 <div class="panel panel-info">
     <div class="panel-body tabs">
