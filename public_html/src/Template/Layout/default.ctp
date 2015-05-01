@@ -29,6 +29,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?= $this->Html->css('bootstrap.min'); ?>
     <?= $this->Html->css('datepicker3'); ?>
     <?= $this->Html->css('styles.css'); ?>
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.7/css/jquery.dataTables.css">
     
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
@@ -110,24 +111,6 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?= $this->Html->script('chart.min'); ?>
     <?= $this->Html->script('easypiechart'); ?>
     <?= $this->Html->script('bootstrap-datepicker'); ?>
-    
-	<script>
-		$('#calendar').datepicker({
-		});
-
-		!function ($) {
-		    $(document).on("click","ul.nav li.parent > a > span.icon", function(){          
-		        $(this).find('em:first').toggleClass("glyphicon-minus");      
-		    }); 
-		    $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
-		}(window.jQuery);
-
-		$(window).on('resize', function () {
-		  if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
-		})
-		$(window).on('resize', function () {
-		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
-		})
-	</script>	
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.7/js/jquery.dataTables.js"></script>
 </body>
 </html>
