@@ -6,13 +6,13 @@ $okcoin_client = new OKCoin(
 $okc_btc_future_depth = $okcoin_client->depthFutureApi(array(
     'symbol' => 'btc_usd', 
     'contract_type' => 'this_week', 
-    'size' => 20
+    'size' => 40
 ));
 
 $okc_ltc_future_depth = $okcoin_client->depthFutureApi(array(
     'symbol' => 'ltc_usd', 
     'contract_type' => 'this_week',
-    'size' => 30,
+    'size' => 40,
 ));
 
 $okcoin_ask_prices = array();
@@ -249,22 +249,10 @@ window.onload = function() {
     var chart3 = document.getElementById("okcoin-asks-prices-chart").getContext("2d");
     window.myOKCoinLineChart_ASK = new Chart(chart3).Line(okcoin_ask_prices, {
         responsive: true,
-        /*
-        scaleOverride: true,
-        scaleSteps: steps,
-        scaleStepWidth:  Math.ceil((max_price - min_price) / steps),
-        scaleStartValue: min_price, 
-        */
     });
     var chart4 = document.getElementById("okcoin-bids-prices-chart").getContext("2d");
     window.myOKCoinLineChart_BIKD = new Chart(chart4).Line(okcoin_bid_prices, {
         responsive: true,
-        /*
-        scaleOverride: true,
-        scaleSteps: steps,
-        scaleStepWidth:  Math.ceil((max_price - min_price) / steps),
-        scaleStartValue: min_price, 
-        */
     });
     
 }
