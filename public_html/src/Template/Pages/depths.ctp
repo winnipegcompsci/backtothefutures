@@ -85,7 +85,7 @@ foreach($okc_btc_future_depth->bids as $bid) {
                             </div>
                             
                             <div class="columns col-lg-6">
-                                <div class="row"><span style="color: rgba(48,164,255,1.0); background-color: rgba(48, 164, 255, 0.8)" class="pull-right badge">Asks</span></div>
+                                <div class="row"><span style="color: rgba(48,164,255,1.0); background-color: rgba(48, 164, 255, 0.2)" class="pull-right badge">Asks</span></div>
                                 <div class="row"><span style="color: rgba(255,181,62,0.8); background-color: rgba(220,220,220,1)" class="pull-right badge">Bids</span></div>
                             </div>
                         
@@ -110,7 +110,7 @@ foreach($okc_btc_future_depth->bids as $bid) {
                             </div>
                             
                             <div class="columns col-lg-6">
-                                <div class="row"><span style="color: rgba(48,164,255,1.0); background-color: rgba(48, 164, 255, 0.8)" class="pull-right badge">Asks</span></div>
+                                <div class="row"><span style="color: rgba(48,164,255,1.0); background-color: rgba(48, 164, 255, 0.2)" class="pull-right badge">Asks</span></div>
                                 <div class="row"><span style="color: rgba(255,181,62,0.8); background-color: rgba(220,220,220,1)" class="pull-right badge">Bids</span></div>
                             </div>
                         </div>    
