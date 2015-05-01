@@ -17,22 +17,29 @@ $okc_ltc_future_depth = $okcoin_client->depthFutureApi(array(
 
 // echo "<pre>" . print_r($okc_btc_future_depth, TRUE) . "</pre>";
 
-echo "<h1> Asks </h1>";
+$okcoin_ask_prices = array();
+$okcoin_ask_depths = array();
+$okcoin_bid_prices = array();
+$okcoin_bid_depths = array();
+
+
 foreach($okc_btc_future_depth->asks as $ask) {
-    echo "<pre>" . print_r($ask, TRUE) . "</pre>";
+    $okcoin_ask_prices[] = $ask[0];
+    $okcoin_ask_depths[] = $ask[1];
 }
 
-echo "<h2> Bids </h2>";
+
 foreach($okc_btc_future_depth->bids as $bid) {
-    echo "<pre>" . print_r($bid, TRUE) . "</pre>";
+    $okcoin_bid_prices[] = $bid[0];
+    $okcoin_bid_depths[] = $bid[1];
 }
 
 ?>
 
 <div class="row">
-    <div class="col-lg-12">
+    <div class="col-lg-6">
         <div class="panel panel-default">
-            <div class="panel-heading">Bar Chart</div>
+            <div class="panel-heading">OKCoin - Bids (Depths)</div>
             <div class="panel-body">
                 <div class="canvas-wrapper">
                     <canvas class="main-chart" id="okcoin-bar-chart" height="200" width="600"></canvas>
@@ -43,9 +50,9 @@ foreach($okc_btc_future_depth->bids as $bid) {
 </div><!--/.row-->		
 
 <div class="row">
-    <div class="col-lg-12">
+    <div class="col-lg-6">
         <div class="panel panel-default">
-            <div class="panel-heading">Line Chart</div>
+            <div class="panel-heading">OKCoin Asks</div>
             <div class="panel-body">
                 <div class="canvas-wrapper">
                     <canvas class="main-chart" id="okcoin-line-chart" height="200" width="600"></canvas>
@@ -69,14 +76,14 @@ var okcoin_bar_data = {
             strokeColor : "rgba(220,220,220,0.8)",
             highlightFill: "rgba(220,220,220,0.75)",
             highlightStroke: "rgba(220,220,220,1)",
-            data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+            data : [ <?= implode(", ", $okcoin_ask_depths); ?> ]
         },
         {
             fillColor : "rgba(48, 164, 255, 0.2)",
             strokeColor : "rgba(48, 164, 255, 0.8)",
             highlightFill : "rgba(48, 164, 255, 0.75)",
             highlightStroke : "rgba(48, 164, 255, 1)",
-            data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+            data : [ <?= implode(", ", $okcoin_bid_depths); ?> ]
         }
     ]
 }
@@ -93,7 +100,7 @@ var okcoin_line_data = {
 			highlightFill : "rgba(48, 164, 255, 0.75)",
 			highlightStroke : "rgba(48, 164, 255, 1)",
             data : [
-                randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()
+                <?= implode(", ", $okcoin_ask_prices); ?>
             ]
         },
         {
@@ -105,7 +112,7 @@ var okcoin_line_data = {
             pointHighlightFill : "#fff",
             pointHighlightStroke : "rgba(220,220,220,1)",
             data : [
-               randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()
+                <?= implode(", ",  $okcoin_bid_prices); ?>
             ]
         }
     ]
