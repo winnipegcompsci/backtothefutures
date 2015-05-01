@@ -33,6 +33,7 @@ $okcoin_trades_ltc = $okcoin_client->tradesFutureApi(array(
                             <div class="panel-heading"><span class="pull-right">Bitcoin (BTC)</span></div>
                             <div class="panel-body">
                                 <table width="100%" id = "okcoin_btc_table">
+                                    <thead>
                                     <tr>
                                         <th>Date</th>
                                         <th>Amount</th>
@@ -40,7 +41,9 @@ $okcoin_trades_ltc = $okcoin_client->tradesFutureApi(array(
                                         <th>Transaction ID</th>
                                         <th>Type</th>
                                     </tr>
+                                    </thead>
                                     
+                                    <tbody>
                                     <?php 
                                         foreach($okcoin_trades_btc as $btc_trade) {
                                             echo "<tr>";
@@ -52,6 +55,7 @@ $okcoin_trades_ltc = $okcoin_client->tradesFutureApi(array(
                                             echo "</tr>";
                                         }
                                     ?>
+                                    </tbody>
                                 </table>        
                             </div>
                         </div>
@@ -62,6 +66,7 @@ $okcoin_trades_ltc = $okcoin_client->tradesFutureApi(array(
                             <div class="panel-heading"><span class="pull-left">(LTC) Litecoin</span></div>
                             <div class="panel-body">
                                 <table width="100%" id= "okcoin_ltc_table">
+                                    <thead>
                                     <tr>
                                         <th>Date</th>
                                         <th>Amount</th>
@@ -69,7 +74,8 @@ $okcoin_trades_ltc = $okcoin_client->tradesFutureApi(array(
                                         <th>Transaction ID</th>
                                         <th>Type</th>
                                     </tr>
-                                    
+                                    </thead>
+                                    <tbody>
                                     <?php 
                                         foreach($okcoin_trades_ltc as $ltc_trade) {
                                             echo "<tr>";
@@ -81,6 +87,7 @@ $okcoin_trades_ltc = $okcoin_client->tradesFutureApi(array(
                                             echo "</tr>";
                                         }
                                     ?>
+                                    </tbody>
                                 </table>
                             </div>
                         </div>
