@@ -151,7 +151,12 @@ var okcoin_bid_prices = {
 }
 
 window.onload = function() {
-     
+    Chart.defaults.global = {
+        legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].strokeColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
+    }
+
+
+    
     var chart1 = document.getElementById("okcoin-asks-depth-chart").getContext("2d");
     window.myOKCoinBarChart_ASK = new Chart(chart1).Bar(okcoin_ask_depths, {
         responsive: true
