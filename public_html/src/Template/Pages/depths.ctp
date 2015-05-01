@@ -134,8 +134,8 @@ var okcoin_bid_depths = {
         {
             fillColor : "rgba(255,181,62,0.5)",
             strokeColor : "rgba(255,181,62,0.8)",
-            highlightFill: "rgba(220,220,220,0.75)",
-            highlightStroke: "rgba(220,220,220,1)",
+            highlightFill: "rgba(255,181,62,0.75)",
+            highlightStroke: "rgba(255,181,62,1)",
             data : [ <?= implode(", ", array_reverse($okcoin_bid_depths)); ?> ]
         }
     ]
@@ -168,10 +168,10 @@ var okcoin_bid_prices = {
             label: "OKCoin: Bid Prices",
             fillColor : "rgba(255,181,62,0.2)",
             strokeColor : "rgba(255,181,62,1)",
-            pointColor : "rgba(220,220,220,1)",
+            pointColor : "rgba(255,181,62,0.75)",
             pointStrokeColor : "#fff",
             pointHighlightFill : "#fff",
-            pointHighlightStroke : "rgba(220,220,220,1)",
+            pointHighlightStroke : "rgba(255,181,62,1)",
             data : [
                 <?= implode(", ",  array_reverse($okcoin_bid_prices)); ?>
             ]
