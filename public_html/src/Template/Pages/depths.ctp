@@ -6,7 +6,7 @@ $okcoin_client = new OKCoin(
 $okc_btc_future_depth = $okcoin_client->depthFutureApi(array(
     'symbol' => 'btc_usd', 
     'contract_type' => 'this_week', 
-    'size' => 10
+    'size' => 100
 ));
 
 $okc_ltc_future_depth = $okcoin_client->depthFutureApi(array(
@@ -71,10 +71,10 @@ var okcoin_ask_depths = {
     ],
     datasets : [
         {
-            fillColor : "rgba(220,220,220,0.5)",
-            strokeColor : "rgba(220,220,220,0.8)",
-            highlightFill: "rgba(220,220,220,0.75)",
-            highlightStroke: "rgba(220,220,220,1)",
+            fillColor : "rgba(48, 164, 255, 0.2)",
+            strokeColor : "rgba(48, 164, 255, 0.8)",
+            highlightFill : "rgba(48, 164, 255, 0.75)",
+            highlightStroke : "rgba(48, 164, 255, 1)",
             data : [ <?= implode(", ", $okcoin_ask_depths); ?> ]
         },
     ]
@@ -86,10 +86,10 @@ var okcoin_bid_depths = {
     ],
     datasets : [
         {
-            fillColor : "rgba(48, 164, 255, 0.2)",
-            strokeColor : "rgba(48, 164, 255, 0.8)",
-            highlightFill : "rgba(48, 164, 255, 0.75)",
-            highlightStroke : "rgba(48, 164, 255, 1)",
+            fillColor : "rgba(220,220,220,0.5)",
+            strokeColor : "rgba(220,220,220,0.8)",
+            highlightFill: "rgba(220,220,220,0.75)",
+            highlightStroke: "rgba(220,220,220,1)",
             data : [ <?= implode(", ", $okcoin_bid_depths); ?> ]
         }
     ]
