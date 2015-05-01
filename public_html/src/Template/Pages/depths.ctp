@@ -25,15 +25,10 @@ foreach($okc_btc_future_depth->asks as $ask) {
     $okcoin_ask_prices[] = $ask[0];
     $okcoin_ask_depths[] = $ask[1];
     
-    if(!isset($min_depth) || $min_depth == "") {
-        $min_depth = $ask[1];
-    }
+
     if(!isset($max_depth) || $max_depth == "") {
         $max_depth = $ask[1];
     }     
-    if($ask[1] < $min_depth) {
-        $min_depth = $ask[1];
-    }
     if($ask[1] > $max_depth) {
         $max_depth = $ask[1];
     }   
@@ -44,14 +39,8 @@ foreach($okc_btc_future_depth->bids as $bid) {
     $okcoin_bid_prices[] = $bid[0];
     $okcoin_bid_depths[] = $bid[1];
     
-    if(!isset($min_price) || $min_price == "") {
-        $min_price = $bid[0];
-    } 
     if(!isset($max_price) || $max_price == "") {
         $max_price = $bid[0];
-    }
-    if($bid[0] < $min_price) {
-        $min_price = $bid[0];
     }
     if($bid[0] > $max_price) {
         $max_price = $bid[0];
@@ -75,19 +64,7 @@ foreach($okc_btc_future_depth->bids as $bid) {
                 <li class="pull-right"><span><h3>Futures Market Depth</h3></span></li>
             </ul>
         </div>
-        <!-- 
-        <div class="col-lg-8">
-            <ul class="nav nav-pills">
-                <li class="pull-left"><span><h4> Litecoin </h4></span></li>
-                <li><a href="#tab4" data-toggle="tab" onclick="redraw()">OKCoin</a></li>
-                <li><a href="#tab5" data-toggle="tab" onclick="redraw()">796.com</a></li>
-                <li><a href="#tab6" data-toggle="tab" onclick="redraw()">BitVC</a></li>
-                <li class="pull-right"><span><h3>Futures Market Depth</h3></span></li>
-            </div>
-        </div>
-        -->
-            
-         
+               
         
         <div class="tab-content">
             <div class="tab-pane fade in active" id="tab1">
@@ -238,6 +215,7 @@ var okcoin_bid_prices = {
 window.onload = function() {
     var steps = 10;
     var max_price = <?= $max_price ?>
+    var max_depth = <?= $max_depth ?>
 
     var chart1 = document.getElementById("okcoin-asks-depth-chart").getContext("2d");
     window.myOKCoinBarChart_ASK = new Chart(chart1).Bar(okcoin_ask_depths, {
@@ -261,10 +239,18 @@ window.onload = function() {
     var chart3 = document.getElementById("okcoin-asks-prices-chart").getContext("2d");
     window.myOKCoinLineChart_ASK = new Chart(chart3).Line(okcoin_ask_prices, {
         responsive: true
+        scaleOverride: true,
+        scaleSteps: steps,
+        scaleStepWidth:  Math.ceil(max_depth / steps),
+        scaleStartValue: 0, 
     });
     var chart4 = document.getElementById("okcoin-bids-prices-chart").getContext("2d");
     window.myOKCoinLineChart_BIKD = new Chart(chart4).Line(okcoin_bid_prices, {
         responsive: true
+        scaleOverride: true,
+        scaleSteps: steps,
+        scaleStepWidth:  Math.ceil(max_depth / steps),
+        scaleStartValue: 0, 
     });
     
 }
