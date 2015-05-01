@@ -19,10 +19,9 @@ $okcoin_ask_prices = array();
 $okcoin_ask_depths = array();
 $okcoin_bid_prices = array();
 $okcoin_bid_depths = array();
-$labels = array();
+
 
 foreach($okc_btc_future_depth->asks as $ask) {
-    $labels[] = "Count: " . count($labels) + 1;
     $okcoin_ask_prices[] = $ask[0];
     $okcoin_ask_depths[] = $ask[1];
 }
@@ -85,7 +84,7 @@ foreach($okc_btc_future_depth->bids as $bid) {
 <script>
 var okcoin_ask_depths = {
     labels: [
-        <?= implode(", ", $labels); ?>
+        <?= implode(", ", $okcoin_ask_prices); ?>
     ],
     datasets : [
         {
@@ -100,7 +99,7 @@ var okcoin_ask_depths = {
 
 var okcoin_bid_depths = {
     labels : [
-        <?= implode(", ", $labels); ?>
+        <?= implode(", ", array_reverse($okcoin_bid_prices)); ?>
     ],
     datasets : [
         {
@@ -115,7 +114,7 @@ var okcoin_bid_depths = {
 
 var okcoin_ask_prices = {
     labels : [
-        <?= implode(", ", $labels); ?>
+        <?= implode(", ", $okcoin_ask_depths); ?>
     ],
     datasets : [
         {
@@ -133,7 +132,7 @@ var okcoin_ask_prices = {
 
 var okcoin_bid_prices = {
     labels : [
-        <?= implode(", ", $labels); ?>
+        <?= implode(", ", array_reverse($okcoin_bid_depths); ?>
     ],
     datasets : [
         {
