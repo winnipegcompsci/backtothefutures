@@ -166,7 +166,7 @@ window.onload = function() {
     window.myOKCoinLineChart_ASK = new Chart(chart3).Line(okcoin_ask_prices, {
         responsive: true
     });
-    var chart4 = document.getElementById("okcoin-bids").getContext("2d");
+    var chart4 = document.getElementById("okcoin-bids-prices-chart").getContext("2d");
     window.myOKCoinLineChart_BIKD = new Chart(chart4).Line(okcoin_bid_prices, {
         responsive: true
     });
