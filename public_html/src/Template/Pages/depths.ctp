@@ -37,7 +37,7 @@ foreach($okc_btc_future_depth->bids as $bid) {
     <div class="panel panel-default">
         <div class="panel-heading"> 
             <div class="columns col-lg-6">
-                Bids Vs. Asks (Depth)
+                Bids Vs. Asks (Depth Quantity)
             </div>
             
             <div class="columns col-lg-6">
@@ -62,7 +62,7 @@ foreach($okc_btc_future_depth->bids as $bid) {
     <div class="panel panel-default">
         <div class="panel-heading"> 
             <div class="columns col-lg-6">
-                Bids vs. Asks (Prices) 
+                Bids vs. Asks (Depth Prices) 
             </div>
             
             <div class="columns col-lg-6">
@@ -104,7 +104,7 @@ var okcoin_bid_depths = {
     datasets : [
         {
             fillColor : "rgba(255,181,62,0.5)",
-            strokeColor : "rgba(220,220,220,0.8)",
+            strokeColor : "rgba(255,181,62,0.8)",
             highlightFill: "rgba(220,220,220,0.75)",
             highlightStroke: "rgba(220,220,220,1)",
             data : [ <?= implode(", ", array_reverse($okcoin_bid_depths)); ?> ]
@@ -138,7 +138,7 @@ var okcoin_bid_prices = {
         {
             label: "OKCoin: Bid Prices",
             fillColor : "rgba(255,181,62,0.2)",
-            strokeColor : "rgba(220,220,220,1)",
+            strokeColor : "rgba(255,181,62,1)",
             pointColor : "rgba(220,220,220,1)",
             pointStrokeColor : "#fff",
             pointHighlightFill : "#fff",
