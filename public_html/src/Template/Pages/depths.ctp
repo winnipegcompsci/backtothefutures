@@ -151,12 +151,6 @@ var okcoin_bid_prices = {
 }
 
 window.onload = function() {
-    Chart.defaults.global = {
-        legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].strokeColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
-    }
-
-
-    
     var chart1 = document.getElementById("okcoin-asks-depth-chart").getContext("2d");
     window.myOKCoinBarChart_ASK = new Chart(chart1).Bar(okcoin_ask_depths, {
         responsive: true
@@ -164,8 +158,7 @@ window.onload = function() {
     var chart2 = document.getElementById("okcoin-bids-depth-chart").getContext("2d");
 	window.myOKCoinBarChart_BID = new Chart(chart2).Bar(okcoin_bid_depths, {
 		responsive: true,
-        legendTemplate : "<ul class=\"pull-right\"><% for (var i=0; i<okcoin_bid_depths.length; i++){%><li><span style=\"background-color:<%=okcoin_bid_depths[i].fillColor%>\"></span><%if(okcoin_bid_depths[i].label){%><%=okcoin_bid_depths[i].label%><%}%></li><%}%></ul>"
-	});
+    });
     
     var chart3 = document.getElementById("okcoin-asks-prices-chart").getContext("2d");
     window.myOKCoinLineChart_ASK = new Chart(chart3).Line(okcoin_ask_prices, {
