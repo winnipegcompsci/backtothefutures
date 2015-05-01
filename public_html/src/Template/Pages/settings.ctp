@@ -8,7 +8,7 @@
 ?>
 <div class="row">    
     <div class="columns col-md-6 col-lg-4">
-        <div class="panel panel-primary">
+        <div class="panel panel-blue">
             <div class="panel-heading"> OKCoin.com </div>
             <div class="panel-body">
             <?php
@@ -29,7 +29,7 @@
     </div>
 
     <div class="columns col-md-6 col-lg-4">     
-        <div class="panel panel-primary">
+        <div class="panel panel-orange">
             <div class="panel-heading"> 796.com </div>
             <div class="panel-body">
             <?php
@@ -50,7 +50,7 @@
     </div>
 
     <div class="columns col-md-6 col-lg-4">
-        <div class="panel panel-primary">
+        <div class="panel panel-teal">
             <div class="panel-heading"> BitVC.com </div>
             <div class="panel-body">
             <?php
