@@ -158,7 +158,8 @@ window.onload = function() {
     });
     var chart2 = document.getElementById("okcoin-bids-depth-chart").getContext("2d");
 	window.myOKCoinBarChart_BID = new Chart(chart2).Bar(okcoin_bid_depths, {
-		responsive: true
+		responsive: true,
+        legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].fillColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
 	});
     
     var chart3 = document.getElementById("okcoin-asks-prices-chart").getContext("2d");
@@ -168,6 +169,7 @@ window.onload = function() {
     var chart4 = document.getElementById("okcoin-bids-prices-chart").getContext("2d");
     window.myOKCoinLineChart_BIKD = new Chart(chart4).Line(okcoin_bid_prices, {
         responsive: true
+        legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].fillColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
     });
     
 }
