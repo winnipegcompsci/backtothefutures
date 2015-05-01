@@ -13,11 +13,6 @@ $okcoin_lend_ltc = $okcoin_client->lendDepthApi(array(
 $okcoin_lend_usd = $okcoin_client->lendDepthApi(array(
     'symbol' => 'usd',
 ));
-
-echo "<pre>" . print_r($okcoin_lend_btc, TRUE) . "</pre>";
-echo "<pre>" . print_r($okcoin_lend_usd, TRUE) . "</pre>";
-echo "<pre>" . print_r($okcoin_lend_ltc, TRUE) . "</pre>";
-
 ?>
 
 <div class="panel panel-info">
@@ -50,7 +45,7 @@ echo "<pre>" . print_r($okcoin_lend_ltc, TRUE) . "</pre>";
                                     
                                     <tbody>
                                     <?php 
-                                        foreach($okcoin_lend_btc as $btc_lend) {
+                                        foreach($okcoin_lend_btc->lend_depth as $btc_lend) {
                                             echo "<tr>";
                                             echo "<td>" . $btc_lend->amount . "</td>";
                                             echo "<td>" . $btc_lend->days . "</td>";
@@ -80,7 +75,7 @@ echo "<pre>" . print_r($okcoin_lend_ltc, TRUE) . "</pre>";
                                     </thead>
                                     <tbody>
                                     <?php 
-                                        foreach($okcoin_lend_usd as $usd_lend) {
+                                        foreach($okcoin_lend_usd->lend_depth as $usd_lend) {
                                             echo "<tr>";
                                             echo "<td>" . $usd_lend->amount . "</td>";
                                             echo "<td>" . $usd_lend->days . "</td>";
@@ -110,7 +105,7 @@ echo "<pre>" . print_r($okcoin_lend_ltc, TRUE) . "</pre>";
                                     </thead>
                                     <tbody>
                                     <?php 
-                                        foreach($okcoin_lend_ltc as $ltc_lend) {
+                                        foreach($okcoin_lend_ltc->lend_depth as $ltc_lend) {
                                             echo "<tr>";
                                             echo "<td>" . $ltc_lend->amount . "</td>";
                                             echo "<td>" . $ltc_lend->days . "</td>";
