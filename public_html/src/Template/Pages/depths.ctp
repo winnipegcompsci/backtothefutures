@@ -236,12 +236,15 @@ var okcoin_bid_prices = {
 }
 
 window.onload = function() {
+    var steps = 10;
+    var max_price = <?= $max_price ?>
+
     var chart1 = document.getElementById("okcoin-asks-depth-chart").getContext("2d");
     window.myOKCoinBarChart_ASK = new Chart(chart1).Bar(okcoin_ask_depths, {
         responsive: true,
         scaleOverride: true,
-        scaleSteps: 10,
-        scaleStepWidth:  Math.ceiling(max_price / 10),
+        scaleSteps: steps,
+        scaleStepWidth:  Math.ceiling(max_price / steps),
         scaleStartValue: 0, 
     });
     
@@ -249,8 +252,8 @@ window.onload = function() {
 	window.myOKCoinBarChart_BID = new Chart(chart2).Bar(okcoin_bid_depths, {
 		responsive: true,
         scaleOverride: true,
-        scaleSteps: 10,
-        scaleStepWidth:  Math.ceiling(max_price / 10),
+        scaleSteps: steps,
+        scaleStepWidth:  Math.ceiling(max_price / steps),
         scaleStartValue: 0, 
         
     });
