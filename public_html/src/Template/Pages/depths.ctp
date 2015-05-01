@@ -238,7 +238,7 @@ var okcoin_bid_prices = {
 window.onload = function() {
     var chart1 = document.getElementById("okcoin-asks-depth-chart").getContext("2d");
     window.myOKCoinBarChart_ASK = new Chart(chart1).Bar(okcoin_ask_depths, {
-        responsive: true
+        responsive: true,
         scaleOverride: true,
         scaleSteps: 10,
         scaleStepWidth:  Math.ceiling(max_price / 10),
