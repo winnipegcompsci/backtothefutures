@@ -132,7 +132,7 @@ var okcoin_ask_prices = {
 
 var okcoin_bid_prices = {
     labels : [
-        <?= implode(", ", array_reverse($okcoin_bid_depths); ?>
+        <?= implode(", ", array_reverse($okcoin_bid_depths)); ?>
     ],
     datasets : [
         {
