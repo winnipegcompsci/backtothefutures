@@ -15,11 +15,18 @@ $okc_ltc_future_depth = $okcoin_client->depthFutureApi(array(
     'size' => 10,
 ));
 
-echo "<pre>" . print_r($okc_btc_future_depth, TRUE) . "</pre>";
+// echo "<pre>" . print_r($okc_btc_future_depth, TRUE) . "</pre>";
 
+echo "<h1> Asks </h1>";
+foreach($okc_btc_future_depth->asks as $ask) {
+    echo "<pre>" . $ask . "</pre>";
+}
 
-echo "Market Asks: " . implode(", ", $okc_btc_future_depth->asks);
-echo "Market Bids: " . implode(", ", $okc_btc_future_depth->bids);
+echo "<h2> Bids </h2>";
+foreach($okc_btc_future_depth->bids as $bid) {
+    echo "<pre>" . $bid . "</pre>";
+}
+
 ?>
 
 <div class="row">
