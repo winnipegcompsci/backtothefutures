@@ -128,7 +128,7 @@ var okcoin_ask_depths = {
 
 var okcoin_bid_depths = {
     labels : [
-        <?= implode(", ", array_reverse($okcoin_bid_prices)); ?>
+        <?= implode(", ", $okcoin_bid_prices); ?>
     ],
     datasets : [
         {
@@ -136,7 +136,7 @@ var okcoin_bid_depths = {
             strokeColor : "rgba(255,181,62,0.8)",
             highlightFill: "rgba(255,181,62,0.75)",
             highlightStroke: "rgba(255,181,62,1)",
-            data : [ <?= implode(", ", array_reverse($okcoin_bid_depths)); ?> ]
+            data : [ <?= implode(", ", $okcoin_bid_depths); ?> ]
         }
     ]
 }
