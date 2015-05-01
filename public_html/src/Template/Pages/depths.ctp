@@ -125,7 +125,8 @@ var okcoin_ask_prices = {
     ]
 }
 
-var okcoin_bid_prices = 
+var okcoin_bid_prices = {
+    datasets : [
         {
             label: "OKCoin: Bid Prices",
             fillColor : "rgba(220,220,220,0.2)",
