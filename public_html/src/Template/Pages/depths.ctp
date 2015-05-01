@@ -45,7 +45,7 @@ foreach($okc_btc_future_depth->bids as $bid) {
             </ul>
         </div>
         
-        <div class="col-lg-4">
+        <div class="col-lg-8">
             <ul class="nav nav-pills">
                 <li class="pull-left"><span><h4> Litecoin </h4></span></li>
                 <li><a href="#tab4" data-toggle="tab" onclick="redraw()">OKCoin</a></li>
