@@ -23,6 +23,10 @@ class OKCoin extends OKCoinBase {
 	public function klineDataApi($params = null) {
 		return $this -> get("/api/v1/kline.do", $params);
 	}
+    
+    public function lendDepthApi($params = null) {
+        return $this -> get("/api/v1/lend_depth.dp", $params);
+    }
 	
 	public function userinfoApi($params = null) {
 		return $this -> post("/api/v1/userinfo.do", $params);
