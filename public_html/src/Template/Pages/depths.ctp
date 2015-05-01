@@ -42,14 +42,20 @@ foreach($okc_btc_future_depth->bids as $bid) {
     if(!isset($max_price) || $max_price == "") {
         $max_price = $bid[0];
     }
+    if(!isset($min_price) || $min_price == "") {
+        $min_price = $bid[0];
+    }
+    
     if($bid[0] > $max_price) {
         $max_price = $bid[0];
     }
+    if($bid[0] < $min_price) {
+        $min_price = $bid[0];
+    }
+    
 }
 
 
-echo "MAX PRICE: " . $max_price;
-echo "MAX DEPTH: " . $max_depth;
 ?>
 
 <div class="panel panel-info">
@@ -217,6 +223,7 @@ var okcoin_bid_prices = {
 
 window.onload = function() {
     var steps = 10;
+    var min_price = <?= $min_price ?>;
     var max_price = <?= $max_price ?>;
     var max_depth = <?= $max_depth ?>;
 
@@ -244,16 +251,16 @@ window.onload = function() {
         responsive: true,
         scaleOverride: true,
         scaleSteps: steps,
-        scaleStepWidth:  Math.ceil(max_price / steps),
-        scaleStartValue: 0, 
+        scaleStepWidth:  Math.ceil((max_price - min_price) / steps),
+        scaleStartValue: min_price, 
     });
     var chart4 = document.getElementById("okcoin-bids-prices-chart").getContext("2d");
     window.myOKCoinLineChart_BIKD = new Chart(chart4).Line(okcoin_bid_prices, {
         responsive: true,
         scaleOverride: true,
         scaleSteps: steps,
-        scaleStepWidth:  Math.ceil(max_price / steps),
-        scaleStartValue: 0, 
+        scaleStepWidth:  Math.ceil((max_price - min_price) / steps),
+        scaleStartValue: min_price, 
     });
     
 }
