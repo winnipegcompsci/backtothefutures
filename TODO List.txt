@@ -2,10 +2,7 @@ TODO:: Back To The Futures.
 -------------------------------------------------------------------------------
 Create Schema for Fetched Results
 OKCoin:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-    Get Future Price Ticker:: 
-    Setup Cron Job: 'sh cake O_K_Coin' on Whiskey.
-    
-    
+
 
 
 796.com::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::

@@ -33,53 +33,82 @@ foreach($okc_btc_future_depth->bids as $bid) {
 }
 ?>
 
-<div class="row">
-    <div class="panel panel-default">
-        <div class="panel-heading"> 
-            <div class="columns col-lg-6">
-                Market Depth - Bids Vs. Asks (Quantity)
+
+<div class="panel panel-info">
+    <div class="panel-body tabs">
+        <ul class="nav nav-pills">
+            <li class="active"><a href="#tab1" data-toggle="tab" onclick="redraw()">OKCoin</a></li>
+			<li><a href="#tab2" data-toggle="tab" onclick="redraw()">796.com</a></li>\
+            <li><a href="#tab3" data-toggle="tab" onclick="redraw()">BitVC</a></li>
+            <li class="pull-right"><span><h3>Futures Market Depths</h3></span></li>
+		</ul>
+        <div class="tab-content">
+            <div class="tab-pane fade in active" id="tab1">
+                <div class="row">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"> 
+                            <div class="columns col-lg-6">
+                                Market Depth - Bids Vs. Asks (Quantity)
+                            </div>
+                            
+                            <div class="columns col-lg-6">
+                                <div class="row"><span style="color: rgba(48,164,255,1.0); background-color: rgba(48, 164, 255, 0.2)" class="pull-right badge">Asks</span></div>
+                                <div class="row"><span style="color: rgba(255,181,62,0.8); background-color: rgba(220,220,220,0.5)" class="pull-right badge">Bids</span></div>
+                            </div>
+                        
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-lg-6 canvas-wrapper">
+                                <canvas class="main-chart" id="okcoin-asks-depth-chart" height="200" width="600"></canvas>    
+                            </div>
+                            
+                            <div class="col-lg-6 canvas-wrapper">
+                                <canvas class="main-chart" id="okcoin-bids-depth-chart" height="200" width="600"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"> 
+                            <div class="columns col-lg-6">
+                                Market Depth - Bids vs. Asks (Prices) 
+                            </div>
+                            
+                            <div class="columns col-lg-6">
+                                <div class="row"><span style="color: rgba(48,164,255,1.0); background-color: rgba(48, 164, 255, 0.2)" class="pull-right badge">Asks</span></div>
+                                <div class="row"><span style="color: rgba(255,181,62,0.8); background-color: rgba(220,220,220,0.5)" class="pull-right badge">Bids</span></div>
+                            </div>
+                        </div>    
+                        <div class="panel-body">
+                            <div class="col-lg-6 canvas-wrapper">
+                                <canvas class="main-chart" id="okcoin-asks-prices-chart" height="200" width="600"></canvas>
+                            </div>
+                            <div class="col-lg-6 canvas-wrapper">
+                                <canvas class="main-chart" id="okcoin-bids-prices-chart" height="200" width="600"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             
-            <div class="columns col-lg-6">
-                <div class="row"><span style="color: rgba(48,164,255,1.0); background-color: rgba(48, 164, 255, 0.2)" class="pull-right badge">Asks</span></div>
-                <div class="row"><span style="color: rgba(255,181,62,0.8); background-color: rgba(220,220,220,0.5)" class="pull-right badge">Bids</span></div>
-            </div>
-        
-        </div>
-        <div class="panel-body">
-            <div class="col-lg-6 canvas-wrapper">
-                <canvas class="main-chart" id="okcoin-asks-depth-chart" height="200" width="600"></canvas>    
+            <div class="tab-pane fade" id="tab2">
+            
             </div>
             
-            <div class="col-lg-6 canvas-wrapper">
-                <canvas class="main-chart" id="okcoin-bids-depth-chart" height="200" width="600"></canvas>
+            <div class="tab-pane fade" id="tab3">
+            
             </div>
+            
         </div>
     </div>
 </div>
 
-<div class="row">
-    <div class="panel panel-default">
-        <div class="panel-heading"> 
-            <div class="columns col-lg-6">
-                Market Depth - Bids vs. Asks (Prices) 
-            </div>
-            
-            <div class="columns col-lg-6">
-                <div class="row"><span style="color: rgba(48,164,255,1.0); background-color: rgba(48, 164, 255, 0.2)" class="pull-right badge">Asks</span></div>
-                <div class="row"><span style="color: rgba(255,181,62,0.8); background-color: rgba(220,220,220,0.5)" class="pull-right badge">Bids</span></div>
-            </div>
-        </div>    
-        <div class="panel-body">
-            <div class="col-lg-6 canvas-wrapper">
-                <canvas class="main-chart" id="okcoin-asks-prices-chart" height="200" width="600"></canvas>
-            </div>
-            <div class="col-lg-6 canvas-wrapper">
-                <canvas class="main-chart" id="okcoin-bids-prices-chart" height="200" width="600"></canvas>
-            </div>
-        </div>
-    </div>
-</div>
+
+
+
+
 
 <script>
 var okcoin_ask_depths = {
