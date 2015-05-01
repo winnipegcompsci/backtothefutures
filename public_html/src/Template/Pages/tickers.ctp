@@ -46,19 +46,19 @@ $okcoin_ticker_ltc = $okcoin_client->tickerFutureApi(array(
         <div class="panel panel-blue">
             <div class="panel-heading">OKCoin - Litecoin (LTC)</div>
             <div class="panel-body">
-                <table width="100%">
+                <table width="80%">
                     <tr>
                         <th> Item </th> <th> Value </th>
                     </tr>
-                    <tr><td>Low</td> <td>$<?= $okcoin_ticker_ltc->ticker->low; ?></td> </tr>
-                    <tr><td>High</td> <td>$<?= $okcoin_ticker_ltc->ticker->high; ?></td> </tr>
-                    <tr><td>Last</td> <td>$<?= $okcoin_ticker_ltc->ticker->last; ?></td> </tr>
-                    <tr><td>Buy</td> <td>$<?= $okcoin_ticker_ltc->ticker->buy; ?></td> </tr>
-                    <tr><td>Sell</td> <td>$<?= $okcoin_ticker_ltc->ticker->sell; ?></td> </tr>
-                    <tr><td>Volume</td> <td> <?= $okcoin_ticker_ltc->ticker->vol; ?> </td> </tr>
-                    <tr><td>Contract ID</td> <td> <?= $okcoin_ticker_ltc->ticker->contract_id; ?></td></tr>
-                    <tr><td>Unit Amount</td><td><?= $okcoin_ticker_ltc->ticker->unit_amount; ?></td></tr>
-                    <tr><td>Last Updated:</td><td><?= date('Y-m-d H:i:s', $okcoin_ticker_ltc->date) ?></td></tr>
+                    <tr><td>Low</td> <td class="pull-right">$<?= $okcoin_ticker_ltc->ticker->low; ?></td> </tr>
+                    <tr><td>High</td> <td class="pull-right">$<?= $okcoin_ticker_ltc->ticker->high; ?></td> </tr>
+                    <tr><td>Last</td> <td class="pull-right">$<?= $okcoin_ticker_ltc->ticker->last; ?></td> </tr>
+                    <tr><td>Buy</td> <td class="pull-right">$<?= $okcoin_ticker_ltc->ticker->buy; ?></td> </tr>
+                    <tr><td>Sell</td> <td class="pull-right">$<?= $okcoin_ticker_ltc->ticker->sell; ?></td> </tr>
+                    <tr><td>Volume</td> <td class="pull-right"> <?= $okcoin_ticker_ltc->ticker->vol; ?> </td> </tr>
+                    <tr><td>Contract ID</td> <td class="pull-right"> <?= $okcoin_ticker_ltc->ticker->contract_id; ?></td></tr>
+                    <tr><td>Unit Amount</td><td class="pull-right"><?= $okcoin_ticker_ltc->ticker->unit_amount; ?></td></tr>
+                    <tr><td>Last Updated:</td><td class="pull-right"><?= date('Y-m-d H:i:s', $okcoin_ticker_ltc->date) ?></td></tr>
                 </table>
             </div>
         </div>
