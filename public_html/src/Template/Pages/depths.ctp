@@ -6,13 +6,13 @@ $okcoin_client = new OKCoin(
 $okc_btc_future_depth = $okcoin_client->depthFutureApi(array(
     'symbol' => 'btc_usd', 
     'contract_type' => 'this_week', 
-    'size' => 100
+    'size' => 20
 ));
 
 $okc_ltc_future_depth = $okcoin_client->depthFutureApi(array(
     'symbol' => 'ltc_usd', 
     'contract_type' => 'this_week',
-    'size' => 10,
+    'size' => 20,
 ));
 
 $okcoin_ask_prices = array();
