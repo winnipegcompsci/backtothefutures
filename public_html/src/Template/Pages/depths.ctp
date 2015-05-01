@@ -244,7 +244,7 @@ window.onload = function() {
         responsive: true,
         scaleOverride: true,
         scaleSteps: steps,
-        scaleStepWidth:  Math.ceiling(max_price / steps),
+        scaleStepWidth:  Math.ceil(max_price / steps),
         scaleStartValue: 0, 
     });
     
@@ -253,7 +253,7 @@ window.onload = function() {
 		responsive: true,
         scaleOverride: true,
         scaleSteps: steps,
-        scaleStepWidth:  Math.ceiling(max_price / steps),
+        scaleStepWidth:  Math.ceil(max_price / steps),
         scaleStartValue: 0, 
         
     });
