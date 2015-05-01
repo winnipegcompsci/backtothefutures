@@ -39,11 +39,51 @@ $okcoin_trades_ltc = $okcoin_client->tradesFutureApi(array(
                 
                 <div class="row">
                     <div class="columns col-lg-6">
-                        <?= "<pre>" . print_r($okcoin_trades_btc, TRUE) . "</pre>"; ?>                    
+                        <table id = "datatable">
+                            <tr>
+                                <th>Date</th>
+                                <th>Amount</th>
+                                <th>Price</th>
+                                <th>Transaction ID</th>
+                                <th>Type</th>
+                            </tr>
+                            
+                            <?php 
+                                foreach($okcoin_trades_btc as $btc_trade) {
+                                    echo "<tr>";
+                                    echo "<td>" . $btc_trade->date_ms . "</td>";
+                                    echo "<td>" . $btc_trade->amount . "</td>";
+                                    echo "<td>" . $btc_trade->price . "</td>";
+                                    echo "<td>" . $btc_trade->tid . "</td";
+                                    echo "<td>" . $btc_trade->type . "</td>";
+                                    echo "</tr>";
+                                }
+                            ?>
+                        </table>        
                     </div>
                     
                     <div class="columns col-lg-6">
-                        <?= "<pre>" . print_r($okcoin_trades_ltc, TRUE) . "</pre>"; ?>
+                        <table id= "datatable">
+                            <tr>
+                                <th>Date</th>
+                                <th>Amount</th>
+                                <th>Price</th>
+                                <th>Transaction ID</th>
+                                <th>Type</th>
+                            </tr>
+                            
+                            <?php 
+                                foreach($okcoin_trades_ltc as $ltc_trade) {
+                                    echo "<tr>";
+                                    echo "<td>" . $ltc_trade->date_ms . "</td>";
+                                    echo "<td>" . $ltc_trade->amount . "</td>"; 
+                                    echo "<td>" . $ltc_trade->price . "</td>";
+                                    echo "<td>" . $ltc_trade->tid . "</td>";
+                                    echo "<td>" . $ltc_trade->type . "</td>";
+                                    echo "</tr>";
+                                }
+                            ?>
+                        </table>
                     </div>
                 </div>
             </div>
