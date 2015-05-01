@@ -37,71 +37,32 @@ foreach($okc_btc_future_depth->bids as $bid) {
 
 
 <div class="row">
-    <div class="col-lg-6 canvas-wrapper">
-        <canvas class="main-chart" id="okcoin-bids-depth-chart" height="200" width="600"></canvas>
-    </div>
-    <div class="col-lg-6 canvas-wrapper">
-        <canvas class="main-chart" id="okcoin-asks-depth-chart" height="200" width="600"></canvas>    
+    <div class="panel panel-primary">
+        <div class="panel-heading"> Bids Vs. Asks (Depth) </div>
+        <div class="panel-body">
+            <div class="col-lg-6 canvas-wrapper">
+                <canvas class="main-chart" id="okcoin-bids-depth-chart" height="200" width="600"></canvas>
+            </div>
+            <div class="col-lg-6 canvas-wrapper">
+                <canvas class="main-chart" id="okcoin-asks-depth-chart" height="200" width="600"></canvas>    
+            </div>
+        </div>
     </div>
 </div>
 
 <div class="row">
-    <div class="col-lg-6 canvas-wrapper">
-        <canvas class="main-chart" id="okcoin-bids-prices-chart" height="200" width="600"></canvas>
-    </div>
-    <div class="col-lg-6 canvas-wrapper">
-        <canvas class="main-chart" id="okcoin-asks-prices-chart" height="200" width="600"></canvas>
+    <div class="panel panel-primary">
+        <div class="panel-heading"> Bids vs. Asks (Prices) </div>
+        <div class="panel-body">
+            <div class="col-lg-6 canvas-wrapper">
+                <canvas class="main-chart" id="okcoin-bids-prices-chart" height="200" width="600"></canvas>
+            </div>
+            <div class="col-lg-6 canvas-wrapper">
+                <canvas class="main-chart" id="okcoin-asks-prices-chart" height="200" width="600"></canvas>
+            </div>
+        </div>
     </div>
 </div>
-
-
-<!--
-<div class="row">
-    <div class="col-lg-6">
-        <div class="panel panel-default">
-            <div class="panel-heading">OKCoin - Bids (Depths)</div>
-            <div class="panel-body">
-                <div class="canvas-wrapper">
-                    <canvas class="main-chart" id="okcoin-bids-depth-chart" height="200" width="600"></canvas>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-6">
-        <div class="panel panel-default">
-            <div class="panel-heading">OKCoin - Asks (Depths)</div>
-            <div class="panel-body">
-                <div class="canvas-wrapper">
-                    <canvas class="main-chart" id="okcoin-asks-depth-chart" height="200" width="600"></canvas>
-                </div>
-            </div>
-        </div>
-    </div>
-</div><!--/.row-->		
-
-<!--
-<div class="row">
-    <div class="col-lg-6">
-        <div class="panel panel-default">
-            <div class="panel-heading">OKCoin Bids - Prices</div>
-            <div class="panel-body">
-                <div class="canvas-wrapper">
-                    <canvas class="main-chart" id="okcoin-bids-prices-chart" height="200" width="600"></canvas>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-6">
-        <div class="panel panel-default">
-            <div class="panel-heading">OKCoin Asks - Prices</div>
-            <div class="panel-body">
-                <div class="canvas-wrapper">
-                    <canvas class="main-chart" id="okcoin-asks-prices-chart" height="200" width="600"></canvas>
-                </div>
-            </div>
-        </div>
-    </div>
-</div><!--/.row-->
 
 <script>
 var okcoin_ask_depths = {
