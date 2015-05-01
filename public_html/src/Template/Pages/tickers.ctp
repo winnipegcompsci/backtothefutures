@@ -1,3 +1,20 @@
+<?php 
+$okcoin_client = new OKCoin(
+    new OKCoin_ApiKeyAuthentication($ok_api_key, $ok_secret_key)
+);
+
+$okcoin_ticker_btc = $okcoin_client->tickerFutureApi(array(
+    'symbol' => 'btc_usd',
+    'contract_type' => 'this_week',
+));
+
+$okcoin_ticker_ltc = $okcoin_client->tickerFutureApi(array(
+    'symbol' => 'btc_usd',
+    'contract_type' => 'this_week',
+));
+
+?>
+
 <div class="row">
     <div class="columns col-lg-3 col-md-6">
         <div class="panel panel-blue">
@@ -7,13 +24,15 @@
                     <tr>
                         <th> Item </th> <th> Value </th>
                     </tr>
-                    <tr><td>Low</td> <td></td></tr>
-                    <tr><td>High</td> <td></td></tr>
-                    <tr><td>Last</td> <td></td></tr>
-                    <tr><td>Buy</td> <td></td></tr>
-                    <tr><td>Sell</td> <td></td></tr>
-                    <tr><td>Volume</td> <td> </td></tr>
-                    <tr><td colspan=2>Last Updated: </td></tr>
+                    <tr><td>Low</td> <td><?= $okcoin_ticker_btc->ticker['low']; ?></td> </tr>
+                    <tr><td>High</td> <td><?= $okcoin_ticker_btc->ticker['high']; ?></td> </tr>
+                    <tr><td>Last</td> <td><?= $okcoin_ticker_btc->ticker['last']; ?></td> </tr>
+                    <tr><td>Buy</td> <td><?= $okcoin_ticker_btc->ticker['buy']; ?></td> </tr>
+                    <tr><td>Sell</td> <td><?= $okcoin_ticker_btc->ticker['sell']; ?></td> </tr>
+                    <tr><td>Volume</td> <td> <?= $okcoin_ticker_btc->ticker['vol']; ?> </td> </tr>
+                    <tr><td>Contract ID</td> <td> <?= $okcoin_ticker_btc->ticker['contract_id']; ?></td></tr>
+                    <tr><td>Unit Amount</td><td><?= $okcoin_ticker_btc->ticker['unit_amount']; ?></td></tr>
+                    <tr><td colspan=2>Last Updated: <?= date('Y-m-d H:i:s', $okcoin_ticker_btc->date) ?></td></tr>
                 </table>
             </div>
         </div>
@@ -31,13 +50,15 @@
                     <tr>
                         <th> Item </th> <th> Value </th>
                     </tr>
-                    <tr><td>Low</td> <td></td></tr>
-                    <tr><td>High</td> <td></td></tr>
-                    <tr><td>Last</td> <td></td></tr>
-                    <tr><td>Buy</td> <td></td></tr>
-                    <tr><td>Sell</td> <td></td></tr>
-                    <tr><td>Volume</td> <td> </td></tr>
-                    <tr><td colspan=2>Last Updated: </td></tr>
+          <tr><td>Low</td> <td><?= $okcoin_ticker_btc->ticker['low']; ?></td> </tr>
+                    <tr><td>High</td> <td><?= $okcoin_ticker_ltc->ticker['high']; ?></td> </tr>
+                    <tr><td>Last</td> <td><?= $okcoin_ticker_ltc->ticker['last']; ?></td> </tr>
+                    <tr><td>Buy</td> <td><?= $okcoin_ticker_ltc->ticker['buy']; ?></td> </tr>
+                    <tr><td>Sell</td> <td><?= $okcoin_ticker_ltc->ticker['sell']; ?></td> </tr>
+                    <tr><td>Volume</td> <td> <?= $okcoin_ticker_ltc->ticker['vol']; ?> </td> </tr>
+                    <tr><td>Contract ID</td> <td> <?= $okcoin_ticker_ltc->ticker['contract_id']; ?></td></tr>
+                    <tr><td>Unit Amount</td><td><?= $okcoin_ticker_ltc->ticker['unit_amount']; ?></td></tr>
+                    <tr><td colspan=2>Last Updated: <?= date('Y-m-d H:i:s', $okcoin_ticker_ltc->date) ?></td></tr>
                 </table>
             </div>
         </div>
