@@ -25,7 +25,7 @@ class OKCoin extends OKCoinBase {
 	}
     
     public function lendDepthApi($params = null) {
-        return $this -> get("/api/v1/lend_depth.dp", $params);
+        return $this -> get("/api/v1/lend_depth.do", $params);
     }
 	
 	public function userinfoApi($params = null) {
