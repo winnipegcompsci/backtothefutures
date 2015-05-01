@@ -30,7 +30,7 @@ $okcoin_trades_ltc = $okcoin_client->tradesFutureApi(array(
                 <div class="row">
                     <div class="columns col-lg-6">
                         <div class="panel panel-teal">
-                            <div class="panel-heading"><span class="pull-left">Bitcoin (BTC)</span></div>
+                            <div class="panel-heading"><span class="pull-right">Bitcoin (BTC)</span></div>
                             <div class="panel-body">
                                 <table width="100%" id = "datatable">
                                     <tr>
@@ -59,7 +59,7 @@ $okcoin_trades_ltc = $okcoin_client->tradesFutureApi(array(
                     
                     <div class="columns col-lg-6">
                         <div class="panel panel-blue">
-                            <div class="panel-heading"><span class="pull-right">(LTC) Litecoin</span></div>
+                            <div class="panel-heading"><span class="pull-left">(LTC) Litecoin</span></div>
                             <div class="panel-body">
                                 <table width="100%" id= "datatable">
                                     <tr>
