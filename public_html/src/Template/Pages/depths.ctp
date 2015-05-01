@@ -54,7 +54,10 @@ foreach($okc_btc_future_depth->bids as $bid) {
             </div>
         </div>
         
-         <li class="pull-right"><span><h3>Futures Market Depth</h3></span></li>
+        <div class="col-lg-4">
+            <<span><h3>Futures Market Depth</h3></span></li>
+        </div>
+         
         
         <div class="tab-content">
             <div class="tab-pane fade in active" id="tab1">
