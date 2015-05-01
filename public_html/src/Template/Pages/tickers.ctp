@@ -14,6 +14,7 @@ $okcoin_ticker_ltc = $okcoin_client->tickerFutureApi(array(
 ));
 
 echo "<pre>" . print_r($okcoin_ticker_btc, TRUE) . "</pre>";
+die("DONE");
 
 ?>
 
