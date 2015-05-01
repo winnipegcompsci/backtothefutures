@@ -238,7 +238,7 @@ window.onload = function() {
     
     var chart3 = document.getElementById("okcoin-asks-prices-chart").getContext("2d");
     window.myOKCoinLineChart_ASK = new Chart(chart3).Line(okcoin_ask_prices, {
-        responsive: true
+        responsive: true,
         scaleOverride: true,
         scaleSteps: steps,
         scaleStepWidth:  Math.ceil(max_depth / steps),
@@ -246,7 +246,7 @@ window.onload = function() {
     });
     var chart4 = document.getElementById("okcoin-bids-prices-chart").getContext("2d");
     window.myOKCoinLineChart_BIKD = new Chart(chart4).Line(okcoin_bid_prices, {
-        responsive: true
+        responsive: true,
         scaleOverride: true,
         scaleSteps: steps,
         scaleStepWidth:  Math.ceil(max_depth / steps),
