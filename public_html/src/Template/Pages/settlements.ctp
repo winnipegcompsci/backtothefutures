@@ -14,6 +14,10 @@ $okcoin_lend_usd = $okcoin_client->lendDepthApi(array(
     'symbol' => 'usd',
 ));
 
+echo "<pre>" . print_r($okcoin_lend_btc, TRUE) . "</pre>";
+echo "<pre>" . print_r($okcoin_lend_usd, TRUE) . "</pre>";
+echo "<pre>" . print_r($okcoin_lend_ltc, TRUE) . "</pre>";
+
 ?>
 
 <div class="panel panel-info">
@@ -32,7 +36,7 @@ $okcoin_lend_usd = $okcoin_client->lendDepthApi(array(
                 <div class="row">
                     <div class="columns col-lg-4">
                         <div class="panel panel-primary">
-                            <div class="panel-heading"><span>Bitcoin (BTC)</span></div>
+                            <div class="panel-heading"><span>(BTC) Bitcoin</span></div>
                             <div class="panel-body">
                                 <table width="100%" id = "okcoin_btc_table">
                                     <thead>
@@ -68,7 +72,7 @@ $okcoin_lend_usd = $okcoin_client->lendDepthApi(array(
                                 <table width="100%" id= "okcoin_usd_table">
                                     <thead>
                                     <tr>
-                                        <th>Amount (BTC)</th>
+                                        <th>Amount (USD)</th>
                                         <th>Days</th>
                                         <th>Number</th>
                                         <th>Rate</th>
