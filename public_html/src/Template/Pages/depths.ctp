@@ -12,7 +12,7 @@ $okc_btc_future_depth = $okcoin_client->depthFutureApi(array(
 $okc_ltc_future_depth = $okcoin_client->depthFutureApi(array(
     'symbol' => 'ltc_usd', 
     'contract_type' => 'this_week',
-    'size' => 20,
+    'size' => 30,
 ));
 
 $okcoin_ask_prices = array();
@@ -48,7 +48,7 @@ foreach($okc_btc_future_depth->bids as $bid) {
                     <div class="panel panel-default">
                         <div class="panel-heading"> 
                             <div class="columns col-lg-6">
-                                Market Depth - Bids Vs. Asks (Quantity)
+                                BTC Market Depth - Bids Vs. Asks (Quantity)
                             </div>
                             
                             <div class="columns col-lg-6">
@@ -73,7 +73,7 @@ foreach($okc_btc_future_depth->bids as $bid) {
                     <div class="panel panel-default">
                         <div class="panel-heading"> 
                             <div class="columns col-lg-6">
-                                Market Depth - Bids vs. Asks (Prices) 
+                                BTC Market Depth - Bids vs. Asks (Prices) 
                             </div>
                             
                             <div class="columns col-lg-6">
