@@ -24,12 +24,38 @@ $okcoin_bid_depths = array();
 foreach($okc_btc_future_depth->asks as $ask) {
     $okcoin_ask_prices[] = $ask[0];
     $okcoin_ask_depths[] = $ask[1];
+    
+    if(!isset($min_depth) || $min_depth == "") {
+        $min_depth = $ask[1];
+    }
+    if(!isset($max_depth) || $max_depth == "") {
+        $max_depth = $ask[1];
+    }     
+    if($ask[1] < $min_depth) {
+        $min_depth = $ask[1];
+    }
+    if($ask[1] > $max_depth) {
+        $max_depth = $ask[1];
+    }   
 }
 
 
 foreach($okc_btc_future_depth->bids as $bid) {
     $okcoin_bid_prices[] = $bid[0];
     $okcoin_bid_depths[] = $bid[1];
+    
+    if(!isset($min_price) || $min_price == "") {
+        $min_price = $bid[0];
+    } 
+    if(!isset($max_price) || $max_price == "") {
+        $max_price = $bid[0];
+    }
+    if($bid[0] < $min_price) {
+        $min_price = $bid[0];
+    }
+    if($bid[0] > $max_price) {
+        $max_price = $bid[0];
+    }
 }
 ?>
 
@@ -42,6 +68,11 @@ foreach($okc_btc_future_depth->bids as $bid) {
                 <li class="active"><a href="#tab1" data-toggle="tab" onclick="redraw()">OKCoin</a></li>
                 <li><a href="#tab2" data-toggle="tab" onclick="redraw()">796.com</a></li>
                 <li><a href="#tab3" data-toggle="tab" onclick="redraw()">BitVC</a></li>
+                <li><span><h4> Litecoin </h4></span></li>
+                <li><a href="#tab4" data-toggle="tab" onclick="redraw()">OKCoin</a></li>
+                <li><a href="#tab5" data-toggle="tab" onclick="redraw()">796.com</a></li>
+                <li><a href="#tab6" data-toggle="tab" onclick="redraw()">BitVC</a></li>
+                <li class="pull-right"><span><h3>Futures Market Depth</h3></span></li>
             </ul>
         </div>
         
@@ -117,6 +148,15 @@ foreach($okc_btc_future_depth->bids as $bid) {
             
             </div>
             
+            <div class="tab-pane fade" id="tab4">
+            
+            </div>
+            <div class="tab-pane fade" id="tab5">
+            
+            </div>
+            <div class="tab-pane fade" id="tab6">
+            
+            </div>         
         </div>
     </div>
 </div>
