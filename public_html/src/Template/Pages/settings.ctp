@@ -9,7 +9,7 @@
 <div class="row">
     <div class="columns col-md-6 col-lg-12">
         <div class="panel panel-primary">
-            <div class="panel-heading"> <span class="glyphicon glyphicon-question-sign"></span> Terms </div>
+            <div class="panel-heading"> <span class="glyphicon glyphicon-question-sign"></span> Definitions / Terms </div>
             <div class="panel-body">
                 <div class="columns col-md-6 col-lg-6">
                     <dl>
