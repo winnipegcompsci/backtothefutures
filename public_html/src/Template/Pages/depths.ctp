@@ -51,12 +51,11 @@ foreach($okc_btc_future_depth->bids as $bid) {
                 <li><a href="#tab4" data-toggle="tab" onclick="redraw()">OKCoin</a></li>
                 <li><a href="#tab5" data-toggle="tab" onclick="redraw()">796.com</a></li>
                 <li><a href="#tab6" data-toggle="tab" onclick="redraw()">BitVC</a></li>
+                <li class="pull-right"><span><h3>Futures Market Depth</h3></span></li>
             </div>
         </div>
         
-        <div class="col-lg-2">
-            <span class="pull-right"><h3>Futures Market Depth</h3></span></li>
-        </div>
+            
          
         
         <div class="tab-content">
