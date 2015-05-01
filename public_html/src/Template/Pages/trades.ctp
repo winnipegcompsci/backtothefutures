@@ -37,7 +37,7 @@ $okcoin_trades_ltc = $okcoin_client->tradesFutureApi(array(
                                     <tr>
                                         <th>Date</th>
                                         <th>Amount</th>
-                                        <th>Price</th>
+                                        <th>Price/BTC</th>
                                         <th>Transaction ID</th>
                                         <th>Type</th>
                                     </tr>
@@ -70,7 +70,7 @@ $okcoin_trades_ltc = $okcoin_client->tradesFutureApi(array(
                                     <tr>
                                         <th>Date</th>
                                         <th>Amount</th>
-                                        <th>Price</th>
+                                        <th>Price/LTC</th>
                                         <th>Transaction ID</th>
                                         <th>Type</th>
                                     </tr>
@@ -112,9 +112,13 @@ $okcoin_trades_ltc = $okcoin_client->tradesFutureApi(array(
 
 <script>
 $(document).ready( function () {
-    $('#okcoin_btc_table').DataTable();
+    $('#okcoin_btc_table').DataTable({
+        "pagingType": "full_numbers",
+    });
 } );
 $(document).ready( function () {
-    $('#okcoin_ltc_table').DataTable();
+    $('#okcoin_ltc_table').DataTable({
+        "pagingType": "full_numbers",
+    });
 } );
 </script>
