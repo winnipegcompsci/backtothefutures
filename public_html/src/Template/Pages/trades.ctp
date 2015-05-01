@@ -99,9 +99,9 @@ $okcoin_trades_ltc = $okcoin_client->tradesFutureApi(array(
     </div>
 </div>
 
-<link rel="stylesheet" type="text/css" href="/DataTables-1.10.7/media/css/jquery.dataTables.css">
-<script type="text/javascript" charset="utf8" src="/DataTables-1.10.7/media/js/jquery.js"></script>
-<script type="text/javascript" charset="utf8" src="/DataTables-1.10.7/media/js/jquery.dataTables.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf8" src="../js/jquery.dataTables.js"></script>
 
 <script>
 $(document).ready( function () {
