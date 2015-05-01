@@ -81,7 +81,7 @@ foreach($okc_btc_future_depth->bids as $bid) {
                     <div class="panel panel-default">
                         <div class="panel-heading"> 
                             <div class="columns col-lg-6">
-                                BTC Market Depth - Bids Vs. Asks (Quantity)
+                                BTC Market Depth - Asks vs. Bids (Quantity)
                             </div>
                             
                             <div class="columns col-lg-6">
@@ -106,7 +106,7 @@ foreach($okc_btc_future_depth->bids as $bid) {
                     <div class="panel panel-default">
                         <div class="panel-heading"> 
                             <div class="columns col-lg-6">
-                                BTC Market Depth - Bids vs. Asks (Prices) 
+                                BTC Market Depth - Asks vs. Bids  (Prices) 
                             </div>
                             
                             <div class="columns col-lg-6">
