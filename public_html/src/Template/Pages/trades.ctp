@@ -39,7 +39,7 @@ $okcoin_trades_ltc = $okcoin_client->tradesFutureApi(array(
                 
                 <div class="row">
                     <div class="columns col-lg-6">
-                        <table id = "datatable">
+                        <table width="100%" id = "datatable">
                             <tr>
                                 <th>Date</th>
                                 <th>Amount</th>
@@ -51,7 +51,7 @@ $okcoin_trades_ltc = $okcoin_client->tradesFutureApi(array(
                             <?php 
                                 foreach($okcoin_trades_btc as $btc_trade) {
                                     echo "<tr>";
-                                    echo "<td>" . $btc_trade->date_ms . "</td>";
+                                    echo "<td>" . strtotime($btc_trade->date_ms) . "</td>";
                                     echo "<td>" . $btc_trade->amount . "</td>";
                                     echo "<td>" . $btc_trade->price . "</td>";
                                     echo "<td>" . $btc_trade->tid . "</td";
@@ -63,7 +63,7 @@ $okcoin_trades_ltc = $okcoin_client->tradesFutureApi(array(
                     </div>
                     
                     <div class="columns col-lg-6">
-                        <table id= "datatable">
+                        <table width="100%" id= "datatable">
                             <tr>
                                 <th>Date</th>
                                 <th>Amount</th>
@@ -75,7 +75,7 @@ $okcoin_trades_ltc = $okcoin_client->tradesFutureApi(array(
                             <?php 
                                 foreach($okcoin_trades_ltc as $ltc_trade) {
                                     echo "<tr>";
-                                    echo "<td>" . $ltc_trade->date_ms . "</td>";
+                                    echo "<td>" . strtotime($ltc_trade->date_ms) . "</td>";
                                     echo "<td>" . $ltc_trade->amount . "</td>"; 
                                     echo "<td>" . $ltc_trade->price . "</td>";
                                     echo "<td>" . $ltc_trade->tid . "</td>";
