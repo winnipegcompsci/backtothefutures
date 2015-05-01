@@ -8,5 +8,16 @@ $okcoin_trades_btc = $okcoin_client->tradesFutureApi(array(
     'contract_type' => 'this_week', 
 ));
 
-echo "<pre>" . print_r($okcoin_trades_btc, TRUE) . "</pre>";
+$okcoin_trades_ltc = $okcoin_client->tradesFutureApi(array(
+    'symbol' => 'ltc_usd',
+    'contract_type' => 'this_week',
+));
 
+
+foreach($okcoin_trades_btc as $btc_trade) {
+    echo "<pre>" . print_r($btc_trade, TRUE) . "</pre>";
+}
+
+foreach($okcoin_trades_ltc as $ltc_trade) {
+    echo "<pre>" . print_r($ltc_trade, TRUE) . "</pre>";
+}
