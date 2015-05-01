@@ -54,8 +54,8 @@ foreach($okc_btc_future_depth->bids as $bid) {
             </div>
         </div>
         
-        <div class="col-lg-4">
-            <<span><h3>Futures Market Depth</h3></span></li>
+        <div class="col-lg-2">
+            <span class="pull-right"><h3>Futures Market Depth</h3></span></li>
         </div>
          
         
