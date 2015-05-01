@@ -20,7 +20,7 @@ $okcoin_ticker_ltc = $okcoin_client->tickerFutureApi(array(
         <div class="panel panel-blue">
             <div class="panel-heading">OKCoin - Bitcoin (BTC)</div>
             <div class="panel-body">
-                <table width="100%">
+                <table width="90%">
                     <tr>
                         <th> Item </th> <th class="pull-right"> Value </th>
                     </tr>
@@ -32,7 +32,7 @@ $okcoin_ticker_ltc = $okcoin_client->tickerFutureApi(array(
                     <tr><td>Volume</td> <td class="pull-right"> <?= $okcoin_ticker_btc->ticker->vol; ?> </td> </tr>
                     <tr><td>Contract ID</td> <td class="pull-right"> <?= $okcoin_ticker_btc->ticker->contract_id; ?></td></tr>
                     <tr><td>Unit Amount</td><td class="pull-right"><?= $okcoin_ticker_btc->ticker->unit_amount; ?></td></tr>
-                    <tr><td>Last Updated:</td><td><?= date('Y-m-d H:i:s', $okcoin_ticker_btc->date) ?></td></tr>
+                    <tr><td>Last Updated:</td><td class="pull-right"><?= date('Y-m-d H:i:s', $okcoin_ticker_btc->date) ?></td></tr>
                 </table>
             </div>
         </div>
@@ -46,7 +46,7 @@ $okcoin_ticker_ltc = $okcoin_client->tickerFutureApi(array(
         <div class="panel panel-blue">
             <div class="panel-heading">OKCoin - Litecoin (LTC)</div>
             <div class="panel-body">
-                <table width="80%">
+                <table width="90%">
                     <tr>
                         <th> Item </th> <th class="pull-right"> Value </th>
                     </tr>
