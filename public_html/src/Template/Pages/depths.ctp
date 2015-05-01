@@ -34,10 +34,10 @@ foreach($okc_btc_future_depth->bids as $bid) {
     $okcoin_bid_depths[] = $bid[1];
 }
 
-echo "Ask Depths<pre>" . $okcoin_ask_deoths  . "</pre>";
-echo "Bid Depths<pre>" . $okcoin_bid_depths . "</pre>";
-echo "Ask Prices<pre>" . $okcoin_ask_prices . "</pre>";
-echo "Bid Prices<pre>" . $okcoin_bid_prices . "</pre>";
+echo "Ask Depths<pre>" . print_r($okcoin_ask_depths, TRUE) . "</pre>";
+echo "Bid Depths<pre>" . print_r($okcoin_bid_depths, TRUE) . "</pre>";
+echo "Ask Prices<pre>" . print_r($okcoin_ask_prices, TRUE) . "</pre>";
+echo "Bid Prices<pre>" . print_r($okcoin_bid_prices, TRUE) . "</pre>";
 ?>
 
 
