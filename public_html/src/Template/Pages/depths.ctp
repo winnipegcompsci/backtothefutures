@@ -22,7 +22,7 @@ $okcoin_bid_depths = array();
 $labels = array();
 
 foreach($okc_btc_future_depth->asks as $ask) {
-    $labels[] = "\"Label #" . count($labels) . "\"";
+    $labels[] = "\"Label #" . (count($labels)+1) . "\"";
     
     $okcoin_ask_prices[] = $ask[0];
     $okcoin_ask_depths[] = $ask[1];
