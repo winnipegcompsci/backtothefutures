@@ -22,7 +22,7 @@ $okcoin_lend_usd = $okcoin_client->lendDepthApi(array(
                 <li class="active"><a href="#tab1" data-toggle="tab" onclick="redraw()">OKCoin</a></li>
                 <li><a href="#tab2" data-toggle="tab" onclick="redraw()">796.com</a></li>
                 <li><a href="#tab3" data-toggle="tab" onclick="redraw()">BitVC</a></li>
-                <li class="pull-right"><span><h3>Futures Lending</h3></span></li>
+                <li class="pull-right"><span><h3>Futures Lending Depth</h3></span></li>
             </ul>
         </div>
         
@@ -37,9 +37,9 @@ $okcoin_lend_usd = $okcoin_client->lendDepthApi(array(
                                     <thead>
                                     <tr>
                                         <th>Amount (BTC)</th>
-                                        <th>Days</th>
-                                        <th>Number</th>
-                                        <th>Rate</th>
+                                        <th>Loan Days</th>
+                                        <th>Number of Loans</th>
+                                        <th>Interest Rate</th>
                                     </tr>
                                     </thead>
                                     
@@ -68,9 +68,9 @@ $okcoin_lend_usd = $okcoin_client->lendDepthApi(array(
                                     <thead>
                                     <tr>
                                         <th>Amount (USD)</th>
-                                        <th>Days</th>
-                                        <th>Number</th>
-                                        <th>Rate</th>
+                                        <th>Loan Days</th>
+                                        <th>Number of Loans</th>
+                                        <th>Interest Rate</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -98,9 +98,9 @@ $okcoin_lend_usd = $okcoin_client->lendDepthApi(array(
                                     <thead>
                                     <tr>
                                         <th>Amount (BTC)</th>
-                                        <th>Days</th>
-                                        <th>Number</th>
-                                        <th>Rate</th>
+                                        <th>Loan Days</th>
+                                        <th>Number of Loans</th>
+                                        <th>Interest Rate</th>
                                     </tr>
                                     </thead>
                                     <tbody>
