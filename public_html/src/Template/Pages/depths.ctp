@@ -92,6 +92,9 @@ echo "Bid Prices<pre>" . print_r($okcoin_bid_prices, TRUE) . "</pre>";
 
 <script>
 var okcoin_ask_depths = {
+    labels: [
+    
+    ],
     datasets : [
         {
             fillColor : "rgba(220,220,220,0.5)",
@@ -104,6 +107,9 @@ var okcoin_ask_depths = {
 }
 
 var okcoin_bid_depths = {
+    labels : [
+    
+    ],
     datasets : [
         {
             fillColor : "rgba(48, 164, 255, 0.2)",
@@ -116,6 +122,9 @@ var okcoin_bid_depths = {
 }
 
 var okcoin_ask_prices = {
+    labels : [
+    
+    ],
     datasets : [
         {
             label: "OKCoin: Ask Prices",
@@ -131,6 +140,9 @@ var okcoin_ask_prices = {
 }
 
 var okcoin_bid_prices = {
+    labels : [
+    
+    ],
     datasets : [
         {
             label: "OKCoin: Bid Prices",
