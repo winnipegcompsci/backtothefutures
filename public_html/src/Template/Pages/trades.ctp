@@ -36,8 +36,8 @@ $okcoin_trades_ltc = $okcoin_client->tradesFutureApi(array(
                                     <thead>
                                     <tr>
                                         <th>Date</th>
-                                        <th>Amount</th>
-                                        <th>Price/BTC</th>
+                                        <th>Amount (BTC)</th>
+                                        <th>Price/BTC (USD)</th>
                                         <th>Transaction ID</th>
                                         <th>Type</th>
                                     </tr>
@@ -48,7 +48,7 @@ $okcoin_trades_ltc = $okcoin_client->tradesFutureApi(array(
                                         foreach($okcoin_trades_btc as $btc_trade) {
                                             echo "<tr>";
                                             echo "<td>" . date('Y-m-d H:i:s', $btc_trade->date) . "</td>";
-                                            echo "<td>" . $btc_trade->amount . " BTC</td>";
+                                            echo "<td>" . $btc_trade->amount . "</td>";
                                             echo "<td> $" . number_format($btc_trade->price, 2) . "</td>";
                                             echo "<td>" . $btc_trade->tid . "</td>";
                                             echo "<td>" . $btc_trade->type . "</td>";
@@ -69,8 +69,8 @@ $okcoin_trades_ltc = $okcoin_client->tradesFutureApi(array(
                                     <thead>
                                     <tr>
                                         <th>Date</th>
-                                        <th>Amount</th>
-                                        <th>Price/LTC</th>
+                                        <th>Amount (LTC)</th>
+                                        <th>Price/LTC (USD)</th>
                                         <th>Transaction ID</th>
                                         <th>Type</th>
                                     </tr>
@@ -80,7 +80,7 @@ $okcoin_trades_ltc = $okcoin_client->tradesFutureApi(array(
                                         foreach($okcoin_trades_ltc as $ltc_trade) {
                                             echo "<tr>";
                                             echo "<td>" . date('Y-m-d H:i:s', $ltc_trade->date) . "</td>";
-                                            echo "<td>" . $ltc_trade->amount . " LTC</td>"; 
+                                            echo "<td>" . $ltc_trade->amount . "</td>"; 
                                             echo "<td>$" . number_format($ltc_trade->price, 2) . "</td>";
                                             echo "<td>" . $ltc_trade->tid . "</td>";
                                             echo "<td>" . $ltc_trade->type . "</td>";
