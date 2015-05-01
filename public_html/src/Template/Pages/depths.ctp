@@ -15,7 +15,7 @@ $okc_ltc_future_depth = $okcoin_client->depthFutureApi(array(
     'size' => 10,
 ));
 
-echo "<pre>" . print_r($okc_btc_future_depth, TRUE) . "</pre>";
+// echo "<pre>" . print_r($okc_btc_future_depth, TRUE) . "</pre>";
 
 $okcoin_ask_prices = array();
 $okcoin_ask_depths = array();
@@ -34,7 +34,12 @@ foreach($okc_btc_future_depth->bids as $bid) {
     $okcoin_bid_depths[] = $bid[1];
 }
 
+echo "Ask Depths<pre>" . $okcoin_ask_deoths  . "</pre>";
+echo "Bid Depths<pre>" . $okcoin_bid_depths . "</pre>";
+echo "Ask Prices<pre>" . $okcoin_ask_prices . "</pre>";
+echo "Bid Prices<pre>" . $okcoin_bid_prices . "</pre>";
 ?>
+
 
 <div class="row">
     <div class="col-lg-6">
