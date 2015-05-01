@@ -36,7 +36,7 @@ foreach($okc_btc_future_depth->bids as $bid) {
 ?>
 
 <div class="row">
-    <div class="panel panel-primary">
+    <div class="panel panel-default">
         <div class="panel-heading"> 
             <div class="columns col-lg-6">
                 Bids Vs. Asks (Depth)
@@ -61,7 +61,7 @@ foreach($okc_btc_future_depth->bids as $bid) {
 </div>
 
 <div class="row">
-    <div class="panel panel-primary">
+    <div class="panel panel-default">
         <div class="panel-heading"> 
             <div class="columns col-lg-6">
                 Bids vs. Asks (Prices) 
