@@ -75,7 +75,7 @@ foreach($okc_btc_future_depth->bids as $bid) {
                 <li class="pull-right"><span><h3>Futures Market Depth</h3></span></li>
             </ul>
         </div>
-        
+        <!-- 
         <div class="col-lg-8">
             <ul class="nav nav-pills">
                 <li class="pull-left"><span><h4> Litecoin </h4></span></li>
@@ -85,7 +85,7 @@ foreach($okc_btc_future_depth->bids as $bid) {
                 <li class="pull-right"><span><h3>Futures Market Depth</h3></span></li>
             </div>
         </div>
-        
+        -->
             
          
         
