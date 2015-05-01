@@ -22,8 +22,7 @@ $okcoin_bid_depths = array();
 $labels = array();
 
 foreach($okc_btc_future_depth->asks as $ask) {
-    $labels[] = "\"Label #" . (count($labels)+1) . "\"";
-    
+    $depth_labels = 
     $okcoin_ask_prices[] = $ask[0];
     $okcoin_ask_depths[] = $ask[1];
 }
@@ -109,7 +108,7 @@ var okcoin_bid_depths = {
             strokeColor : "rgba(220,220,220,0.8)",
             highlightFill: "rgba(220,220,220,0.75)",
             highlightStroke: "rgba(220,220,220,1)",
-            data : [ <?= implode(", ", $okcoin_bid_depths); ?> ]
+            data : [ <?= implode(", ", array_reverse($okcoin_bid_depths)); ?> ]
         }
     ]
 }
@@ -146,7 +145,7 @@ var okcoin_bid_prices = {
             pointHighlightFill : "#fff",
             pointHighlightStroke : "rgba(220,220,220,1)",
             data : [
-                <?= implode(", ",  $okcoin_bid_prices); ?>
+                <?= implode(", ",  array_reverse($okcoin_bid_prices)); ?>
             ]
         }
     ]
