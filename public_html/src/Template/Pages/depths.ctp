@@ -85,8 +85,8 @@ foreach($okc_btc_future_depth->bids as $bid) {
                             </div>
                             
                             <div class="columns col-lg-6">
-                                <div class="row"><span style="color: rgba(48,164,255,1.0); background-color: rgba(48, 164, 255, 0.2)" class="pull-right badge">Asks</span></div>
-                                <div class="row"><span style="color: rgba(255,181,62,0.8); background-color: rgba(220,220,220,0.5)" class="pull-right badge">Bids</span></div>
+                                <div class="row"><span style="color: rgba(48,164,255,1.0); background-color: rgba(48, 164, 255, 0.8)" class="pull-right badge">Asks</span></div>
+                                <div class="row"><span style="color: rgba(255,181,62,0.8); background-color: rgba(220,220,220,1)" class="pull-right badge">Bids</span></div>
                             </div>
                         
                         </div>
@@ -110,8 +110,8 @@ foreach($okc_btc_future_depth->bids as $bid) {
                             </div>
                             
                             <div class="columns col-lg-6">
-                                <div class="row"><span style="color: rgba(48,164,255,1.0); background-color: rgba(48, 164, 255, 0.2)" class="pull-right badge">Asks</span></div>
-                                <div class="row"><span style="color: rgba(255,181,62,0.8); background-color: rgba(220,220,220,0.5)" class="pull-right badge">Bids</span></div>
+                                <div class="row"><span style="color: rgba(48,164,255,1.0); background-color: rgba(48, 164, 255, 0.8)" class="pull-right badge">Asks</span></div>
+                                <div class="row"><span style="color: rgba(255,181,62,0.8); background-color: rgba(220,220,220,1)" class="pull-right badge">Bids</span></div>
                             </div>
                         </div>    
                         <div class="panel-body">
@@ -249,18 +249,22 @@ window.onload = function() {
     var chart3 = document.getElementById("okcoin-asks-prices-chart").getContext("2d");
     window.myOKCoinLineChart_ASK = new Chart(chart3).Line(okcoin_ask_prices, {
         responsive: true,
+        /*
         scaleOverride: true,
         scaleSteps: steps,
         scaleStepWidth:  Math.ceil((max_price - min_price) / steps),
         scaleStartValue: min_price, 
+        */
     });
     var chart4 = document.getElementById("okcoin-bids-prices-chart").getContext("2d");
     window.myOKCoinLineChart_BIKD = new Chart(chart4).Line(okcoin_bid_prices, {
         responsive: true,
+        /*
         scaleOverride: true,
         scaleSteps: steps,
         scaleStepWidth:  Math.ceil((max_price - min_price) / steps),
         scaleStartValue: min_price, 
+        */
     });
     
 }
