@@ -3,40 +3,112 @@ $okcoin_client = new OKCoin(
     new OKCoin_ApiKeyAuthentication($ok_api_key, $ok_secret_key)
 );
 
-$okc_btc_depth = $okcoin_client->depthApi(array('symbol' => 'btc_usd', 'size' => 5));
-$okc_ltc_depth = $okcoin_client->depthApi(array('symbol' => 'ltc_usd', 'size' => 5));
-
 $okc_btc_future_depth = $okcoin_client->depthFutureApi(array(
     'symbol' => 'btc_usd', 
     'contract_type' => 'this_week', 
-    'size' => 5
+    'size' => 10
 ));
 
 $okc_ltc_future_depth = $okcoin_client->depthFutureApi(array(
     'symbol' => 'ltc_usd', 
     'contract_type' => 'this_week',
-    'size' => 5,
+    'size' => 10,
 ));
 
+echo "<pre>" . print_r($okc_btc_future_depth, TRUE) . "</pre>";
 ?>
-<table class="col-lg-12 columns" border="1px solid black;">
-<tr>
-    <th>Currency</th>
-    <th>Current Depth</th>
-    <th>Future Depth</th>
-</tr>
 
-<tr>
-    <td>BTC</td>
-    <td><?php echo "<pre>" . print_r($okc_btc_depth, TRUE) . "</pre>"; ?></td>
-    <td><?php echo "<pre>" . print_r($okc_btc_future_depth, TRUE) . "</pre>"; ?></td>
-</tr>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">Bar Chart</div>
+            <div class="panel-body">
+                <div class="canvas-wrapper">
+                    <canvas class="main-chart" id="okcoin-bar-chart" height="200" width="600"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!--/.row-->		
 
-<tr>
-    <td> LTC </td>
-    <td><?php echo "<pre>" . print_r($okc_ltc_depth, TRUE) . "</pre>"; ?></td>
-    <td><?php echo "<pre>" . print_r($okc_ltc_future_depth, TRUE) .  "</pre>"; ?></td>
-</tr>
-</table>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">Line Chart</div>
+            <div class="panel-body">
+                <div class="canvas-wrapper">
+                    <canvas class="main-chart" id="okcoin-line-chart" height="200" width="600"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!--/.row-->
 
- 
+
+
+
+<script>
+var randomScalingFactor = function(){ return Math.round(Math.random()*1000)};
+
+var okcoin_bar_data = {
+    labels : ["January","February","March","April","May","June","July"],
+    datasets : [
+        {
+            fillColor : "rgba(220,220,220,0.5)",
+            strokeColor : "rgba(220,220,220,0.8)",
+            highlightFill: "rgba(220,220,220,0.75)",
+            highlightStroke: "rgba(220,220,220,1)",
+            data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+        },
+        {
+            fillColor : "rgba(48, 164, 255, 0.2)",
+            strokeColor : "rgba(48, 164, 255, 0.8)",
+            highlightFill : "rgba(48, 164, 255, 0.75)",
+            highlightStroke : "rgba(48, 164, 255, 1)",
+            data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+        }
+    ]
+}
+
+var okcoin_line_data = {
+    labels : [
+        "A", "B", "C", "D", "E", "F", "G"
+    ],
+    datasets : [
+        {
+            label: "OKCoin: Bids",
+            fillColor : "rgba(48, 164, 255, 0.2)",
+			strokeColor : "rgba(48, 164, 255, 0.8)",
+			highlightFill : "rgba(48, 164, 255, 0.75)",
+			highlightStroke : "rgba(48, 164, 255, 1)",
+            data : [
+                randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()
+            ]
+        },
+        {
+            label: "OKCoin: Asks",
+            fillColor : "rgba(220,220,220,0.2)",
+            strokeColor : "rgba(220,220,220,1)",
+            pointColor : "rgba(220,220,220,1)",
+            pointStrokeColor : "#fff",
+            pointHighlightFill : "#fff",
+            pointHighlightStroke : "rgba(220,220,220,1)",
+            data : [
+               randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()
+            ]
+        }
+    ]
+}
+
+window.onload = function() {
+    var chart1 = document.getElementById("okcoin-bar-chart").getContext("2d");
+    window.myOKCoinBarChart = new Chart(chart1).Bar(okcoin_bar_data, {
+        responsive: true
+    });
+    var chart2 = document.getElementById("okcoin-line-chart").getContext("2d");
+	window.myOKCoinLineChart = new Chart(chart2).Line(okcoin_line_data, {
+		responsive: true
+	});
+
+}
+</script>
