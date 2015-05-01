@@ -214,8 +214,8 @@ var okcoin_bid_prices = {
 
 window.onload = function() {
     var steps = 10;
-    var max_price = <?= $max_price ?>
-    var max_depth = <?= $max_depth ?>
+    var max_price = <?= $max_price ?>;
+    var max_depth = <?= $max_depth ?>;
 
     var chart1 = document.getElementById("okcoin-asks-depth-chart").getContext("2d");
     window.myOKCoinBarChart_ASK = new Chart(chart1).Bar(okcoin_ask_depths, {
