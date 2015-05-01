@@ -45,7 +45,7 @@ $okcoin_trades_ltc = $okcoin_client->tradesFutureApi(array(
                                         foreach($okcoin_trades_btc as $btc_trade) {
                                             echo "<tr>";
                                             echo "<td>" . date('Y-m-d H:i:s', $btc_trade->date) . "</td>";
-                                            echo "<td>" . $btc_trade->amount . " BTC</td>";
+                                            echo "<td class='pull-right'>" . $btc_trade->amount . " BTC</td>";
                                             echo "<td> $" . number_format($btc_trade->price, 2) . "</td>";
                                             echo "<td>" . $btc_trade->tid . "</td>";
                                             echo "<td>" . $btc_trade->type . "</td>";
