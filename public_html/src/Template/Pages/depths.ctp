@@ -103,7 +103,7 @@ var okcoin_bid_depths = {
     ],
     datasets : [
         {
-            fillColor : "rgba(100,71,24.3,0.5)",
+            fillColor : "rgba(255,181,62,0.5)",
             strokeColor : "rgba(220,220,220,0.8)",
             highlightFill: "rgba(220,220,220,0.75)",
             highlightStroke: "rgba(220,220,220,1)",
@@ -137,7 +137,7 @@ var okcoin_bid_prices = {
     datasets : [
         {
             label: "OKCoin: Bid Prices",
-            fillColor : "rgba(220,220,220,0.2)",
+            fillColor : "rgba(255,181,62,0.2)",
             strokeColor : "rgba(220,220,220,1)",
             pointColor : "rgba(220,220,220,1)",
             pointStrokeColor : "#fff",
