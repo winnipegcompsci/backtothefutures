@@ -9,7 +9,7 @@ $okcoin_ticker_btc = $okcoin_client->tickerFutureApi(array(
 ));
 
 $okcoin_ticker_ltc = $okcoin_client->tickerFutureApi(array(
-    'symbol' => 'btc_usd',
+    'symbol' => 'ltc_usd',
     'contract_type' => 'this_week',
 ));
 
@@ -50,7 +50,7 @@ $okcoin_ticker_ltc = $okcoin_client->tickerFutureApi(array(
                     <tr>
                         <th> Item </th> <th> Value </th>
                     </tr>
-                    <tr><td>Low</td> <td><?= $okcoin_ticker_btc->ticker->low; ?></td> </tr>
+                    <tr><td>Low</td> <td><?= $okcoin_ticker_ltc->ticker->low; ?></td> </tr>
                     <tr><td>High</td> <td><?= $okcoin_ticker_ltc->ticker->high; ?></td> </tr>
                     <tr><td>Last</td> <td><?= $okcoin_ticker_ltc->ticker->last; ?></td> </tr>
                     <tr><td>Buy</td> <td><?= $okcoin_ticker_ltc->ticker->buy; ?></td> </tr>
