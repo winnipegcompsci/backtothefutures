@@ -39,7 +39,7 @@ class ContractTypesTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->allowEmpty('contract_type_name', 'create');
+            ->allowEmpty('contract_type_name');
 
         return $validator;
     }

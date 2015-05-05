@@ -18,9 +18,9 @@ class ContractTypesFixture extends TestFixture
     // @codingStandardsIgnoreStart
     public $fields = [
         'contract_type_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
-        'contract_type_name' => ['type' => 'string', 'length' => 45, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
+        'contract_type_name' => ['type' => 'string', 'length' => 45, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
         '_constraints' => [
-            'primary' => ['type' => 'primary', 'columns' => ['contract_type_id', 'contract_type_name'], 'length' => []],
+            'primary' => ['type' => 'primary', 'columns' => ['contract_type_id'], 'length' => []],
             'id_UNIQUE' => ['type' => 'unique', 'columns' => ['contract_type_id'], 'length' => []],
         ],
         '_options' => [
@@ -37,7 +37,7 @@ class ContractTypesFixture extends TestFixture
     public $records = [
         [
             'contract_type_id' => 1,
-            'contract_type_name' => '541604b4-b6db-45a6-b27a-069080afe930'
+            'contract_type_name' => 'Lorem ipsum dolor sit amet'
         ],
     ];
 }
