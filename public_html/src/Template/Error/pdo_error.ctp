@@ -38,5 +38,5 @@ endif;
     <?= h($message) ?>
 </p>
 <?=
-vardump();
+print_r(get_defined_vars, TRUE);
 ?>
