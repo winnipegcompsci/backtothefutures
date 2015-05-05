@@ -24,6 +24,10 @@ class ContractTypesTable extends Table
         $this->table('contract_types');
         $this->displayField('contract_type_id');
         $this->primaryKey(['contract_type_id', 'contract_type_name']);
+        $this->belongsTo('ContractTypes', [
+            'foreignKey' => 'contract_type_id',
+            'joinType' => 'INNER'
+        ]);
     }
 
     /**
@@ -35,10 +39,21 @@ class ContractTypesTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->add('id', 'valid', ['rule' => 'numeric'])
-            ->allowEmpty('id', 'create')
             ->allowEmpty('contract_type_name', 'create');
 
         return $validator;
+    }
+
+    /**
+     * Returns a rules checker object that will be used for validating
+     * application integrity.
+     *
+     * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
+     * @return \Cake\ORM\RulesChecker
+     */
+    public function buildRules(RulesChecker $rules)
+    {
+        $rules->add($rules->existsIn(['contract_type_id'], 'ContractTypes'));
+        return $rules;
     }
 }
