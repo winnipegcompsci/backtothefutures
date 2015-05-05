@@ -59,7 +59,7 @@ class FixedLeveragePositionsFixture extends TestFixture
             'buy_price_avg' => 'Lorem ipsum dolor sit amet',
             'contract_id' => 'Lorem ipsum dolor sit amet',
             'contract_type_id' => 'Lorem ipsum dolor sit amet',
-            'date_created' => 1430841213,
+            'date_created' => 1430842479,
             'sell_amount' => 'Lorem ipsum dolor sit amet',
             'sell_available' => 'Lorem ipsum dolor sit amet',
             'sell_bond' => 'Lorem ipsum dolor sit amet',
