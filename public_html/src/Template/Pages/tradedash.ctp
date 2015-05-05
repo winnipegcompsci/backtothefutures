@@ -11,7 +11,7 @@ use Cake\Core\Configure;
             <!-- Quik Calculator -->
             <div class="panel-heading">Quick Calculator</div>
             <div class="panel-body">
-                <!-- <?= $this->element('calculator');  ?> -->
+                <!-- Calculator Element -->
             </div>
         </div>
     </div>
@@ -21,7 +21,7 @@ use Cake\Core\Configure;
             <!-- Buy/Sell Orders --> 
             <div class="panel-heading">Buy/Sell</div>
             <div class="panel-body">
-                <!-- <?= /* $this->element('buy/sell'); */ ?> -->
+                <!-- Buy / Sell Element -->
             </div>
         </div>
     </div>
@@ -30,9 +30,8 @@ use Cake\Core\Configure;
         <div class="panel panel-blue">
             <div class="panel-heading">List of Recent Trades</div>
             <div class="panel-body">
-                 <!-- <?= /* $this->element('calculator'); */ ?>  -->
-            </div>
-            
+                 <!-- List of Recent Trades -->
+            </div> 
         </div>
     </div>
 </div>
@@ -43,7 +42,7 @@ use Cake\Core\Configure;
         <div class="panel panel-blue">
             <div class="panel-heading">Contracts</div>
             <div class="panel-body">
-                <!-- <?= /* $this->element('contracts'); */ ?> -->
+                <!-- Contracts Element -->
             </div>
         </div>
     </div>
@@ -55,7 +54,7 @@ use Cake\Core\Configure;
         <div class="panel panel-blue">
             <div class="panel-heading">Active Positions</div>
             <div class="panel-body">
-                 <!-- <?= /* $this->element('positions'); */ ?> -->
+                 <!-- Active Positions Element -->
             </div>        
         </div>
     </div>
@@ -67,7 +66,7 @@ use Cake\Core\Configure;
         <div class="panel panel-blue">
             <div class="panel-heading">Orders</div>
             <div class="panel-body">
-                 <!-- <?= /* $this->element('orders'); */ ?> -->
+                 <!-- Orders Element -->
             </div>        
         </div>
     </div>
