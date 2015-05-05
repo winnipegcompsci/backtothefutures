@@ -27,7 +27,7 @@ use Cake\Core\Configure;
     </div>
     
     <div class="columns col-lg-4">
-        <div class="panel panel-blue pull-right">
+        <div class="panel panel-blue">
             <div class="panel-heading">List of Recent Trades</div>
             <div class="panel-body">
                  <!-- List of Recent Trades -->
@@ -55,10 +55,17 @@ use Cake\Core\Configure;
             </div>        
         </div>
     </div>
-</div>
 
-<div class="row">
-<!-- Orders -->
+    <div class="columns col-lg-4">
+        <div class="panel panel-blue">
+            <div class="panel-heading">Ticker</div>
+            <div class="panel-body">
+            
+            </div>
+        </div>
+    </div>
+    
+    <!-- Orders -->
     <div class="columns col-lg-8">
         <div class="panel panel-blue">
             <div class="panel-heading">Orders</div>
