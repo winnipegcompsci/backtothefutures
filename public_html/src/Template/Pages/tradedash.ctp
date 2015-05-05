@@ -27,17 +27,14 @@ use Cake\Core\Configure;
     </div>
     
     <div class="columns col-lg-4">
-        <div class="panel panel-blue" style="height:300px">
+        <div class="panel panel-blue pull-right">
             <div class="panel-heading">List of Recent Trades</div>
             <div class="panel-body">
                  <!-- List of Recent Trades -->
             </div> 
         </div>
     </div>
-</div>
 
-<div class="row">
-<!-- Contracts -->
     <div class="columns col-lg-8">
         <div class="panel panel-blue">
             <div class="panel-heading">Contracts</div>
