@@ -58,7 +58,7 @@ class ContractTypesController extends AppController
                 $this->Flash->error('The contract type could not be saved. Please, try again.');
             }
         }
-        $contractTypes = $this->ContractTypes->ContractTypes->find('list', ['limit' => 200]);
+        $contractTypes = $this->ContractTypes->find('list', ['limit' => 200]);
         $this->set(compact('contractType', 'contractTypes'));
         $this->set('_serialize', ['contractType']);
     }
