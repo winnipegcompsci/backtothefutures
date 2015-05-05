@@ -13,7 +13,9 @@ if (Configure::read('debug')):
 <?php if (!empty($error->queryString)) : ?>
     <p class="notice">
         <strong>SQL Query: </strong>
+        <h1>
         <?= h($error->queryString) ?>
+        </h1>
     </p>
 <?php endif; ?>
 <?php if (!empty($error->params)) : ?>
