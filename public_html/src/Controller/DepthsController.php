@@ -19,7 +19,7 @@ class DepthsController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['Depths', 'Rates']
+            'contain' => ['Rates']
         ];
         $this->set('depths', $this->paginate($this->Depths));
         $this->set('_serialize', ['depths']);
@@ -35,7 +35,7 @@ class DepthsController extends AppController
     public function view($id = null)
     {
         $depth = $this->Depths->get($id, [
-            'contain' => ['Depths', 'Rates']
+            'contain' => ['Rates']
         ]);
         $this->set('depth', $depth);
         $this->set('_serialize', ['depth']);
