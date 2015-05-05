@@ -15,8 +15,8 @@
             <p><?= h($contractType->contract_type_name) ?></p>
         </div>
         <div class="large-2 columns numbers end">
-            <h6 class="subheader"><?= __('Contract Type Id') ?></h6>
-            <p><?= $this->Number->format($contractType->contract_type_id) ?></p>
+            <h6 class="subheader"><?= __('Id') ?></h6>
+            <p><?= $this->Number->format($contractType->id) ?></p>
         </div>
     </div>
 </div>
