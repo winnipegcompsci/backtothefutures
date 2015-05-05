@@ -34,9 +34,6 @@ class OrdersTable extends Table
         $this->belongsTo('LeverageRates', [
             'foreignKey' => 'leverage_rate_id'
         ]);
-        $this->belongsTo('Orders', [
-            'foreignKey' => 'source_order_id'
-        ]);
         $this->belongsTo('OrderTypes', [
             'foreignKey' => 'order_type_id'
         ]);
@@ -76,7 +73,6 @@ class OrdersTable extends Table
         $rules->add($rules->existsIn(['order_id'], 'Orders'));
         $rules->add($rules->existsIn(['contract_id'], 'Contracts'));
         $rules->add($rules->existsIn(['leverage_rate_id'], 'LeverageRates'));
-        $rules->add($rules->existsIn(['source_order_id'], 'SourceOrders'));
         $rules->add($rules->existsIn(['order_type_id'], 'OrderTypes'));
         return $rules;
     }

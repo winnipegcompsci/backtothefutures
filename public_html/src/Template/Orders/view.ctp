@@ -23,8 +23,6 @@
             <p><?= h($order->fee) ?></p>
             <h6 class="subheader"><?= __('Leverage Rate') ?></h6>
             <p><?= $order->has('leverage_rate') ? $this->Html->link($order->leverage_rate->leverage_rate_id, ['controller' => 'LeverageRates', 'action' => 'view', $order->leverage_rate->leverage_rate_id]) : '' ?></p>
-            <h6 class="subheader"><?= __('Source Order Id') ?></h6>
-            <p><?= h($order->source_order_id) ?></p>
             <h6 class="subheader"><?= __('Price') ?></h6>
             <p><?= h($order->price) ?></p>
             <h6 class="subheader"><?= __('Price Average') ?></h6>

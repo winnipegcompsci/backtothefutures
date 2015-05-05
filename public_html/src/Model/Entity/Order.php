@@ -21,7 +21,6 @@ class Order extends Entity
         'deal_amount' => true,
         'fee' => true,
         'leverage_rate_id' => true,
-        'source_order_id' => true,
         'price' => true,
         'price_average' => true,
         'status' => true,

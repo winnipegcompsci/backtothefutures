@@ -19,7 +19,6 @@
             echo $this->Form->input('deal_amount');
             echo $this->Form->input('fee');
             echo $this->Form->input('leverage_rate_id', ['options' => $leverageRates, 'empty' => true]);
-            echo $this->Form->input('source_order_id');
             echo $this->Form->input('price');
             echo $this->Form->input('price_average');
             echo $this->Form->input('status');
