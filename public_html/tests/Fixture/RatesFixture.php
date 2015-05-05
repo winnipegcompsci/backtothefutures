@@ -39,7 +39,7 @@ class RatesFixture extends TestFixture
     public $records = [
         [
             'id' => 1,
-            'time' => 1430864372,
+            'time' => 1430864849,
             'currency_id' => 'Lorem ipsum dolor sit amet',
             'source_id' => 'Lorem ipsum dolor sit amet'
         ],
