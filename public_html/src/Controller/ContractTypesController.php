@@ -19,7 +19,7 @@ class ContractTypesController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['ContractTypes']
+            // 'contain' => ['ContractTypes']
         ];
         $this->set('contractTypes', $this->paginate($this->ContractTypes));
         $this->set('_serialize', ['contractTypes']);
