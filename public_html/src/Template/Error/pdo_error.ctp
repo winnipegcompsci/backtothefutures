@@ -2,13 +2,15 @@
 use Cake\Core\Configure;
 use Cake\Error\Debugger;
 
-echo "ERROR DETAILS" . print_r(get_defined_vars(), TRUE);
+echo "\$ERROR:" . "<pre>" . print_r($error) . "</pre>"; 
+echo "\nMESSAGE: " . "<pre>" . print_r($error, TRUE) . "</pre>";
+echo "ERROR DETAILS" . "<pre>" . print_r(get_defined_vars(), TRUE) . "</pre>";
+
 
 if (Configure::read('debug')):
     $this->layout = 'dev_error';
 
     $this->assign('title', $message);
-    $this->assign('templateName', 'pdo_error.ctp');
 
     $this->start('file');
 ?>
