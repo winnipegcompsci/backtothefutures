@@ -219,8 +219,8 @@ return [
              * the following line and set the port accordingly
              */
             //'port' => 'nonstandard_port_number',
-            'username' => 'drichardson',
-            'password' => 'J5hcz97m!!',
+            'username' => 'root',
+            'password' => 'Passw0rd!',
             'database' => 'backtothefutures',
             'encoding' => 'utf8',
             'timezone' => 'UTC',
