@@ -37,7 +37,7 @@ endif;
     <strong><?= __d('cake', 'Error') ?>: </strong>
     <?= h($message) ?>
 </p>
-<?=
+<?php
 echo "ERROR DETAILS";
 print_r(get_defined_vars, TRUE);
 ?>
