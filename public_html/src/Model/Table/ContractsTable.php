@@ -28,7 +28,7 @@ class ContractsTable extends Table
             'foreignKey' => 'contract_id',
             'joinType' => 'INNER'
         ]);
-        $this->belongsTo('Contracts', [
+        $this->belongsTo('SourceContracts', [
             'foreignKey' => 'source_contract_id'
         ]);
         $this->belongsTo('ContractTypes', [
