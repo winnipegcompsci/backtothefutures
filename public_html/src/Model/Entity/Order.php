@@ -15,6 +15,7 @@ class Order extends Entity
      * @var array
      */
     protected $_accessible = [
+        'id' => true,
         'amount' => true,
         'contract_id' => true,
         'create_date' => true,

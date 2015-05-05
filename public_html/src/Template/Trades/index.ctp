@@ -8,7 +8,7 @@
     <table cellpadding="0" cellspacing="0">
     <thead>
         <tr>
-            <th><?= $this->Paginator->sort('trade_id') ?></th>
+            <th><?= $this->Paginator->sort('id') ?></th>
             <th><?= $this->Paginator->sort('amount') ?></th>
             <th><?= $this->Paginator->sort('date') ?></th>
             <th><?= $this->Paginator->sort('price') ?></th>
@@ -20,7 +20,7 @@
     <tbody>
     <?php foreach ($trades as $trade): ?>
         <tr>
-            <td><?= $this->Number->format($trade->trade_id) ?></td>
+            <td><?= $this->Number->format($trade->id) ?></td>
             <td><?= h($trade->amount) ?></td>
             <td><?= h($trade->date) ?></td>
             <td><?= h($trade->price) ?></td>

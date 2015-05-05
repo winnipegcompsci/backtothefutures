@@ -9,6 +9,7 @@
     <fieldset>
         <legend><?= __('Add Order Type') ?></legend>
         <?php
+            echo $this->Form->input('id');
             echo $this->Form->input('order_type_name');
         ?>
     </fieldset>

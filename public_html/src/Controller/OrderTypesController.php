@@ -18,9 +18,6 @@ class OrderTypesController extends AppController
      */
     public function index()
     {
-        $this->paginate = [
-            'contain' => ['OrderTypes']
-        ];
         $this->set('orderTypes', $this->paginate($this->OrderTypes));
         $this->set('_serialize', ['orderTypes']);
     }
@@ -35,7 +32,7 @@ class OrderTypesController extends AppController
     public function view($id = null)
     {
         $orderType = $this->OrderTypes->get($id, [
-            'contain' => ['OrderTypes']
+            'contain' => []
         ]);
         $this->set('orderType', $orderType);
         $this->set('_serialize', ['orderType']);
@@ -58,8 +55,7 @@ class OrderTypesController extends AppController
                 $this->Flash->error('The order type could not be saved. Please, try again.');
             }
         }
-        $orderTypes = $this->OrderTypes->OrderTypes->find('list', ['limit' => 200]);
-        $this->set(compact('orderType', 'orderTypes'));
+        $this->set(compact('orderType'));
         $this->set('_serialize', ['orderType']);
     }
 
@@ -84,8 +80,7 @@ class OrderTypesController extends AppController
                 $this->Flash->error('The order type could not be saved. Please, try again.');
             }
         }
-        $orderTypes = $this->OrderTypes->OrderTypes->find('list', ['limit' => 200]);
-        $this->set(compact('orderType', 'orderTypes'));
+        $this->set(compact('orderType'));
         $this->set('_serialize', ['orderType']);
     }
 

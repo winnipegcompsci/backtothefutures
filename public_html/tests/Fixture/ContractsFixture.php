@@ -17,7 +17,7 @@ class ContractsFixture extends TestFixture
      */
     // @codingStandardsIgnoreStart
     public $fields = [
-        'contract_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
+        'id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
         'contract_name' => ['type' => 'string', 'length' => 45, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
         'balance' => ['type' => 'float', 'length' => null, 'precision' => null, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => ''],
         'available' => ['type' => 'float', 'length' => null, 'precision' => null, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => ''],
@@ -29,8 +29,8 @@ class ContractsFixture extends TestFixture
         'unprofit' => ['type' => 'string', 'length' => 45, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
         'rights' => ['type' => 'string', 'length' => 45, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
         '_constraints' => [
-            'primary' => ['type' => 'primary', 'columns' => ['contract_id'], 'length' => []],
-            'contract_id_UNIQUE' => ['type' => 'unique', 'columns' => ['contract_id'], 'length' => []],
+            'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
+            'contract_id_UNIQUE' => ['type' => 'unique', 'columns' => ['id'], 'length' => []],
         ],
         '_options' => [
 'engine' => 'InnoDB', 'collation' => 'latin1_swedish_ci'
@@ -45,7 +45,7 @@ class ContractsFixture extends TestFixture
      */
     public $records = [
         [
-            'contract_id' => 1,
+            'id' => 1,
             'contract_name' => 'Lorem ipsum dolor sit amet',
             'balance' => 1,
             'available' => 1,

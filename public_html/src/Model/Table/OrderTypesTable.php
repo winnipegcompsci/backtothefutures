@@ -24,12 +24,9 @@ class OrderTypesTable extends Table
         $this->table('order_types');
         $this->displayField('order_type_id');
         $this->primaryKey('order_type_id');
-       /* 
-       $this->belongsTo('OrderTypes', [
-            'foreignKey' => 'order_type_id',
-            'joinType' => 'INNER'
+        $this->hasMany('Orders', [
+            'foreignKey' => 'order_type_id'
         ]);
-        */
     }
 
     /**
@@ -41,21 +38,10 @@ class OrderTypesTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
+            ->add('id', 'valid', ['rule' => 'numeric'])
+            ->allowEmpty('id', 'create')
             ->allowEmpty('order_type_name');
 
         return $validator;
-    }
-
-    /**
-     * Returns a rules checker object that will be used for validating
-     * application integrity.
-     *
-     * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
-     * @return \Cake\ORM\RulesChecker
-     */
-    public function buildRules(RulesChecker $rules)
-    {
-        // $rules->add($rules->existsIn(['order_type_id'], 'OrderTypes'));
-        return $rules;
     }
 }

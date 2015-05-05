@@ -17,6 +17,7 @@
     <fieldset>
         <legend><?= __('Edit Contract') ?></legend>
         <?php
+            echo $this->Form->input('id');
             echo $this->Form->input('contract_name');
             echo $this->Form->input('balance');
             echo $this->Form->input('available');

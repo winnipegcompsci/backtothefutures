@@ -15,6 +15,7 @@ class Contract extends Entity
      * @var array
      */
     protected $_accessible = [
+        'id' => true,
         'contract_name' => true,
         'balance' => true,
         'available' => true,
@@ -26,7 +27,6 @@ class Contract extends Entity
         'unprofit' => true,
         'rights' => true,
         'contract' => true,
-        'source_contract' => true,
         'contract_type' => true,
     ];
 }

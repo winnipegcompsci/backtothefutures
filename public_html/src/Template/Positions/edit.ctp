@@ -19,6 +19,7 @@
     <fieldset>
         <legend><?= __('Edit Position') ?></legend>
         <?php
+            echo $this->Form->input('id');
             echo $this->Form->input('force_liquidation_price');
             echo $this->Form->input('buy_amount');
             echo $this->Form->input('buy_available');

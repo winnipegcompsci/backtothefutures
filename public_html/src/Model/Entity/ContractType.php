@@ -15,6 +15,7 @@ class ContractType extends Entity
      * @var array
      */
     protected $_accessible = [
+        'id' => true,
         'contract_type' => true,
     ];
 }

@@ -15,7 +15,7 @@ class OrderType extends Entity
      * @var array
      */
     protected $_accessible = [
+        'id' => true,
         'order_type_name' => true,
-        'order_type' => true,
     ];
 }

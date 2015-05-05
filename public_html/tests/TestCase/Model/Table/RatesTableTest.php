@@ -20,7 +20,12 @@ class RatesTableTest extends TestCase
         'Rates' => 'app.rates',
         'Currencies' => 'app.currencies',
         'Spotprices' => 'app.spotprices',
-        'Sources' => 'app.sources'
+        'Sources' => 'app.sources',
+        'FuturesIndexes' => 'app.futures_indexes',
+        'FromCurrencies' => 'app.from_currencies',
+        'ToCurrencies' => 'app.to_currencies',
+        'Tickers' => 'app.tickers',
+        'Depths' => 'app.depths'
     ];
 
     /**

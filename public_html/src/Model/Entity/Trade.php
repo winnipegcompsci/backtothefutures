@@ -15,6 +15,7 @@ class Trade extends Entity
      * @var array
      */
     protected $_accessible = [
+        'id' => true,
         'amount' => true,
         'date' => true,
         'price' => true,

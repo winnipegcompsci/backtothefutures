@@ -17,13 +17,13 @@ class FuturesIndexesFixture extends TestFixture
      */
     // @codingStandardsIgnoreStart
     public $fields = [
-        'futures_index_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
+        'id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
         'from_currency_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         'to_currency_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         'value' => ['type' => 'string', 'length' => 45, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
         'source_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         '_constraints' => [
-            'primary' => ['type' => 'primary', 'columns' => ['futures_index_id'], 'length' => []],
+            'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
         ],
         '_options' => [
 'engine' => 'InnoDB', 'collation' => 'latin1_swedish_ci'
@@ -38,7 +38,7 @@ class FuturesIndexesFixture extends TestFixture
      */
     public $records = [
         [
-            'futures_index_id' => 1,
+            'id' => 1,
             'from_currency_id' => 1,
             'to_currency_id' => 1,
             'value' => 'Lorem ipsum dolor sit amet',

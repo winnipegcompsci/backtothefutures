@@ -15,6 +15,7 @@ class LeverageRate extends Entity
      * @var array
      */
     protected $_accessible = [
+        'id' => true,
         'leverage_rate_name' => true,
         'value' => true,
         'leverage_rate' => true,

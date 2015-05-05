@@ -17,10 +17,10 @@ class OrderTypesFixture extends TestFixture
      */
     // @codingStandardsIgnoreStart
     public $fields = [
-        'order_type_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
+        'id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
         'order_type_name' => ['type' => 'string', 'length' => 45, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
         '_constraints' => [
-            'primary' => ['type' => 'primary', 'columns' => ['order_type_id'], 'length' => []],
+            'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
         ],
         '_options' => [
 'engine' => 'InnoDB', 'collation' => 'latin1_swedish_ci'
@@ -35,7 +35,7 @@ class OrderTypesFixture extends TestFixture
      */
     public $records = [
         [
-            'order_type_id' => 1,
+            'id' => 1,
             'order_type_name' => 'Lorem ipsum dolor sit amet'
         ],
     ];

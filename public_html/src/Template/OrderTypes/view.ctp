@@ -15,8 +15,8 @@
             <p><?= h($orderType->order_type_name) ?></p>
         </div>
         <div class="large-2 columns numbers end">
-            <h6 class="subheader"><?= __('Order Type Id') ?></h6>
-            <p><?= $this->Number->format($orderType->order_type_id) ?></p>
+            <h6 class="subheader"><?= __('Id') ?></h6>
+            <p><?= $this->Number->format($orderType->id) ?></p>
         </div>
     </div>
 </div>

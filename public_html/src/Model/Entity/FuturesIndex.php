@@ -15,6 +15,7 @@ class FuturesIndex extends Entity
      * @var array
      */
     protected $_accessible = [
+        'id' => true,
         'from_currency_id' => true,
         'to_currency_id' => true,
         'value' => true,

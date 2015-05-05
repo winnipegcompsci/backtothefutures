@@ -11,6 +11,7 @@
     <fieldset>
         <legend><?= __('Add Futures Index') ?></legend>
         <?php
+            echo $this->Form->input('id');
             echo $this->Form->input('from_currency_id');
             echo $this->Form->input('to_currency_id');
             echo $this->Form->input('value');

@@ -14,7 +14,7 @@
     <table cellpadding="0" cellspacing="0">
     <thead>
         <tr>
-            <th><?= $this->Paginator->sort('order_id') ?></th>
+            <th><?= $this->Paginator->sort('id') ?></th>
             <th><?= $this->Paginator->sort('amount') ?></th>
             <th><?= $this->Paginator->sort('contract_id') ?></th>
             <th><?= $this->Paginator->sort('create_date') ?></th>
@@ -27,7 +27,7 @@
     <tbody>
     <?php foreach ($orders as $order): ?>
         <tr>
-            <td><?= $this->Number->format($order->order_id) ?></td>
+            <td><?= $this->Number->format($order->id) ?></td>
             <td><?= h($order->amount) ?></td>
             <td>
                 <?= $order->has('contract') ? $this->Html->link($order->contract->contract_id, ['controller' => 'Contracts', 'action' => 'view', $order->contract->contract_id]) : '' ?>

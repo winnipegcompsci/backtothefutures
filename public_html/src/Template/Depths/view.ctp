@@ -21,8 +21,8 @@
             <p><?= $depth->has('rate') ? $this->Html->link($depth->rate->rate_id, ['controller' => 'Rates', 'action' => 'view', $depth->rate->rate_id]) : '' ?></p>
         </div>
         <div class="large-2 columns numbers end">
-            <h6 class="subheader"><?= __('Depths Id') ?></h6>
-            <p><?= $this->Number->format($depth->depths_id) ?></p>
+            <h6 class="subheader"><?= __('Id') ?></h6>
+            <p><?= $this->Number->format($depth->id) ?></p>
         </div>
     </div>
     <div class="row texts">

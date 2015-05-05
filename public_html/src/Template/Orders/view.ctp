@@ -37,8 +37,8 @@
             <p><?= $order->has('order_type') ? $this->Html->link($order->order_type->order_type_id, ['controller' => 'OrderTypes', 'action' => 'view', $order->order_type->order_type_id]) : '' ?></p>
         </div>
         <div class="large-2 columns numbers end">
-            <h6 class="subheader"><?= __('Order Id') ?></h6>
-            <p><?= $this->Number->format($order->order_id) ?></p>
+            <h6 class="subheader"><?= __('Id') ?></h6>
+            <p><?= $this->Number->format($order->id) ?></p>
             <h6 class="subheader"><?= __('Deal Amount') ?></h6>
             <p><?= $this->Number->format($order->deal_amount) ?></p>
         </div>

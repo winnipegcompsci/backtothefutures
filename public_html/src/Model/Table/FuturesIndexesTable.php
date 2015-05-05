@@ -24,10 +24,6 @@ class FuturesIndexesTable extends Table
         $this->table('futures_indexes');
         $this->displayField('futures_index_id');
         $this->primaryKey('futures_index_id');
-        $this->belongsTo('FuturesIndices', [
-            'foreignKey' => 'futures_index_id',
-            'joinType' => 'INNER'
-        ]);
         $this->belongsTo('FromCurrencies', [
             'foreignKey' => 'from_currency_id'
         ]);
@@ -48,6 +44,8 @@ class FuturesIndexesTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
+            ->add('id', 'valid', ['rule' => 'numeric'])
+            ->allowEmpty('id', 'create')
             ->allowEmpty('value');
 
         return $validator;
@@ -62,7 +60,6 @@ class FuturesIndexesTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['futures_index_id'], 'FuturesIndices'));
         $rules->add($rules->existsIn(['from_currency_id'], 'FromCurrencies'));
         $rules->add($rules->existsIn(['to_currency_id'], 'ToCurrencies'));
         $rules->add($rules->existsIn(['source_id'], 'Sources'));

@@ -10,7 +10,7 @@
     <table cellpadding="0" cellspacing="0">
     <thead>
         <tr>
-            <th><?= $this->Paginator->sort('depths_id') ?></th>
+            <th><?= $this->Paginator->sort('id') ?></th>
             <th><?= $this->Paginator->sort('date') ?></th>
             <th><?= $this->Paginator->sort('contract_type') ?></th>
             <th><?= $this->Paginator->sort('rate_id') ?></th>
@@ -20,7 +20,7 @@
     <tbody>
     <?php foreach ($depths as $depth): ?>
         <tr>
-            <td><?= $this->Number->format($depth->depths_id) ?></td>
+            <td><?= $this->Number->format($depth->id) ?></td>
             <td><?= h($depth->date) ?></td>
             <td><?= h($depth->contract_type) ?></td>
             <td>

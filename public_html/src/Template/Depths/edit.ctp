@@ -17,6 +17,7 @@
     <fieldset>
         <legend><?= __('Edit Depth') ?></legend>
         <?php
+            echo $this->Form->input('id');
             echo $this->Form->input('asks');
             echo $this->Form->input('bids');
             echo $this->Form->input('date');

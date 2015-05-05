@@ -17,7 +17,7 @@ class PositionsFixture extends TestFixture
      */
     // @codingStandardsIgnoreStart
     public $fields = [
-        'position_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
+        'id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
         'force_liquidation_price' => ['type' => 'string', 'length' => 45, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
         'buy_amount' => ['type' => 'string', 'length' => 45, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
         'buy_available' => ['type' => 'string', 'length' => 45, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
@@ -33,8 +33,8 @@ class PositionsFixture extends TestFixture
         'sell_price_real' => ['type' => 'string', 'length' => 45, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
         'result' => ['type' => 'string', 'length' => 45, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
         '_constraints' => [
-            'primary' => ['type' => 'primary', 'columns' => ['position_id'], 'length' => []],
-            'position_id_UNIQUE' => ['type' => 'unique', 'columns' => ['position_id'], 'length' => []],
+            'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
+            'position_id_UNIQUE' => ['type' => 'unique', 'columns' => ['id'], 'length' => []],
         ],
         '_options' => [
 'engine' => 'InnoDB', 'collation' => 'latin1_swedish_ci'
@@ -49,7 +49,7 @@ class PositionsFixture extends TestFixture
      */
     public $records = [
         [
-            'position_id' => 1,
+            'id' => 1,
             'force_liquidation_price' => 'Lorem ipsum dolor sit amet',
             'buy_amount' => 'Lorem ipsum dolor sit amet',
             'buy_available' => 'Lorem ipsum dolor sit amet',
@@ -57,7 +57,7 @@ class PositionsFixture extends TestFixture
             'buy_profit_real' => 'Lorem ipsum dolor sit amet',
             'contract_id' => 'Lorem ipsum dolor sit amet',
             'contract_type' => 'Lorem ipsum dolor sit amet',
-            'date_created' => 1430851302,
+            'date_created' => 1430861535,
             'leverage_rate_id' => 'Lorem ipsum dolor sit amet',
             'sell_amount' => 'Lorem ipsum dolor sit amet',
             'sell_available' => 'Lorem ipsum dolor sit amet',

@@ -15,6 +15,7 @@
     <fieldset>
         <legend><?= __('Edit Trade') ?></legend>
         <?php
+            echo $this->Form->input('id');
             echo $this->Form->input('amount');
             echo $this->Form->input('date');
             echo $this->Form->input('price');

@@ -15,6 +15,7 @@ class Position extends Entity
      * @var array
      */
     protected $_accessible = [
+        'id' => true,
         'force_liquidation_price' => true,
         'buy_amount' => true,
         'buy_available' => true,

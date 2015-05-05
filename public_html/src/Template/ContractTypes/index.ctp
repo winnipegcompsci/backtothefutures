@@ -8,7 +8,7 @@
     <table cellpadding="0" cellspacing="0">
     <thead>
         <tr>
-            <th><?= $this->Paginator->sort('contract_type_id') ?></th>
+            <th><?= $this->Paginator->sort('id') ?></th>
             <th><?= $this->Paginator->sort('contract_type_name') ?></th>
             <th class="actions"><?= __('Actions') ?></th>
         </tr>
@@ -16,7 +16,7 @@
     <tbody>
     <?php foreach ($contractTypes as $contractType): ?>
         <tr>
-            <td><?= $this->Number->format($contractType->contract_type_id) ?></td>
+            <td><?= $this->Number->format($contractType->id) ?></td>
             <td><?= h($contractType->contract_type_name) ?></td>
             <td class="actions">
                 <?= $this->Html->link(__('View'), ['action' => 'view', $contractType->contract_type_id]) ?>

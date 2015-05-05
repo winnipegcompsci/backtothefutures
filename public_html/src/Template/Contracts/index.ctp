@@ -10,7 +10,7 @@
     <table cellpadding="0" cellspacing="0">
     <thead>
         <tr>
-            <th><?= $this->Paginator->sort('contract_id') ?></th>
+            <th><?= $this->Paginator->sort('id') ?></th>
             <th><?= $this->Paginator->sort('contract_name') ?></th>
             <th><?= $this->Paginator->sort('balance') ?></th>
             <th><?= $this->Paginator->sort('available') ?></th>
@@ -23,7 +23,7 @@
     <tbody>
     <?php foreach ($contracts as $contract): ?>
         <tr>
-            <td><?= $this->Number->format($contract->contract_id) ?></td>
+            <td><?= $this->Number->format($contract->id) ?></td>
             <td><?= h($contract->contract_name) ?></td>
             <td><?= $this->Number->format($contract->balance) ?></td>
             <td><?= $this->Number->format($contract->available) ?></td>

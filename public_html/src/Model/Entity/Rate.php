@@ -15,11 +15,12 @@ class Rate extends Entity
      * @var array
      */
     protected $_accessible = [
+        'id' => true,
         'time' => true,
         'currency_id' => true,
         'source_id' => true,
-        'rate' => true,
         'currency' => true,
         'source' => true,
+        'depths' => true,
     ];
 }

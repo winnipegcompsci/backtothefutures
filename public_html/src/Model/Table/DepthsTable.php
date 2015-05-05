@@ -24,10 +24,6 @@ class DepthsTable extends Table
         $this->table('depths');
         $this->displayField('depths_id');
         $this->primaryKey('depths_id');
-        $this->belongsTo('Depths', [
-            'foreignKey' => 'depths_id',
-            'joinType' => 'INNER'
-        ]);
         $this->belongsTo('Rates', [
             'foreignKey' => 'rate_id'
         ]);
@@ -42,6 +38,8 @@ class DepthsTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
+            ->add('id', 'valid', ['rule' => 'numeric'])
+            ->allowEmpty('id', 'create')
             ->allowEmpty('asks')
             ->allowEmpty('bids')
             ->allowEmpty('date')
@@ -59,7 +57,6 @@ class DepthsTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['depths_id'], 'Depths'));
         $rules->add($rules->existsIn(['rate_id'], 'Rates'));
         return $rules;
     }

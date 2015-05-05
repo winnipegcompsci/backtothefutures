@@ -35,7 +35,7 @@ class ContractsController extends AppController
     public function view($id = null)
     {
         $contract = $this->Contracts->get($id, [
-            'contain' => ['Contracts', 'SourceContracts', 'ContractTypes']
+            'contain' => ['Contracts', 'ContractTypes']
         ]);
         $this->set('contract', $contract);
         $this->set('_serialize', ['contract']);
@@ -59,9 +59,8 @@ class ContractsController extends AppController
             }
         }
         $contracts = $this->Contracts->Contracts->find('list', ['limit' => 200]);
-        $sourceContracts = $this->Contracts->SourceContracts->find('list', ['limit' => 200]);
         $contractTypes = $this->Contracts->ContractTypes->find('list', ['limit' => 200]);
-        $this->set(compact('contract', 'contracts', 'sourceContracts', 'contractTypes'));
+        $this->set(compact('contract', 'contracts', 'contractTypes'));
         $this->set('_serialize', ['contract']);
     }
 
@@ -87,9 +86,8 @@ class ContractsController extends AppController
             }
         }
         $contracts = $this->Contracts->Contracts->find('list', ['limit' => 200]);
-        $sourceContracts = $this->Contracts->SourceContracts->find('list', ['limit' => 200]);
         $contractTypes = $this->Contracts->ContractTypes->find('list', ['limit' => 200]);
-        $this->set(compact('contract', 'contracts', 'sourceContracts', 'contractTypes'));
+        $this->set(compact('contract', 'contracts', 'contractTypes'));
         $this->set('_serialize', ['contract']);
     }
 

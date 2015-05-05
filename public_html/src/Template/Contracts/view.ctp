@@ -31,8 +31,8 @@
             <p><?= h($contract->rights) ?></p>
         </div>
         <div class="large-2 columns numbers end">
-            <h6 class="subheader"><?= __('Contract Id') ?></h6>
-            <p><?= $this->Number->format($contract->contract_id) ?></p>
+            <h6 class="subheader"><?= __('Id') ?></h6>
+            <p><?= $this->Number->format($contract->id) ?></p>
             <h6 class="subheader"><?= __('Balance') ?></h6>
             <p><?= $this->Number->format($contract->balance) ?></p>
             <h6 class="subheader"><?= __('Available') ?></h6>

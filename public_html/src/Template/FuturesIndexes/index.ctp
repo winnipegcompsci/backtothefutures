@@ -10,7 +10,7 @@
     <table cellpadding="0" cellspacing="0">
     <thead>
         <tr>
-            <th><?= $this->Paginator->sort('futures_index_id') ?></th>
+            <th><?= $this->Paginator->sort('id') ?></th>
             <th><?= $this->Paginator->sort('from_currency_id') ?></th>
             <th><?= $this->Paginator->sort('to_currency_id') ?></th>
             <th><?= $this->Paginator->sort('value') ?></th>
@@ -21,7 +21,7 @@
     <tbody>
     <?php foreach ($futuresIndexes as $futuresIndex): ?>
         <tr>
-            <td><?= $this->Number->format($futuresIndex->futures_index_id) ?></td>
+            <td><?= $this->Number->format($futuresIndex->id) ?></td>
             <td><?= $this->Number->format($futuresIndex->from_currency_id) ?></td>
             <td><?= $this->Number->format($futuresIndex->to_currency_id) ?></td>
             <td><?= h($futuresIndex->value) ?></td>

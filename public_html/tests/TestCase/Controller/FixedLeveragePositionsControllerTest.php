@@ -20,7 +20,10 @@ class FixedLeveragePositionsControllerTest extends IntegrationTestCase
         'Contracts' => 'app.contracts',
         'SourceContracts' => 'app.source_contracts',
         'ContractTypes' => 'app.contract_types',
-        'LeverageRates' => 'app.leverage_rates'
+        'Orders' => 'app.orders',
+        'LeverageRates' => 'app.leverage_rates',
+        'OrderTypes' => 'app.order_types',
+        'Positions' => 'app.positions'
     ];
 
     /**

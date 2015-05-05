@@ -20,7 +20,9 @@ class OrdersControllerTest extends IntegrationTestCase
         'Contracts' => 'app.contracts',
         'SourceContracts' => 'app.source_contracts',
         'ContractTypes' => 'app.contract_types',
+        'FixedLeveragePositions' => 'app.fixed_leverage_positions',
         'LeverageRates' => 'app.leverage_rates',
+        'Positions' => 'app.positions',
         'OrderTypes' => 'app.order_types'
     ];
 

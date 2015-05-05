@@ -24,10 +24,6 @@ class OrdersTable extends Table
         $this->table('orders');
         $this->displayField('order_id');
         $this->primaryKey('order_id');
-        $this->belongsTo('Orders', [
-            'foreignKey' => 'order_id',
-            'joinType' => 'INNER'
-        ]);
         $this->belongsTo('Contracts', [
             'foreignKey' => 'contract_id'
         ]);
@@ -48,6 +44,8 @@ class OrdersTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
+            ->add('id', 'valid', ['rule' => 'numeric'])
+            ->allowEmpty('id', 'create')
             ->allowEmpty('amount')
             ->allowEmpty('create_date')
             ->add('deal_amount', 'valid', ['rule' => 'numeric'])

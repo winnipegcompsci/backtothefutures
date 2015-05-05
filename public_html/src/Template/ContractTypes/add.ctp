@@ -9,6 +9,7 @@
     <fieldset>
         <legend><?= __('Add Contract Type') ?></legend>
         <?php
+            echo $this->Form->input('id');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

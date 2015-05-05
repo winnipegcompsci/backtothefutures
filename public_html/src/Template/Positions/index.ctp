@@ -12,7 +12,7 @@
     <table cellpadding="0" cellspacing="0">
     <thead>
         <tr>
-            <th><?= $this->Paginator->sort('position_id') ?></th>
+            <th><?= $this->Paginator->sort('id') ?></th>
             <th><?= $this->Paginator->sort('force_liquidation_price') ?></th>
             <th><?= $this->Paginator->sort('buy_amount') ?></th>
             <th><?= $this->Paginator->sort('buy_available') ?></th>
@@ -25,7 +25,7 @@
     <tbody>
     <?php foreach ($positions as $position): ?>
         <tr>
-            <td><?= $this->Number->format($position->position_id) ?></td>
+            <td><?= $this->Number->format($position->id) ?></td>
             <td><?= h($position->force_liquidation_price) ?></td>
             <td><?= h($position->buy_amount) ?></td>
             <td><?= h($position->buy_available) ?></td>

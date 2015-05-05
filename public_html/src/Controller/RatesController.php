@@ -19,7 +19,7 @@ class RatesController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['Rates', 'Currencies', 'Sources']
+            'contain' => ['Currencies', 'Sources']
         ];
         $this->set('rates', $this->paginate($this->Rates));
         $this->set('_serialize', ['rates']);
@@ -35,7 +35,7 @@ class RatesController extends AppController
     public function view($id = null)
     {
         $rate = $this->Rates->get($id, [
-            'contain' => ['Rates', 'Currencies', 'Sources']
+            'contain' => ['Currencies', 'Sources', 'Depths']
         ]);
         $this->set('rate', $rate);
         $this->set('_serialize', ['rate']);
@@ -58,10 +58,9 @@ class RatesController extends AppController
                 $this->Flash->error('The rate could not be saved. Please, try again.');
             }
         }
-        $rates = $this->Rates->Rates->find('list', ['limit' => 200]);
         $currencies = $this->Rates->Currencies->find('list', ['limit' => 200]);
         $sources = $this->Rates->Sources->find('list', ['limit' => 200]);
-        $this->set(compact('rate', 'rates', 'currencies', 'sources'));
+        $this->set(compact('rate', 'currencies', 'sources'));
         $this->set('_serialize', ['rate']);
     }
 
@@ -86,10 +85,9 @@ class RatesController extends AppController
                 $this->Flash->error('The rate could not be saved. Please, try again.');
             }
         }
-        $rates = $this->Rates->Rates->find('list', ['limit' => 200]);
         $currencies = $this->Rates->Currencies->find('list', ['limit' => 200]);
         $sources = $this->Rates->Sources->find('list', ['limit' => 200]);
-        $this->set(compact('rate', 'rates', 'currencies', 'sources'));
+        $this->set(compact('rate', 'currencies', 'sources'));
         $this->set('_serialize', ['rate']);
     }
 

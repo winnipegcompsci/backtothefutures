@@ -24,10 +24,6 @@ class TradesTable extends Table
         $this->table('trades');
         $this->displayField('trade_id');
         $this->primaryKey('trade_id');
-        $this->belongsTo('Trades', [
-            'foreignKey' => 'trade_id',
-            'joinType' => 'INNER'
-        ]);
     }
 
     /**
@@ -39,6 +35,8 @@ class TradesTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
+            ->add('id', 'valid', ['rule' => 'numeric'])
+            ->allowEmpty('id', 'create')
             ->allowEmpty('amount')
             ->allowEmpty('date')
             ->allowEmpty('price')
@@ -46,18 +44,5 @@ class TradesTable extends Table
             ->allowEmpty('type');
 
         return $validator;
-    }
-
-    /**
-     * Returns a rules checker object that will be used for validating
-     * application integrity.
-     *
-     * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
-     * @return \Cake\ORM\RulesChecker
-     */
-    public function buildRules(RulesChecker $rules)
-    {
-        $rules->add($rules->existsIn(['trade_id'], 'Trades'));
-        return $rules;
     }
 }

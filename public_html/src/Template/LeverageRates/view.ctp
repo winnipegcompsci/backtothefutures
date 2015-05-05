@@ -15,8 +15,8 @@
             <p><?= h($leverageRate->leverage_rate_name) ?></p>
         </div>
         <div class="large-2 columns numbers end">
-            <h6 class="subheader"><?= __('Leverage Rate Id') ?></h6>
-            <p><?= $this->Number->format($leverageRate->leverage_rate_id) ?></p>
+            <h6 class="subheader"><?= __('Id') ?></h6>
+            <p><?= $this->Number->format($leverageRate->id) ?></p>
             <h6 class="subheader"><?= __('Value') ?></h6>
             <p><?= $this->Number->format($leverageRate->value) ?></p>
         </div>

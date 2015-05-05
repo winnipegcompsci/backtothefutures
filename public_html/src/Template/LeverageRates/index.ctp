@@ -8,7 +8,7 @@
     <table cellpadding="0" cellspacing="0">
     <thead>
         <tr>
-            <th><?= $this->Paginator->sort('leverage_rate_id') ?></th>
+            <th><?= $this->Paginator->sort('id') ?></th>
             <th><?= $this->Paginator->sort('leverage_rate_name') ?></th>
             <th><?= $this->Paginator->sort('value') ?></th>
             <th class="actions"><?= __('Actions') ?></th>
@@ -17,7 +17,7 @@
     <tbody>
     <?php foreach ($leverageRates as $leverageRate): ?>
         <tr>
-            <td><?= $this->Number->format($leverageRate->leverage_rate_id) ?></td>
+            <td><?= $this->Number->format($leverageRate->id) ?></td>
             <td><?= h($leverageRate->leverage_rate_name) ?></td>
             <td><?= $this->Number->format($leverageRate->value) ?></td>
             <td class="actions">

@@ -22,10 +22,10 @@ class TickersTableTest extends TestCase
         'ToCurrencies' => 'app.to_currencies',
         'Sources' => 'app.sources',
         'FuturesIndexes' => 'app.futures_indexes',
-        'FuturesIndices' => 'app.futures_indices',
         'Rates' => 'app.rates',
         'Currencies' => 'app.currencies',
-        'Spotprices' => 'app.spotprices'
+        'Spotprices' => 'app.spotprices',
+        'Depths' => 'app.depths'
     ];
 
     /**

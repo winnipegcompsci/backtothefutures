@@ -15,6 +15,7 @@
     <fieldset>
         <legend><?= __('Add Order') ?></legend>
         <?php
+            echo $this->Form->input('id');
             echo $this->Form->input('amount');
             echo $this->Form->input('contract_id', ['options' => $contracts, 'empty' => true]);
             echo $this->Form->input('create_date');

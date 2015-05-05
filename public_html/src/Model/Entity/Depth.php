@@ -15,6 +15,7 @@ class Depth extends Entity
      * @var array
      */
     protected $_accessible = [
+        'id' => true,
         'asks' => true,
         'bids' => true,
         'date' => true,

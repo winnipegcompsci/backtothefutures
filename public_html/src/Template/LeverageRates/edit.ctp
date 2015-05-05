@@ -15,6 +15,7 @@
     <fieldset>
         <legend><?= __('Edit Leverage Rate') ?></legend>
         <?php
+            echo $this->Form->input('id');
             echo $this->Form->input('leverage_rate_name');
             echo $this->Form->input('value');
         ?>

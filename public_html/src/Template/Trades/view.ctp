@@ -21,8 +21,8 @@
             <p><?= h($trade->type) ?></p>
         </div>
         <div class="large-2 columns numbers end">
-            <h6 class="subheader"><?= __('Trade Id') ?></h6>
-            <p><?= $this->Number->format($trade->trade_id) ?></p>
+            <h6 class="subheader"><?= __('Id') ?></h6>
+            <p><?= $this->Number->format($trade->id) ?></p>
         </div>
         <div class="large-2 columns dates end">
             <h6 class="subheader"><?= __('Date') ?></h6>

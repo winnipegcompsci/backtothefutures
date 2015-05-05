@@ -19,8 +19,8 @@
             <p><?= $futuresIndex->has('source') ? $this->Html->link($futuresIndex->source->source_name, ['controller' => 'Sources', 'action' => 'view', $futuresIndex->source->id]) : '' ?></p>
         </div>
         <div class="large-2 columns numbers end">
-            <h6 class="subheader"><?= __('Futures Index Id') ?></h6>
-            <p><?= $this->Number->format($futuresIndex->futures_index_id) ?></p>
+            <h6 class="subheader"><?= __('Id') ?></h6>
+            <p><?= $this->Number->format($futuresIndex->id) ?></p>
             <h6 class="subheader"><?= __('From Currency Id') ?></h6>
             <p><?= $this->Number->format($futuresIndex->from_currency_id) ?></p>
             <h6 class="subheader"><?= __('To Currency Id') ?></h6>

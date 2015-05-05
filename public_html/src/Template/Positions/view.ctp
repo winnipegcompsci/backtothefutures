@@ -43,8 +43,8 @@
             <p><?= h($position->result) ?></p>
         </div>
         <div class="large-2 columns numbers end">
-            <h6 class="subheader"><?= __('Position Id') ?></h6>
-            <p><?= $this->Number->format($position->position_id) ?></p>
+            <h6 class="subheader"><?= __('Id') ?></h6>
+            <p><?= $this->Number->format($position->id) ?></p>
         </div>
         <div class="large-2 columns dates end">
             <h6 class="subheader"><?= __('Date Created') ?></h6>

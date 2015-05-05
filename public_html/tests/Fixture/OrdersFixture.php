@@ -17,7 +17,7 @@ class OrdersFixture extends TestFixture
      */
     // @codingStandardsIgnoreStart
     public $fields = [
-        'order_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
+        'id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
         'amount' => ['type' => 'string', 'length' => 45, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
         'contract_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         'create_date' => ['type' => 'timestamp', 'length' => null, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null],
@@ -30,8 +30,8 @@ class OrdersFixture extends TestFixture
         'symbol' => ['type' => 'string', 'length' => 45, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
         'order_type_id' => ['type' => 'string', 'length' => 45, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
         '_constraints' => [
-            'primary' => ['type' => 'primary', 'columns' => ['order_id'], 'length' => []],
-            'order_id_UNIQUE' => ['type' => 'unique', 'columns' => ['order_id'], 'length' => []],
+            'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
+            'order_id_UNIQUE' => ['type' => 'unique', 'columns' => ['id'], 'length' => []],
         ],
         '_options' => [
 'engine' => 'InnoDB', 'collation' => 'latin1_swedish_ci'
@@ -46,10 +46,10 @@ class OrdersFixture extends TestFixture
      */
     public $records = [
         [
-            'order_id' => 1,
+            'id' => 1,
             'amount' => 'Lorem ipsum dolor sit amet',
             'contract_id' => 1,
-            'create_date' => 1430848787,
+            'create_date' => 1430861523,
             'deal_amount' => 1,
             'fee' => 'Lorem ipsum dolor sit amet',
             'leverage_rate_id' => 'Lorem ipsum dolor sit amet',

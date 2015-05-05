@@ -6,13 +6,15 @@
         <li><?= $this->Html->link(__('New Currency'), ['controller' => 'Currencies', 'action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Sources'), ['controller' => 'Sources', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Source'), ['controller' => 'Sources', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('List Depths'), ['controller' => 'Depths', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('New Depth'), ['controller' => 'Depths', 'action' => 'add']) ?> </li>
     </ul>
 </div>
 <div class="rates index large-10 medium-9 columns">
     <table cellpadding="0" cellspacing="0">
     <thead>
         <tr>
-            <th><?= $this->Paginator->sort('rate_id') ?></th>
+            <th><?= $this->Paginator->sort('id') ?></th>
             <th><?= $this->Paginator->sort('time') ?></th>
             <th><?= $this->Paginator->sort('currency_id') ?></th>
             <th><?= $this->Paginator->sort('source_id') ?></th>
@@ -22,7 +24,7 @@
     <tbody>
     <?php foreach ($rates as $rate): ?>
         <tr>
-            <td><?= $this->Number->format($rate->rate_id) ?></td>
+            <td><?= $this->Number->format($rate->id) ?></td>
             <td><?= h($rate->time) ?></td>
             <td>
                 <?= $rate->has('currency') ? $this->Html->link($rate->currency->currency_name, ['controller' => 'Currencies', 'action' => 'view', $rate->currency->id]) : '' ?>

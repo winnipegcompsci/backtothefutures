@@ -24,15 +24,14 @@ class RatesTable extends Table
         $this->table('rates');
         $this->displayField('rate_id');
         $this->primaryKey('rate_id');
-        $this->belongsTo('Rates', [
-            'foreignKey' => 'rate_id',
-            'joinType' => 'INNER'
-        ]);
         $this->belongsTo('Currencies', [
             'foreignKey' => 'currency_id'
         ]);
         $this->belongsTo('Sources', [
             'foreignKey' => 'source_id'
+        ]);
+        $this->hasMany('Depths', [
+            'foreignKey' => 'rate_id'
         ]);
     }
 
@@ -45,6 +44,8 @@ class RatesTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
+            ->add('id', 'valid', ['rule' => 'numeric'])
+            ->allowEmpty('id', 'create')
             ->allowEmpty('time');
 
         return $validator;
@@ -59,7 +60,6 @@ class RatesTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['rate_id'], 'Rates'));
         $rules->add($rules->existsIn(['currency_id'], 'Currencies'));
         $rules->add($rules->existsIn(['source_id'], 'Sources'));
         return $rules;

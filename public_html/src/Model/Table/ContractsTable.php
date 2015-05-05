@@ -24,15 +24,20 @@ class ContractsTable extends Table
         $this->table('contracts');
         $this->displayField('contract_id');
         $this->primaryKey('contract_id');
-        $this->belongsTo('Contracts', [
-            'foreignKey' => 'contract_id',
-            'joinType' => 'INNER'
-        ]);
-        $this->belongsTo('Contracts', [
+        $this->belongsTo('SourceContracts', [
             'foreignKey' => 'source_contract_id'
         ]);
         $this->belongsTo('ContractTypes', [
             'foreignKey' => 'contract_type_id'
+        ]);
+        $this->hasMany('FixedLeveragePositions', [
+            'foreignKey' => 'contract_id'
+        ]);
+        $this->hasMany('Orders', [
+            'foreignKey' => 'contract_id'
+        ]);
+        $this->hasMany('Positions', [
+            'foreignKey' => 'contract_id'
         ]);
     }
 
@@ -45,6 +50,8 @@ class ContractsTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
+            ->add('id', 'valid', ['rule' => 'numeric'])
+            ->allowEmpty('id', 'create')
             ->allowEmpty('contract_name')
             ->add('balance', 'valid', ['rule' => 'numeric'])
             ->allowEmpty('balance')
@@ -68,7 +75,6 @@ class ContractsTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['contract_id'], 'Contracts'));
         $rules->add($rules->existsIn(['source_contract_id'], 'SourceContracts'));
         $rules->add($rules->existsIn(['contract_type_id'], 'ContractTypes'));
         return $rules;

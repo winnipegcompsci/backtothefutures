@@ -24,10 +24,6 @@ class PositionsTable extends Table
         $this->table('positions');
         $this->displayField('position_id');
         $this->primaryKey('position_id');
-        $this->belongsTo('Positions', [
-            'foreignKey' => 'position_id',
-            'joinType' => 'INNER'
-        ]);
         $this->belongsTo('Contracts', [
             'foreignKey' => 'contract_id'
         ]);
@@ -45,6 +41,8 @@ class PositionsTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
+            ->add('id', 'valid', ['rule' => 'numeric'])
+            ->allowEmpty('id', 'create')
             ->allowEmpty('force_liquidation_price')
             ->allowEmpty('buy_amount')
             ->allowEmpty('buy_available')
@@ -70,7 +68,6 @@ class PositionsTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['position_id'], 'Positions'));
         $rules->add($rules->existsIn(['contract_id'], 'Contracts'));
         $rules->add($rules->existsIn(['leverage_rate_id'], 'LeverageRates'));
         return $rules;
