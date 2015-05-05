@@ -36,7 +36,7 @@ class ContractTypesFixture extends TestFixture
     public $records = [
         [
             'contract_type_id' => 1,
-            'contract_type_name' => 'c41d146d-bc7a-4ec4-883e-acea0086236e'
+            'contract_type_name' => 'ae4e004f-a809-49a0-aae8-d222bdd98ffc'
         ],
     ];
 }

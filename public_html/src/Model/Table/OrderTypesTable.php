@@ -24,10 +24,12 @@ class OrderTypesTable extends Table
         $this->table('order_types');
         $this->displayField('order_type_id');
         $this->primaryKey('order_type_id');
-        $this->belongsTo('OrderTypes', [
+       /* 
+       $this->belongsTo('OrderTypes', [
             'foreignKey' => 'order_type_id',
             'joinType' => 'INNER'
         ]);
+        */
     }
 
     /**
@@ -53,7 +55,7 @@ class OrderTypesTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['order_type_id'], 'OrderTypes'));
+        // $rules->add($rules->existsIn(['order_type_id'], 'OrderTypes'));
         return $rules;
     }
 }
