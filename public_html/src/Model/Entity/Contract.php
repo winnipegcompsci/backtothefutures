@@ -26,6 +26,7 @@ class Contract extends Entity
         'unprofit' => true,
         'rights' => true,
         'contract' => true,
+        'source_contract' => true,
         'contract_type' => true,
     ];
 }
