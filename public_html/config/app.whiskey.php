@@ -220,7 +220,7 @@ return [
              */
             //'port' => 'nonstandard_port_number',
             'username' => 'root',
-            'password' => '1qaz2wsx',
+            'password' => '',
             'database' => 'backtothefutures',
             'encoding' => 'utf8',
             'timezone' => 'UTC',
