@@ -11,7 +11,7 @@ use Cake\Core\Configure;
             <!-- Quik Calculator -->
             <div class="panel-heading">Quick Calculator</div>
             <div class="panel-body">
-                 <?= /* $this->element('calculator'); */ ?>
+                <!-- <?= $this->element('calculator');  ?> -->
             </div>
         </div>
     </div>
@@ -21,7 +21,7 @@ use Cake\Core\Configure;
             <!-- Buy/Sell Orders --> 
             <div class="panel-heading">Buy/Sell</div>
             <div class="panel-body">
-                 <?= /* $this->element('buy/sell'); */ ?>
+                <!-- <?= /* $this->element('buy/sell'); */ ?> -->
             </div>
         </div>
     </div>
@@ -30,7 +30,7 @@ use Cake\Core\Configure;
         <div class="panel panel-blue">
             <div class="panel-heading">List of Recent Trades</div>
             <div class="panel-body">
-                 <?= /* $this->element('calculator'); */ ?>
+                 <!-- <?= /* $this->element('calculator'); */ ?>  -->
             </div>
             
         </div>
@@ -43,7 +43,7 @@ use Cake\Core\Configure;
         <div class="panel panel-blue">
             <div class="panel-heading">Contracts</div>
             <div class="panel-body">
-                 <?= /* $this->element('contracts'); */ ?>
+                <!-- <?= /* $this->element('contracts'); */ ?> -->
             </div>
         </div>
     </div>
@@ -55,7 +55,7 @@ use Cake\Core\Configure;
         <div class="panel panel-blue">
             <div class="panel-heading">Active Positions</div>
             <div class="panel-body">
-                 <?= /* $this->element('positions'); */ ?>
+                 <!-- <?= /* $this->element('positions'); */ ?> -->
             </div>        
         </div>
     </div>
@@ -67,7 +67,7 @@ use Cake\Core\Configure;
         <div class="panel panel-blue">
             <div class="panel-heading">Orders</div>
             <div class="panel-body">
-                 <?= /* $this->element('orders'); */ ?>
+                 <!-- <?= /* $this->element('orders'); */ ?> -->
             </div>        
         </div>
     </div>
