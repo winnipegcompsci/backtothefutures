@@ -22,8 +22,10 @@ class FuturesIndexesTableTest extends TestCase
         'FromCurrencies' => 'app.from_currencies',
         'ToCurrencies' => 'app.to_currencies',
         'Sources' => 'app.sources',
+        'Rates' => 'app.rates',
+        'Currencies' => 'app.currencies',
         'Spotprices' => 'app.spotprices',
-        'Currencies' => 'app.currencies'
+        'Tickers' => 'app.tickers'
     ];
 
     /**

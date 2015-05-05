@@ -22,6 +22,7 @@ class LeverageRatesFixture extends TestFixture
         'value' => ['type' => 'float', 'length' => null, 'precision' => null, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => ''],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['leverage_rate_id'], 'length' => []],
+            'leverage_rate_id_UNIQUE' => ['type' => 'unique', 'columns' => ['leverage_rate_id'], 'length' => []],
         ],
         '_options' => [
 'engine' => 'InnoDB', 'collation' => 'latin1_swedish_ci'

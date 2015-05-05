@@ -24,7 +24,7 @@ class FixedLeveragePositionsFixture extends TestFixture
         'buy_flatprice' => ['type' => 'string', 'length' => 45, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
         'buy_price_avg' => ['type' => 'string', 'length' => 45, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
         'contract_id' => ['type' => 'string', 'length' => 45, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
-        'contract_type_id' => ['type' => 'string', 'length' => 45, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
+        'contract_type_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         'date_created' => ['type' => 'timestamp', 'length' => null, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null],
         'sell_amount' => ['type' => 'string', 'length' => 45, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
         'sell_available' => ['type' => 'string', 'length' => 45, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
@@ -34,7 +34,7 @@ class FixedLeveragePositionsFixture extends TestFixture
         'sell_price_avg' => ['type' => 'string', 'length' => 45, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
         'sell_price_real' => ['type' => 'string', 'length' => 45, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
         'symbol' => ['type' => 'string', 'length' => 45, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
-        'leverage_rate_id' => ['type' => 'string', 'length' => 45, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
+        'leverage_rate_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['fixed_leverage_position_id'], 'length' => []],
         ],
@@ -58,8 +58,8 @@ class FixedLeveragePositionsFixture extends TestFixture
             'buy_flatprice' => 'Lorem ipsum dolor sit amet',
             'buy_price_avg' => 'Lorem ipsum dolor sit amet',
             'contract_id' => 'Lorem ipsum dolor sit amet',
-            'contract_type_id' => 'Lorem ipsum dolor sit amet',
-            'date_created' => 1430842479,
+            'contract_type_id' => 1,
+            'date_created' => 1430848633,
             'sell_amount' => 'Lorem ipsum dolor sit amet',
             'sell_available' => 'Lorem ipsum dolor sit amet',
             'sell_bond' => 'Lorem ipsum dolor sit amet',
@@ -68,7 +68,7 @@ class FixedLeveragePositionsFixture extends TestFixture
             'sell_price_avg' => 'Lorem ipsum dolor sit amet',
             'sell_price_real' => 'Lorem ipsum dolor sit amet',
             'symbol' => 'Lorem ipsum dolor sit amet',
-            'leverage_rate_id' => 'Lorem ipsum dolor sit amet'
+            'leverage_rate_id' => 1
         ],
     ];
 }

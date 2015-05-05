@@ -21,8 +21,10 @@ class FuturesIndexesControllerTest extends IntegrationTestCase
         'FromCurrencies' => 'app.from_currencies',
         'ToCurrencies' => 'app.to_currencies',
         'Sources' => 'app.sources',
+        'Rates' => 'app.rates',
+        'Currencies' => 'app.currencies',
         'Spotprices' => 'app.spotprices',
-        'Currencies' => 'app.currencies'
+        'Tickers' => 'app.tickers'
     ];
 
     /**

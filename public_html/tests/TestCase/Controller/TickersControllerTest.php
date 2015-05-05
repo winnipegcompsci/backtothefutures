@@ -20,8 +20,11 @@ class TickersControllerTest extends IntegrationTestCase
         'FromCurrencies' => 'app.from_currencies',
         'ToCurrencies' => 'app.to_currencies',
         'Sources' => 'app.sources',
-        'Spotprices' => 'app.spotprices',
-        'Currencies' => 'app.currencies'
+        'FuturesIndexes' => 'app.futures_indexes',
+        'FuturesIndices' => 'app.futures_indices',
+        'Rates' => 'app.rates',
+        'Currencies' => 'app.currencies',
+        'Spotprices' => 'app.spotprices'
     ];
 
     /**

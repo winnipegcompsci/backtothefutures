@@ -9,6 +9,8 @@
         <li><?= $this->Html->link(__('New Contract'), ['controller' => 'Contracts', 'action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Leverage Rates'), ['controller' => 'LeverageRates', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Leverage Rate'), ['controller' => 'LeverageRates', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('List Order Types'), ['controller' => 'OrderTypes', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('New Order Type'), ['controller' => 'OrderTypes', 'action' => 'add']) ?> </li>
     </ul>
 </div>
 <div class="orders view large-10 medium-9 columns">
@@ -31,8 +33,8 @@
             <p><?= h($order->status) ?></p>
             <h6 class="subheader"><?= __('Symbol') ?></h6>
             <p><?= h($order->symbol) ?></p>
-            <h6 class="subheader"><?= __('Order Type Id') ?></h6>
-            <p><?= h($order->order_type_id) ?></p>
+            <h6 class="subheader"><?= __('Order Type') ?></h6>
+            <p><?= $order->has('order_type') ? $this->Html->link($order->order_type->order_type_id, ['controller' => 'OrderTypes', 'action' => 'view', $order->order_type->order_type_id]) : '' ?></p>
         </div>
         <div class="large-2 columns numbers end">
             <h6 class="subheader"><?= __('Order Id') ?></h6>

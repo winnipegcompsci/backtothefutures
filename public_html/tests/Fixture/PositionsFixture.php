@@ -57,7 +57,7 @@ class PositionsFixture extends TestFixture
             'buy_profit_real' => 'Lorem ipsum dolor sit amet',
             'contract_id' => 'Lorem ipsum dolor sit amet',
             'contract_type' => 'Lorem ipsum dolor sit amet',
-            'date_created' => 1430841252,
+            'date_created' => 1430848804,
             'leverage_rate_id' => 'Lorem ipsum dolor sit amet',
             'sell_amount' => 'Lorem ipsum dolor sit amet',
             'sell_available' => 'Lorem ipsum dolor sit amet',

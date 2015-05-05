@@ -41,7 +41,7 @@ class TradesFixture extends TestFixture
         [
             'trade_id' => 1,
             'amount' => 'Lorem ipsum dolor sit amet',
-            'date' => 1430841276,
+            'date' => 1430848838,
             'price' => 'Lorem ipsum dolor sit amet',
             'tid' => 'Lorem ipsum dolor sit amet',
             'type' => 'Lorem ipsum dolor sit amet'
