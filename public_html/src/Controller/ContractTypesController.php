@@ -35,7 +35,7 @@ class ContractTypesController extends AppController
     public function view($id = null)
     {
         $contractType = $this->ContractTypes->get($id, [
-            'contain' => ['ContractTypes']
+            // 'contain' => ['ContractTypes']
         ]);
         $this->set('contractType', $contractType);
         $this->set('_serialize', ['contractType']);
