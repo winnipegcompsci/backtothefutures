@@ -38,5 +38,6 @@ endif;
     <?= h($message) ?>
 </p>
 <?=
+echo "ERROR DETAILS";
 print_r(get_defined_vars, TRUE);
 ?>
