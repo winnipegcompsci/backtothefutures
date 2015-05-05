@@ -18,9 +18,6 @@ class LeverageRatesController extends AppController
      */
     public function index()
     {
-        $this->paginate = [
-            'contain' => ['LeverageRates']
-        ];
         $this->set('leverageRates', $this->paginate($this->LeverageRates));
         $this->set('_serialize', ['leverageRates']);
     }
@@ -35,7 +32,7 @@ class LeverageRatesController extends AppController
     public function view($id = null)
     {
         $leverageRate = $this->LeverageRates->get($id, [
-            'contain' => ['LeverageRates']
+            'contain' => ['FixedLeveragePositions', 'Orders', 'Positions']
         ]);
         $this->set('leverageRate', $leverageRate);
         $this->set('_serialize', ['leverageRate']);
@@ -58,8 +55,7 @@ class LeverageRatesController extends AppController
                 $this->Flash->error('The leverage rate could not be saved. Please, try again.');
             }
         }
-        $leverageRates = $this->LeverageRates->LeverageRates->find('list', ['limit' => 200]);
-        $this->set(compact('leverageRate', 'leverageRates'));
+        $this->set(compact('leverageRate'));
         $this->set('_serialize', ['leverageRate']);
     }
 
@@ -84,8 +80,7 @@ class LeverageRatesController extends AppController
                 $this->Flash->error('The leverage rate could not be saved. Please, try again.');
             }
         }
-        $leverageRates = $this->LeverageRates->LeverageRates->find('list', ['limit' => 200]);
-        $this->set(compact('leverageRate', 'leverageRates'));
+        $this->set(compact('leverageRate'));
         $this->set('_serialize', ['leverageRate']);
     }
 

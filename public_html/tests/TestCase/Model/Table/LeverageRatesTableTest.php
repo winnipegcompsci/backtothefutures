@@ -17,7 +17,13 @@ class LeverageRatesTableTest extends TestCase
      * @var array
      */
     public $fixtures = [
-        'LeverageRates' => 'app.leverage_rates'
+        'LeverageRates' => 'app.leverage_rates',
+        'FixedLeveragePositions' => 'app.fixed_leverage_positions',
+        'Contracts' => 'app.contracts',
+        'ContractTypes' => 'app.contract_types',
+        'Orders' => 'app.orders',
+        'OrderTypes' => 'app.order_types',
+        'Positions' => 'app.positions'
     ];
 
     /**
@@ -60,16 +66,6 @@ class LeverageRatesTableTest extends TestCase
      * @return void
      */
     public function testValidationDefault()
-    {
-        $this->markTestIncomplete('Not implemented yet.');
-    }
-
-    /**
-     * Test buildRules method
-     *
-     * @return void
-     */
-    public function testBuildRules()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }

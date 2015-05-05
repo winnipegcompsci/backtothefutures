@@ -16,7 +16,13 @@ class LeverageRatesControllerTest extends IntegrationTestCase
      * @var array
      */
     public $fixtures = [
-        'LeverageRates' => 'app.leverage_rates'
+        'LeverageRates' => 'app.leverage_rates',
+        'FixedLeveragePositions' => 'app.fixed_leverage_positions',
+        'Contracts' => 'app.contracts',
+        'ContractTypes' => 'app.contract_types',
+        'Orders' => 'app.orders',
+        'OrderTypes' => 'app.order_types',
+        'Positions' => 'app.positions'
     ];
 
     /**

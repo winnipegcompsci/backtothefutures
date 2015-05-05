@@ -18,6 +18,8 @@ class LeverageRate extends Entity
         'id' => true,
         'leverage_rate_name' => true,
         'value' => true,
-        'leverage_rate' => true,
+        'fixed_leverage_positions' => true,
+        'orders' => true,
+        'positions' => true,
     ];
 }
