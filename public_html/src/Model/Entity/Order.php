@@ -29,7 +29,6 @@ class Order extends Entity
         'order' => true,
         'contract' => true,
         'leverage_rate' => true,
-        'source_order' => true,
         'order_type' => true,
     ];
 }

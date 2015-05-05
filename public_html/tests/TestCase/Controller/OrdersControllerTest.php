@@ -21,7 +21,6 @@ class OrdersControllerTest extends IntegrationTestCase
         'SourceContracts' => 'app.source_contracts',
         'ContractTypes' => 'app.contract_types',
         'LeverageRates' => 'app.leverage_rates',
-        'SourceOrders' => 'app.source_orders',
         'OrderTypes' => 'app.order_types'
     ];
 
