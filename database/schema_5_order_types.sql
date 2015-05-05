@@ -18,38 +18,18 @@ USE `backtothefutures`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `orders`
+-- Table structure for table `order_types`
 --
 
-DROP TABLE IF EXISTS `orders`;
+DROP TABLE IF EXISTS `order_types`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `orders` (
-  `order_id` int(11) NOT NULL AUTO_INCREMENT,
-  `amount` varchar(45) DEFAULT NULL,
-  `contract_id` int(11) DEFAULT NULL,
-  `create_date` timestamp NULL DEFAULT NULL,
-  `deal_amount` float DEFAULT NULL,
-  `fee` varchar(45) DEFAULT NULL,
-  `leverage_rate_id` varchar(45) DEFAULT NULL,
-  `price` varchar(45) DEFAULT NULL,
-  `price_average` varchar(45) DEFAULT NULL,
-  `status` varchar(45) DEFAULT NULL,
-  `symbol` varchar(45) DEFAULT NULL,
-  `order_type_id` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`order_id`),
-  UNIQUE KEY `order_id_UNIQUE` (`order_id`)
+CREATE TABLE `order_types` (
+  `order_type_id` int(11) NOT NULL AUTO_INCREMENT,
+  `order_type_name` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`order_type_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `orders`
---
-
-LOCK TABLES `orders` WRITE;
-/*!40000 ALTER TABLE `orders` DISABLE KEYS */;
-/*!40000 ALTER TABLE `orders` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -60,4 +40,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-05-05 12:25:18
+-- Dump completed on 2015-05-05 12:29:42
