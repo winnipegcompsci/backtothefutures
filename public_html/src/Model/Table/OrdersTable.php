@@ -34,7 +34,7 @@ class OrdersTable extends Table
         $this->belongsTo('LeverageRates', [
             'foreignKey' => 'leverage_rate_id'
         ]);
-        $this->belongsTo('SourceOrders', [
+        $this->belongsTo('Orders', [
             'foreignKey' => 'source_order_id'
         ]);
         $this->belongsTo('OrderTypes', [

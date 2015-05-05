@@ -19,7 +19,13 @@ class OrdersController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['Orders', 'Contracts', 'LeverageRates', 'SourceOrders', 'OrderTypes']
+            'contain' => [
+                'Orders', 
+                'Contracts', 
+                'LeverageRates', 
+                'SourceOrders', 
+                'OrderTypes'
+            ]
         ];
         $this->set('orders', $this->paginate($this->Orders));
         $this->set('_serialize', ['orders']);
