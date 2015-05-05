@@ -22,7 +22,6 @@ class DepthsControllerTest extends IntegrationTestCase
         'Spotprices' => 'app.spotprices',
         'Sources' => 'app.sources',
         'FuturesIndexes' => 'app.futures_indexes',
-        'FuturesIndices' => 'app.futures_indices',
         'FromCurrencies' => 'app.from_currencies',
         'ToCurrencies' => 'app.to_currencies',
         'Tickers' => 'app.tickers'

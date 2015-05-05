@@ -58,9 +58,8 @@ class DepthsController extends AppController
                 $this->Flash->error('The depth could not be saved. Please, try again.');
             }
         }
-        $depths = $this->Depths->Depths->find('list', ['limit' => 200]);
         $rates = $this->Depths->Rates->find('list', ['limit' => 200]);
-        $this->set(compact('depth', 'depths', 'rates'));
+        $this->set(compact('depth', 'rates'));
         $this->set('_serialize', ['depth']);
     }
 
@@ -85,9 +84,8 @@ class DepthsController extends AppController
                 $this->Flash->error('The depth could not be saved. Please, try again.');
             }
         }
-        $depths = $this->Depths->Depths->find('list', ['limit' => 200]);
         $rates = $this->Depths->Rates->find('list', ['limit' => 200]);
-        $this->set(compact('depth', 'depths', 'rates'));
+        $this->set(compact('depth', 'rates'));
         $this->set('_serialize', ['depth']);
     }
 

@@ -21,7 +21,6 @@ class Depth extends Entity
         'date' => true,
         'contract_type' => true,
         'rate_id' => true,
-        'depth' => true,
         'rate' => true,
     ];
 }
