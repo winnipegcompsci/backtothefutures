@@ -25,7 +25,7 @@ class OrderTypesTable extends Table
         $this->displayField('order_type_id');
         $this->primaryKey('order_type_id');
         $this->belongsTo('OrderTypes', [
-            'foreignKey' => 'Orders.order_type_id',
+            'foreignKey' => 'order_type_id',
             'joinType' => 'INNER'
         ]);
     }
