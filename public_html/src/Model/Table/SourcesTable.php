@@ -24,7 +24,16 @@ class SourcesTable extends Table
         $this->table('sources');
         $this->displayField('source_name');
         $this->primaryKey('id');
+        $this->hasMany('FuturesIndexes', [
+            'foreignKey' => 'source_id'
+        ]);
+        $this->hasMany('Rates', [
+            'foreignKey' => 'source_id'
+        ]);
         $this->hasMany('Spotprices', [
+            'foreignKey' => 'source_id'
+        ]);
+        $this->hasMany('Tickers', [
             'foreignKey' => 'source_id'
         ]);
     }
@@ -40,7 +49,9 @@ class SourcesTable extends Table
         $validator
             ->add('id', 'valid', ['rule' => 'numeric'])
             ->allowEmpty('id', 'create')
-            ->allowEmpty('source_name');
+            ->allowEmpty('source_name')
+            ->allowEmpty('apikey')
+            ->allowEmpty('secretkey');
 
         return $validator;
     }

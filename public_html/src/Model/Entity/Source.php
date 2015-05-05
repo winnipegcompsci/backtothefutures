@@ -16,6 +16,8 @@ class Source extends Entity
      */
     protected $_accessible = [
         'source_name' => true,
+        'apikey' => true,
+        'secretkey' => true,
         'spotprices' => true,
     ];
 }

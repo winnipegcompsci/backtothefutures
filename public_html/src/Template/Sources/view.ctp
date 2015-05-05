@@ -10,11 +10,15 @@
     </ul>
 </div>
 <div class="sources view large-10 medium-9 columns">
-    <h2><?= h($source->id) ?></h2>
+    <h2><?= h($source->source_name) ?></h2>
     <div class="row">
         <div class="large-5 columns strings">
             <h6 class="subheader"><?= __('Source Name') ?></h6>
             <p><?= h($source->source_name) ?></p>
+            <h6 class="subheader"><?= __('Apikey') ?></h6>
+            <p><?= h($source->apikey) ?></p>
+            <h6 class="subheader"><?= __('Secretkey') ?></h6>
+            <p><?= h($source->secretkey) ?></p>
         </div>
         <div class="large-2 columns numbers end">
             <h6 class="subheader"><?= __('Id') ?></h6>

@@ -12,6 +12,8 @@
         <legend><?= __('Add Source') ?></legend>
         <?php
             echo $this->Form->input('source_name');
+            echo $this->Form->input('apikey');
+            echo $this->Form->input('secretkey');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

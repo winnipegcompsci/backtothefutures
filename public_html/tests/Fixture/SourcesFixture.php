@@ -19,6 +19,8 @@ class SourcesFixture extends TestFixture
     public $fields = [
         'id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
         'source_name' => ['type' => 'string', 'length' => 45, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
+        'apikey' => ['type' => 'string', 'length' => 45, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
+        'secretkey' => ['type' => 'string', 'length' => 45, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
             'source_name_UNIQUE' => ['type' => 'unique', 'columns' => ['source_name'], 'length' => []],
@@ -37,7 +39,9 @@ class SourcesFixture extends TestFixture
     public $records = [
         [
             'id' => 1,
-            'source_name' => 'Lorem ipsum dolor sit amet'
+            'source_name' => 'Lorem ipsum dolor sit amet',
+            'apikey' => 'Lorem ipsum dolor sit amet',
+            'secretkey' => 'Lorem ipsum dolor sit amet'
         ],
     ];
 }
