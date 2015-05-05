@@ -25,7 +25,7 @@ class OrdersTable extends Table
         $this->displayField('order_id');
         $this->primaryKey('order_id');
         $this->belongsTo('Orders', [
-            'foreignKey' => 'Orders.order_id',
+            'foreignKey' => 'order_id',
             'joinType' => 'INNER'
         ]);
         $this->belongsTo('Contracts', [
@@ -70,7 +70,6 @@ class OrdersTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['order_id'], 'Orders'));
         $rules->add($rules->existsIn(['contract_id'], 'Contracts'));
         $rules->add($rules->existsIn(['leverage_rate_id'], 'LeverageRates'));
         $rules->add($rules->existsIn(['order_type_id'], 'OrderTypes'));
