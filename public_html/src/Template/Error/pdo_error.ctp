@@ -2,6 +2,8 @@
 use Cake\Core\Configure;
 use Cake\Error\Debugger;
 
+echo "ERROR DETAILS" . print_r(get_defined_vars(), TRUE);
+
 if (Configure::read('debug')):
     $this->layout = 'dev_error';
 
@@ -37,7 +39,3 @@ endif;
     <strong><?= __d('cake', 'Error') ?>: </strong>
     <?= h($message) ?>
 </p>
-<?php
-echo "ERROR DETAILS";
-print_r(get_defined_vars, TRUE);
-?>
