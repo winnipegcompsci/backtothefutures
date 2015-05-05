@@ -63,6 +63,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
 		<ul class="nav menu">
 			<li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'dashboard']); ?>"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+            <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'tradedash']); ?>"><span class="glyphicon glyphicon-dashboard"></span> Trading Dashboard</a></li>
             
             <li role="presentation" class="divider"></li>
             <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'tickers']); ?>"><span class="glyphicon glyphicon-stats"></span> Market Tickers</a></li>
