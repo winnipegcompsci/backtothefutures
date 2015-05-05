@@ -37,3 +37,6 @@ endif;
     <strong><?= __d('cake', 'Error') ?>: </strong>
     <?= h($message) ?>
 </p>
+<?=
+vardump();
+?>
