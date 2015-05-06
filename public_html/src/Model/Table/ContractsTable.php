@@ -24,7 +24,7 @@ class ContractsTable extends Table
         $this->table('contracts');
         $this->displayField('contract_id');
         $this->primaryKey('contract_id');
-        $this->belongsTo('Contracts', [
+        $this->belongsTo('SourceContracts', [
             'foreignKey' => 'source_contract_id'
         ]);
         $this->belongsTo('ContractTypes', [

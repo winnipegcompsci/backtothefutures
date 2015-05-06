@@ -18,9 +18,6 @@ class ContractTypesController extends AppController
      */
     public function index()
     {
-        $this->paginate = [
-            // 'contain' => ['ContractTypes']
-        ];
         $this->set('contractTypes', $this->paginate($this->ContractTypes));
         $this->set('_serialize', ['contractTypes']);
     }
@@ -35,7 +32,7 @@ class ContractTypesController extends AppController
     public function view($id = null)
     {
         $contractType = $this->ContractTypes->get($id, [
-            // 'contain' => ['ContractTypes']
+            'contain' => []
         ]);
         $this->set('contractType', $contractType);
         $this->set('_serialize', ['contractType']);
@@ -58,8 +55,7 @@ class ContractTypesController extends AppController
                 $this->Flash->error('The contract type could not be saved. Please, try again.');
             }
         }
-        $contractTypes = $this->ContractTypes->ContractTypes->find('list', ['limit' => 200]);
-        $this->set(compact('contractType', 'contractTypes'));
+        $this->set(compact('contractType'));
         $this->set('_serialize', ['contractType']);
     }
 
@@ -84,8 +80,7 @@ class ContractTypesController extends AppController
                 $this->Flash->error('The contract type could not be saved. Please, try again.');
             }
         }
-        $contractTypes = $this->ContractTypes->ContractTypes->find('list', ['limit' => 200]);
-        $this->set(compact('contractType', 'contractTypes'));
+        $this->set(compact('contractType'));
         $this->set('_serialize', ['contractType']);
     }
 

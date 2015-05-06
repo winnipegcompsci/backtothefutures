@@ -28,5 +28,8 @@ class Contract extends Entity
         'rights' => true,
         'contract' => true,
         'contract_type' => true,
+        'fixed_leverage_positions' => true,
+        'orders' => true,
+        'positions' => true,
     ];
 }

@@ -19,7 +19,7 @@ class ContractsController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['ContractTypes']
+            'contain' => ['Contracts', 'ContractTypes']
         ];
         $this->set('contracts', $this->paginate($this->Contracts));
         $this->set('_serialize', ['contracts']);
@@ -35,7 +35,7 @@ class ContractsController extends AppController
     public function view($id = null)
     {
         $contract = $this->Contracts->get($id, [
-            'contain' => ['ContractTypes']
+            'contain' => ['Contracts', 'ContractTypes', 'FixedLeveragePositions', 'Orders', 'Positions']
         ]);
         $this->set('contract', $contract);
         $this->set('_serialize', ['contract']);
