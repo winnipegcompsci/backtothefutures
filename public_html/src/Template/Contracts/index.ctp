@@ -21,7 +21,7 @@
             <th><?= $this->Paginator->sort('balance') ?></th>
             <th><?= $this->Paginator->sort('available') ?></th>
             <th><?= $this->Paginator->sort('bond') ?></th>
-            <th><?= $this->Paginator->sort('source_contract_id') ?></th>
+            <th><?= $this->Paginator->sort('source_contract_num') ?></th>
             <th><?= $this->Paginator->sort('contract_type_id') ?></th>
             <th class="actions"><?= __('Actions') ?></th>
         </tr>
@@ -34,7 +34,7 @@
             <td><?= $this->Number->format($contract->balance) ?></td>
             <td><?= $this->Number->format($contract->available) ?></td>
             <td><?= h($contract->bond) ?></td>
-            <td><?= h($contract->source_contract_id) ?></td>
+            <td><?= h($contract->source_contract_num) ?></td>
             <td>
                 <?= $contract->has('contract_type') ? $this->Html->link($contract->contract_type->contract_type_id, ['controller' => 'ContractTypes', 'action' => 'view', $contract->contract_type->contract_type_id]) : '' ?>
             </td>

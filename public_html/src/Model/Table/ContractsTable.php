@@ -24,9 +24,6 @@ class ContractsTable extends Table
         $this->table('contracts');
         $this->displayField('contract_id');
         $this->primaryKey('contract_id');
-        $this->belongsTo('SourceContracts', [
-            'foreignKey' => 'source_contract_id'
-        ]);
         $this->belongsTo('ContractTypes', [
             'foreignKey' => 'contract_type_id'
         ]);
@@ -58,6 +55,7 @@ class ContractsTable extends Table
             ->add('available', 'valid', ['rule' => 'numeric'])
             ->allowEmpty('available')
             ->allowEmpty('bond')
+            ->allowEmpty('source_contract_num')
             ->allowEmpty('freeze')
             ->allowEmpty('profit')
             ->allowEmpty('unprofit')
@@ -75,7 +73,6 @@ class ContractsTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['source_contract_id'], 'SourceContracts'));
         $rules->add($rules->existsIn(['contract_type_id'], 'ContractTypes'));
         return $rules;
     }

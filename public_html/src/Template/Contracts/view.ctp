@@ -23,8 +23,8 @@
             <p><?= h($contract->contract_name) ?></p>
             <h6 class="subheader"><?= __('Bond') ?></h6>
             <p><?= h($contract->bond) ?></p>
-            <h6 class="subheader"><?= __('Source Contract Id') ?></h6>
-            <p><?= h($contract->source_contract_id) ?></p>
+            <h6 class="subheader"><?= __('Source Contract Num') ?></h6>
+            <p><?= h($contract->source_contract_num) ?></p>
             <h6 class="subheader"><?= __('Contract Type') ?></h6>
             <p><?= $contract->has('contract_type') ? $this->Html->link($contract->contract_type->contract_type_id, ['controller' => 'ContractTypes', 'action' => 'view', $contract->contract_type->contract_type_id]) : '' ?></p>
             <h6 class="subheader"><?= __('Freeze') ?></h6>

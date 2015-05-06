@@ -19,7 +19,7 @@ class ContractsController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['Contracts', 'ContractTypes']
+            'contain' => ['SourceContracts', 'ContractTypes']
         ];
         $this->set('contracts', $this->paginate($this->Contracts));
         $this->set('_serialize', ['contracts']);
@@ -35,7 +35,7 @@ class ContractsController extends AppController
     public function view($id = null)
     {
         $contract = $this->Contracts->get($id, [
-            'contain' => ['Contracts', 'ContractTypes', 'FixedLeveragePositions', 'Orders', 'Positions']
+            'contain' => ['SourceContracts', 'ContractTypes', 'FixedLeveragePositions', 'Orders', 'Positions']
         ]);
         $this->set('contract', $contract);
         $this->set('_serialize', ['contract']);
@@ -58,9 +58,9 @@ class ContractsController extends AppController
                 $this->Flash->error('The contract could not be saved. Please, try again.');
             }
         }
-        $contracts = $this->Contracts->Contracts->find('list', ['limit' => 200]);
+        $sourceContracts = $this->Contracts->SourceContracts->find('list', ['limit' => 200]);
         $contractTypes = $this->Contracts->ContractTypes->find('list', ['limit' => 200]);
-        $this->set(compact('contract', 'contracts', 'contractTypes'));
+        $this->set(compact('contract', 'sourceContracts', 'contractTypes'));
         $this->set('_serialize', ['contract']);
     }
 
@@ -85,9 +85,9 @@ class ContractsController extends AppController
                 $this->Flash->error('The contract could not be saved. Please, try again.');
             }
         }
-        $contracts = $this->Contracts->Contracts->find('list', ['limit' => 200]);
+        $sourceContracts = $this->Contracts->SourceContracts->find('list', ['limit' => 200]);
         $contractTypes = $this->Contracts->ContractTypes->find('list', ['limit' => 200]);
-        $this->set(compact('contract', 'contracts', 'contractTypes'));
+        $this->set(compact('contract', 'sourceContracts', 'contractTypes'));
         $this->set('_serialize', ['contract']);
     }
 

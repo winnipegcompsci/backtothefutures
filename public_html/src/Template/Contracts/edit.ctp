@@ -28,7 +28,7 @@
             echo $this->Form->input('balance');
             echo $this->Form->input('available');
             echo $this->Form->input('bond');
-            echo $this->Form->input('source_contract_id');
+            echo $this->Form->input('source_contract_num');
             echo $this->Form->input('contract_type_id', ['options' => $contractTypes, 'empty' => true]);
             echo $this->Form->input('freeze');
             echo $this->Form->input('profit');
