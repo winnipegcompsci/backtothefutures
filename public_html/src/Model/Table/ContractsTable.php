@@ -22,8 +22,9 @@ class ContractsTable extends Table
     public function initialize(array $config)
     {
         $this->table('contracts');
-        $this->displayField('contract_id');
-        $this->primaryKey('contract_id');
+        $this->displayField('contract_name');
+        $this->primaryKey('id');      
+        
         $this->belongsTo('ContractTypes', [
             'foreignKey' => 'contract_type_id'
         ]);
