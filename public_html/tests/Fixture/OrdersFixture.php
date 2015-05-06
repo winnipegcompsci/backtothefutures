@@ -49,7 +49,7 @@ class OrdersFixture extends TestFixture
             'id' => 1,
             'amount' => 'Lorem ipsum dolor sit amet',
             'contract_id' => 1,
-            'create_date' => 1430861523,
+            'create_date' => 1430927431,
             'deal_amount' => 1,
             'fee' => 'Lorem ipsum dolor sit amet',
             'leverage_rate_id' => 'Lorem ipsum dolor sit amet',

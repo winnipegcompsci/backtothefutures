@@ -27,7 +27,6 @@ class Order extends Entity
         'status' => true,
         'symbol' => true,
         'order_type_id' => true,
-        'order' => true,
         'contract' => true,
         'leverage_rate' => true,
         'order_type' => true,

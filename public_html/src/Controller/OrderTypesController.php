@@ -32,7 +32,7 @@ class OrderTypesController extends AppController
     public function view($id = null)
     {
         $orderType = $this->OrderTypes->get($id, [
-            'contain' => []
+            'contain' => ['Orders']
         ]);
         $this->set('orderType', $orderType);
         $this->set('_serialize', ['orderType']);

@@ -19,7 +19,7 @@ class OrdersController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['Orders', 'Contracts', 'LeverageRates', 'OrderTypes']
+            'contain' => ['Contracts', 'LeverageRates', 'OrderTypes']
         ];
         $this->set('orders', $this->paginate($this->Orders));
         $this->set('_serialize', ['orders']);
@@ -35,7 +35,7 @@ class OrdersController extends AppController
     public function view($id = null)
     {
         $order = $this->Orders->get($id, [
-            'contain' => ['Orders', 'Contracts', 'LeverageRates', 'OrderTypes']
+            'contain' => ['Contracts', 'LeverageRates', 'OrderTypes']
         ]);
         $this->set('order', $order);
         $this->set('_serialize', ['order']);
@@ -58,11 +58,10 @@ class OrdersController extends AppController
                 $this->Flash->error('The order could not be saved. Please, try again.');
             }
         }
-        $orders = $this->Orders->Orders->find('list', ['limit' => 200]);
         $contracts = $this->Orders->Contracts->find('list', ['limit' => 200]);
         $leverageRates = $this->Orders->LeverageRates->find('list', ['limit' => 200]);
         $orderTypes = $this->Orders->OrderTypes->find('list', ['limit' => 200]);
-        $this->set(compact('order', 'orders', 'contracts', 'leverageRates', 'orderTypes'));
+        $this->set(compact('order', 'contracts', 'leverageRates', 'orderTypes'));
         $this->set('_serialize', ['order']);
     }
 
@@ -87,11 +86,10 @@ class OrdersController extends AppController
                 $this->Flash->error('The order could not be saved. Please, try again.');
             }
         }
-        $orders = $this->Orders->Orders->find('list', ['limit' => 200]);
         $contracts = $this->Orders->Contracts->find('list', ['limit' => 200]);
         $leverageRates = $this->Orders->LeverageRates->find('list', ['limit' => 200]);
         $orderTypes = $this->Orders->OrderTypes->find('list', ['limit' => 200]);
-        $this->set(compact('order', 'orders', 'contracts', 'leverageRates', 'orderTypes'));
+        $this->set(compact('order', 'contracts', 'leverageRates', 'orderTypes'));
         $this->set('_serialize', ['order']);
     }
 

@@ -8,6 +8,8 @@
             )
         ?></li>
         <li><?= $this->Html->link(__('List Order Types'), ['action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('List Orders'), ['controller' => 'Orders', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('New Order'), ['controller' => 'Orders', 'action' => 'add']) ?> </li>
     </ul>
 </div>
 <div class="orderTypes form large-10 medium-9 columns">

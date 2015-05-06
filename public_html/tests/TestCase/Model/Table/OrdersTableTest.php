@@ -19,7 +19,6 @@ class OrdersTableTest extends TestCase
     public $fixtures = [
         'Orders' => 'app.orders',
         'Contracts' => 'app.contracts',
-        'SourceContracts' => 'app.source_contracts',
         'ContractTypes' => 'app.contract_types',
         'FixedLeveragePositions' => 'app.fixed_leverage_positions',
         'LeverageRates' => 'app.leverage_rates',
