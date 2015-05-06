@@ -25,7 +25,7 @@ class OrdersTable extends Table
         $this->displayField('order_id');
         $this->primaryKey('order_id');
         $this->belongsTo('Contracts', [
-            'foreignKey' => 'contract_id'
+            'foreignKey' => 'id'
         ]);
         $this->belongsTo('LeverageRates', [
             'foreignKey' => 'leverage_rate_id'
