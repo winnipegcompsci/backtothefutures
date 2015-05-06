@@ -45,7 +45,7 @@ CREATE TABLE `contracts` (
   `balance` float DEFAULT NULL,
   `available` float DEFAULT NULL,
   `bond` varchar(45) DEFAULT NULL,
-  `source_contract_id` varchar(45) DEFAULT NULL,
+  `source_contract_num` varchar(45) DEFAULT NULL,
   `contract_type_id` varchar(45) DEFAULT NULL,
   `freeze` varchar(45) DEFAULT NULL,
   `profit` varchar(45) DEFAULT NULL,
@@ -324,4 +324,4 @@ CREATE TABLE `trades` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-05-06 10:25:59
+-- Dump completed on 2015-05-06 10:37:44
