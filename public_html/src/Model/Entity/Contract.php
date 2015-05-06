@@ -26,7 +26,6 @@ class Contract extends Entity
         'profit' => true,
         'unprofit' => true,
         'rights' => true,
-        'source_contract' => true,
         'contract_type' => true,
         'fixed_leverage_positions' => true,
         'orders' => true,
