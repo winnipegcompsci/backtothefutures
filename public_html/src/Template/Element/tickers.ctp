@@ -1,5 +1,5 @@
 <ul class="nav nav-pills">
-    <a href="#pilltab1" data-toggle="tab">OKCoin</a></li>
+    <li><a href="#pilltab1" data-toggle="tab">OKCoin</a></li>
     <li><a href="#pilltab2" data-toggle="tab">796</a></li>
     <li><a href="#pilltab3" data-toggle="tab">BitVC</a></li>
 </ul>
