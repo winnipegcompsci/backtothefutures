@@ -17,7 +17,7 @@ use Cake\Core\Configure;
     </div>
     
     <div class="columns col-lg-4">
-        <div class="panel panel-blue">
+        <div class="panel panel-orange">
             <!-- Buy/Sell Orders --> 
             <div class="panel-heading">Buy/Sell</div>
             <div class="panel-body">
