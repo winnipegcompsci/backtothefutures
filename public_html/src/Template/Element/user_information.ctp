@@ -19,19 +19,23 @@ $okcoin_secretkey = Configure::read('okcoin.secretkey');
             $data = $okcoin_client->fixUserinfoFutureApi(['api_key' => $okcoin_apikey]);
             
         ?>
-        <h4>Bitcoin</h4>
-        <ul>
-        <li> Balance: <?= $data->info->btc->balance; ?></li>
-        <li> Contracts: <?= $this->Html->link('View Here', '/contracts'); ?></li>
-        <li> Rights: <?= $data->info->btc->rights; ?></li>
-        </ul>
+        <div class="columns col-lg-2">
+            <h4>Bitcoin</h4>
+            <ul>
+                <li> Balance: <?= $data->info->btc->balance; ?></li>
+                <li> Contracts: <?= $this->Html->link('View Here', '/contracts'); ?></li>
+                <li> Rights: <?= $data->info->btc->rights; ?></li>
+            </ul>
+        </div>
         
-        <h4>Litecoin</h4>
-        <ul>
-        <li> Balance: <?= $data->info->ltc->balance; ?></li>
-        <li> Contracts: <?= $this->Html->link('View Here', '/contracts'); ?></li>
-        <li> Rights: <?= $data->info->ltc->rights; ?></li>
-        </ul>
+        <div class="columns col-lg-2">
+            <h4>Litecoin</h4>
+            <ul>
+                <li> Balance: <?= $data->info->ltc->balance; ?></li>
+                <li> Contracts: <?= $this->Html->link('View Here', '/contracts'); ?></li>
+                <li> Rights: <?= $data->info->ltc->rights; ?></li>
+            </ul>
+        </div>
         
     </div>
     <div class="tab-pane fade" id="userinfo_796">
