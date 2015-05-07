@@ -16,6 +16,7 @@ $okcoin_apikey = Configure::read('okcoin.apikey');
     <div class="tab-pane fade in active" id="trade_okcoin">
         <?php 
             $data = $okcoin_client->futureTradesHistoryFutureApi(['api_key' => $okcoin_apikey]);
+            echo "DATAS <pre>" . print_r($data, TRUE) . "</pre>";
         ?>
         <h4>OKCoin - Recent Trades </h4>
         <?php
