@@ -30,7 +30,7 @@ use Cake\Core\Configure;
         <div class="panel panel-blue">
             <div class="panel-heading">List of Recent Trades</div>
             <div class="panel-body">
-                 <!-- List of Recent Trades -->
+                 <?= $this->element('recent_trades', array()); ?>
             </div> 
         </div>
     </div>
