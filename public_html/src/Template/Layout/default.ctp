@@ -79,7 +79,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             <li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'transactions']); ?>"><span class="glyphicon glyphicon-transfer"></span> My Transactions <span style="background-color: #30a5ff" class="pull-right badge">6</span> </a> </li>
              
 			<li role="presentation" class="divider"></li>
-			<li><a href="<?= $this->Url->build(['controller' => 'pages', 'action' => 'settings']); ?>"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
+			<li><a href="<?= $this->Url->build(['controller' => 'sources', 'action' => 'index']); ?>"><span class="glyphicon glyphicon-cog"></span> Markets / Sources </a></li>
 		</ul>
 	</div><!--/.sidebar-->
 		

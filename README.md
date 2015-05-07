@@ -2,6 +2,10 @@ BACK TO THE FUTURES:
 -------------------------------------------------------------------------------
 Login:: hTCzEdZc
 
+BitVC:
+access_key : 0b5b1c1e-1dfe73d7-c622be59-fac3a9cc
+secret_key : bff88cbb-989f6e67-8e3049f6-7ed1de64
+
 
 Settings (Inputs)::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 Recalculation Period – Interval on Which Positions are Re-Calculated.
