@@ -34,12 +34,24 @@ use Cake\Core\Configure;
             </div> 
         </div>
     </div>
+</div>
 
+<div class="row">
     <div class="columns col-lg-8">
         <div class="panel panel-primary">
             <div class="panel-heading">Contracts</div>
             <div class="panel-body">
                 <!-- Contracts Element -->
+            </div>
+        </div>
+    </div>
+    
+    <div class="columns col-lg-4">
+        <div class="panel panel-info">
+            <div class="panel-heading"> User Information </div>
+            <div class="panel-body">
+                <!-- User Information Element --->
+                <?= $this->element('user_information', array()); ?>
             </div>
         </div>
     </div>
