@@ -60,7 +60,7 @@ use Cake\Core\Configure;
         <div class="panel panel-blue">
             <div class="panel-heading">Ticker</div>
             <div class="panel-body">
-            
+                <?= $this->element('tickers', array()); ?>
             </div>
         </div>
     </div>
