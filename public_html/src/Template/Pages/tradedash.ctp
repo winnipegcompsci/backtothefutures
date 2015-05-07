@@ -57,7 +57,7 @@ use Cake\Core\Configure;
     </div>
 
     <div class="columns col-lg-4">
-        <div class="panel panel-blue">
+        <div class="panel panel-primary">
             <div class="panel-heading">Ticker</div>
             <div class="panel-body">
                 <?= $this->element('tickers', array()); ?>
