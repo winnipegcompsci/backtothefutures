@@ -7,7 +7,7 @@ use Cake\Core\Configure;
 <div class="row">
 <!-- Buy/Sell New Orders, Calculator, Trades -->
     <div class="columns col-lg-4">
-        <div class="panel panel-blue">
+        <div class="panel panel-info">
             <!-- Quik Calculator -->
             <div class="panel-heading">Quick Calculator</div>
             <div class="panel-body">
@@ -27,7 +27,7 @@ use Cake\Core\Configure;
     </div>
     
     <div class="columns col-lg-4">
-        <div class="panel panel-primary">
+        <div class="panel panel-info">
             <div class="panel-heading">List of Recent Trades</div>
             <div class="panel-body">
                  <?= $this->element('recent_trades', array()); ?>
@@ -36,7 +36,7 @@ use Cake\Core\Configure;
     </div>
 
     <div class="columns col-lg-8">
-        <div class="panel panel-blue">
+        <div class="panel panel-primary">
             <div class="panel-heading">Contracts</div>
             <div class="panel-body">
                 <!-- Contracts Element -->
@@ -48,7 +48,7 @@ use Cake\Core\Configure;
 <div class="row">
 <!-- Active Positions -->
     <div class="columns col-lg-8">
-        <div class="panel panel-blue">
+        <div class="panel panel-primary">
             <div class="panel-heading">Active Positions</div>
             <div class="panel-body">
                  <!-- Active Positions Element -->
@@ -57,7 +57,7 @@ use Cake\Core\Configure;
     </div>
 
     <div class="columns col-lg-4">
-        <div class="panel panel-primary">
+        <div class="panel panel-info">
             <div class="panel-heading">Ticker</div>
             <div class="panel-body">
                 <?= $this->element('tickers', array()); ?>
@@ -67,7 +67,7 @@ use Cake\Core\Configure;
     
     <!-- Orders -->
     <div class="columns col-lg-8">
-        <div class="panel panel-blue">
+        <div class="panel panel-primary">
             <div class="panel-heading">Orders</div>
             <div class="panel-body">
                  <!-- Orders Element -->
