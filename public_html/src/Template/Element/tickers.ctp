@@ -1,7 +1,7 @@
 <ul class="nav nav-pills">
-    <li class="active"><a href="#pilltab1" data-toggle="tab">Tab 1</a></li>
-    <li><a href="#pilltab2" data-toggle="tab">Tab 2</a></li>
-    <li><a href="#pilltab3" data-toggle="tab">Tab 3</a></li>
+    <a href="#pilltab1" data-toggle="tab">OKCoin</a></li>
+    <li><a href="#pilltab2" data-toggle="tab">796</a></li>
+    <li><a href="#pilltab3" data-toggle="tab">BitVC</a></li>
 </ul>
 
 <div class="tab-content">
