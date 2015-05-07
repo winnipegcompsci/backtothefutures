@@ -19,7 +19,7 @@ $okcoin_secretkey = Configure::read('okcoin.secretkey');
             $data = $okcoin_client->fixUserinfoFutureApi(['api_key' => $okcoin_apikey]);
             
         ?>
-        <div class="columns col-lg-2">
+        <div class="columns col-lg-6 col-md-6">
             <h4>Bitcoin</h4>
             <ul>
                 <li> Balance: <?= $data->info->btc->balance; ?></li>
@@ -28,7 +28,7 @@ $okcoin_secretkey = Configure::read('okcoin.secretkey');
             </ul>
         </div>
         
-        <div class="columns col-lg-2">
+        <div class="columns col-lg-6 col-md-6">
             <h4>Litecoin</h4>
             <ul>
                 <li> Balance: <?= $data->info->ltc->balance; ?></li>
