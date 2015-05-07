@@ -15,11 +15,24 @@ $okcoin_secretkey = Configure::read('okcoin.secretkey');
 
 <div class="tab-content">
     <div class="tab-pane fade in active" id="userinfo_okcoin">
-        <h4>OKCoin</h4>
         <?php 
             $data = $okcoin_client->fixUserinfoFutureApi(['api_key' => $okcoin_apikey]);
-            echo "<pre>" . print_r($data, TRUE) . "</pre>";
-       ?>
+            
+        ?>
+        <h4>Bitcoin</h4>
+        <ul>
+        <li> Balance: <?= $data->info->btc->balance; ?></li>
+        <li> Contracts: <?= print_r($data->info->btc->contracts, TRUE) ?></li>
+        <li> Rights: <?= $data->info->btc->rights; ?></li>
+        </ul>
+        
+        <h4>Litecoin</h4>
+        <ul>
+        <li> Balance: <?= $data->info->ltc->balance; ?></li>
+        <li> Contracts: <?= print_r($data->info->ltc->contracts, TRUE); ?></li>
+        <li> Rights: <?= $data->info->ltc->rights; ?></li>
+        </ul>
+        
     </div>
     <div class="tab-pane fade" id="userinfo_796">
         <h4>796</h4>
