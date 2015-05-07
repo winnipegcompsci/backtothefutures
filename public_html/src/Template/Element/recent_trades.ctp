@@ -15,10 +15,10 @@ $okcoin_apikey = Configure::read('okcoin.apikey');
 <div class="tab-content">
     <div class="tab-pane fade in active" id="trade_okcoin">
         <?php 
-            $data = $okcoin_client->futureTradesHistoryFutureApi(['api_key' => $okcoin_apikey]);
+            $data = $okcoin_client->futureTradesHistoryFutureApi(['symbol' => 'btc_usd', 'date' => date('yyyy-MM-dd'), 'api_key' => $okcoin_apikey]);
             echo "DATAS <pre>" . print_r($data, TRUE) . "</pre>";
         ?>
-        <h4>OKCoin - Recent Trades </h4>
+        <h4>BTC - Recent Trades </h4>
         <?php
             echo "<table>";
             foreach($data as $trade) {
@@ -32,6 +32,8 @@ $okcoin_apikey = Configure::read('okcoin.apikey');
             }
             echo "</table>";
         ?>
+        <h4>LTC - Recent Trades</h4>
+        
     </div>
     <div class="tab-pane fade" id="trade_796">
         <h4>796 - Recent Trades</h4>
