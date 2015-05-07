@@ -22,14 +22,14 @@ $okcoin_secretkey = Configure::read('okcoin.secretkey');
         <h4>Bitcoin</h4>
         <ul>
         <li> Balance: <?= $data->info->btc->balance; ?></li>
-        <li> Contracts: <?= print_r($data->info->btc->contracts, TRUE) ?></li>
+        <li> Contracts: <?= $this->Html->link('View Here', '/contracts'); ?></li>
         <li> Rights: <?= $data->info->btc->rights; ?></li>
         </ul>
         
         <h4>Litecoin</h4>
         <ul>
         <li> Balance: <?= $data->info->ltc->balance; ?></li>
-        <li> Contracts: <?= print_r($data->info->ltc->contracts, TRUE); ?></li>
+        <li> Contracts: <?= $this->Html->link('View Here', '/contracts'); ?></li>
         <li> Rights: <?= $data->info->ltc->rights; ?></li>
         </ul>
         
