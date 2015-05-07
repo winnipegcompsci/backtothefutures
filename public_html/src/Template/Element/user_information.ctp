@@ -17,7 +17,6 @@ $okcoin_secretkey = Configure::read('okcoin.secretkey');
     <div class="tab-pane fade in active" id="userinfo_okcoin">
         <?php 
             $data = $okcoin_client->fixUserinfoFutureApi(['api_key' => $okcoin_apikey]);
-            
         ?>
         <div class="columns col-lg-6 col-md-6">
             <h4>Bitcoin</h4>
