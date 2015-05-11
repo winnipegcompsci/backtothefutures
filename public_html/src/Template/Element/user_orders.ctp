@@ -15,7 +15,7 @@ $okcoin_secretkey = Configure::read('okcoin.secretkey');
 
 <div class="tab-content">
     <?php 
-       $data = $okcoin_client->(['symbol' => 'btc_usd', 'contract_type' => 'this_week', 'api_key' => $okcoin_apikey]);
+       $data = $okcoin_client->getOrderFutureApi(['symbol' => 'btc_usd', 'contract_type' => 'this_week', 'api_key' => $okcoin_apikey]);
     ?>
     <div class="tab-pane fade in active" id="userorders_okcoin">
         <h4>OKCoin</h4>
