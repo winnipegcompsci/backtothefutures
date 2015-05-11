@@ -27,7 +27,7 @@ $okcoin_secretkey = Configure::read('okcoin.secretkey');
     ?>
     <div class="tab-pane fade in active" id="userorders_okcoin">
         <h4>OKCoin</h4>
-        <?= echo "<pre>" . print_r($okc_data, TRUE) . "</pre>"; ?>
+        <?= "<pre>" . print_r($okc_data, TRUE) . "</pre>"; ?>
     </div>
     
     <div class="tab-pane fade" id="userorders_796">
