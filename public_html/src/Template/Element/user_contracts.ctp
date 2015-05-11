@@ -31,4 +31,3 @@ $okcoin_secretkey = Configure::read('okcoin.secretkey');
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget rutrum purus. Donec hendrerit ante ac metus sagittis elementum. Mauris feugiat nisl sit amet neque luctus, a tincidunt odio auctor. </p>
     </div>
 </div>
-</div>
