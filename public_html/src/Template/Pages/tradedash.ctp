@@ -37,15 +37,24 @@ use Cake\Core\Configure;
 </div>
 
 <div class="row">
+    <!-- Orders -->
     <div class="columns col-lg-8">
+        <div class="panel panel-primary">
+            <div class="panel-heading">Orders</div>
+            <div class="panel-body">
+                <?= $this->element('user_orders', array()); ?>
+            </div>        
+        </div>
+    </div>
+<!-- <div class="columns col-lg-8">
         <div class="panel panel-primary">
             <div class="panel-heading">Contracts</div>
             <div class="panel-body">
-                <!-- Contracts Element -->
+
             </div>
         </div>
     </div>
-    
+-->    
     <div class="columns col-lg-4">
         <div class="panel panel-info">
             <div class="panel-heading"> User Information </div>
@@ -75,16 +84,6 @@ use Cake\Core\Configure;
             <div class="panel-body">
                 <?= $this->element('tickers', array()); ?>
             </div>
-        </div>
-    </div>
-    
-    <!-- Orders -->
-    <div class="columns col-lg-8">
-        <div class="panel panel-primary">
-            <div class="panel-heading">Orders</div>
-            <div class="panel-body">
-                <?= $this->element('user_orders', array()); ?>
-            </div>        
         </div>
     </div>
 </div>
