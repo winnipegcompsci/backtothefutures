@@ -15,8 +15,7 @@ $okcoin_apikey = Configure::read('okcoin.apikey');
 <div class="tab-content">
     <div class="tab-pane fade in active" id="trade_okcoin">
         <?php 
-            $data = $okcoin_client->tradesFutureApi(['symbol' => 'btc_usd', 'contract_type' => 'this_week']);
-            echo "DATAS <pre>" . print_r($data, TRUE) . "</pre>";
+            $data = $okcoin_client->tradesFutureApi(['symbol' => 'btc_usd', 'contract_type' => 'quarter']);
         ?>
         <h4>BTC - Recent Trades </h4>
         <?php
