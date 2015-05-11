@@ -33,6 +33,23 @@ $okcoin_apikey = Configure::read('okcoin.apikey');
             echo "</table>";
         ?>
         <h4>LTC - Recent Trades</h4>
+        <?php
+        
+            $data = $okcoin_client->tradesFutureApi(['symbol' => 'ltc_usd', 'contract_type' => 'quarter']);
+            echo "<table>";
+            echo "<tr><th>Amount</th> <th>Date</th> <th>Price</th> <th>Transaction #</th> <th>Type</th></tr>";
+            foreach($data as $trade) {
+                echo "<tr>"; 
+                echo "<td>" . $trade->amount . "</td>";
+                echo "<td>" . date('Y-m-d H:i:s', $trade->date) . "</td>";
+                echo "<td>" . $trade->price . "</td>";
+                echo "<td>" . $trade->tid . "</td>";
+                echo "<td>" . $trade->type . "</td>";
+                echo "</tr>";
+            }
+            echo "</table>";
+        ?>
+        
         
     </div>
     <div class="tab-pane fade" id="trade_796">
