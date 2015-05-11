@@ -11,11 +11,11 @@ $okcoin_secretkey = Configure::read('okcoin.secretkey');
     <li><a href="#userorders_okcoin" data-toggle="tab">OKCoin</a></li>
     <li><a href="#userorders_796" data-toggle="tab">796</a></li>
     <li><a href="#userorders_bitvc" data-toggle="tab">BitVC</a></li>
-</ul>
+</ul>                             
 
 <div class="tab-content">
     <?php 
-       $data = $okcoin_client->getOrderFutureApi(['symbol' => 'btc_usd', 'contract_type' => 'this_week', 'api_key' => $okcoin_apikey]);
+       $data = $okcoin_client->getOrderFutureApi(['symbol' => 'btc_usd', 'contract_type' => 'quarter', 'api_key' => $okcoin_apikey]);
        echo "<pre>" . print_r($data, TRUE) . "</pre>";
     ?>
     <div class="tab-pane fade in active" id="userorders_okcoin">
