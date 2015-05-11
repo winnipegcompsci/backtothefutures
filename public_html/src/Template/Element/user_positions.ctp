@@ -16,12 +16,12 @@ $okcoin_secretkey = Configure::read('okcoin.secretkey');
 <div class="tab-content">
     <?php 
         $data = $okcoin_client->singleBondPositionFutureApi(['type' => '1', 'symbol' => 'btc_usd', 'contract_type' => 'this_week', 'api_key' => $okcoin_apikey]);
-        echo "<pre>" . print_r($data, TRUE) . "</pre>";
+
     ?>
     <div class="tab-pane fade in active" id="userpositions_okcoin">
         <h4>OKCoin</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget rutrum purus. Donec hendrerit ante ac metus sagittis elementum. Mauris feugiat nisl sit amet neque luctus, a tincidunt odio auctor. </p>
-    </div>
+        <?= "<pre>" . print_r($data, TRUE) . "</pre>"; ?>
+  </div>
     
     <div class="tab-pane fade" id="userpositions_796">
         <h4>796</h4>
