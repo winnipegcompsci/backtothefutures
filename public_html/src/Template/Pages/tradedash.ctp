@@ -61,9 +61,10 @@ use Cake\Core\Configure;
 <!-- Active Positions -->
     <div class="columns col-lg-8">
         <div class="panel panel-primary">
-            <div class="panel-heading">Active Positions</div>
+            <div class="panel-heading">User Positions</div>
             <div class="panel-body">
                  <!-- Active Positions Element -->
+                 <?= $this->element('user_positions', array()); ?>
             </div>        
         </div>
     </div>
