@@ -24,7 +24,7 @@ $okcoin_apikey = Configure::read('okcoin.apikey');
             foreach($data as $trade) {
                 echo "<pre>" . print_r($trade, TRUE) . "</pre>";
                 echo "<tr>"; 
-                echo "<td>" . date('Y-m-d H:i:s', $trade['date']) . "</td>";
+                echo "<td>" . date('Y-m-d H:i:s', $trade->date) . "</td>";
                 echo "<td>" . $trade['amount'] . "</td>";
                 echo "<td>" . $trade['tid'] . "</td>";
                 echo "<td>" . $trade['type'] . "</td>";
