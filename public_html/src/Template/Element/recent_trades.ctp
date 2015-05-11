@@ -20,6 +20,7 @@ $okcoin_apikey = Configure::read('okcoin.apikey');
         <h4>BTC - Recent Trades </h4>
         <?php
             echo "<table>";
+            echo "<tr><th>Amount</th> <th>Date</th> <th>Price</th> <th>Transaction #</th> <th>Type</th></tr>";
             foreach($data as $trade) {
                 echo "<tr>"; 
                 echo "<td>" . $trade->amount . "</td>";
