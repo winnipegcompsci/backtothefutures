@@ -19,12 +19,11 @@ $okcoin_apikey = Configure::read('okcoin.apikey');
         ?>
         <h4>BTC - Recent Trades </h4>
         <?php
-            echo "<table>";
-            echo "<tr><th>Amount</th> <th>Date</th> <th>Price</th> <th>Transaction #</th> <th>Type</th></tr>";
+            echo "<table class='col-lg-2'>";
+            echo "<tr><th>Amount</th><th>Price</th> <th>Transaction #</th> <th>Type</th></tr>";
             foreach($data as $trade) {
                 echo "<tr>"; 
                 echo "<td>" . $trade->amount . "</td>";
-                echo "<td>" . date('Y-m-d H:i:s', $trade->date) . "</td>";
                 echo "<td>" . $trade->price . "</td>";
                 echo "<td>" . $trade->tid . "</td>";
                 echo "<td>" . $trade->type . "</td>";
@@ -36,12 +35,11 @@ $okcoin_apikey = Configure::read('okcoin.apikey');
         <?php
         
             $data = $okcoin_client->tradesFutureApi(['symbol' => 'ltc_usd', 'contract_type' => 'quarter']);
-            echo "<table>";
-            echo "<tr><th>Amount</th> <th>Date</th> <th>Price</th> <th>Transaction #</th> <th>Type</th></tr>";
+            echo "<table class='col-lg-2'>";
+            echo "<tr><th>Amount</th><th>Price</th> <th>Transaction #</th> <th>Type</th></tr>";
             foreach($data as $trade) {
                 echo "<tr>"; 
                 echo "<td>" . $trade->amount . "</td>";
-                echo "<td>" . date('Y-m-d H:i:s', $trade->date) . "</td>";
                 echo "<td>" . $trade->price . "</td>";
                 echo "<td>" . $trade->tid . "</td>";
                 echo "<td>" . $trade->type . "</td>";
