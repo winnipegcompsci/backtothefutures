@@ -83,7 +83,7 @@ use Cake\Core\Configure;
         <div class="panel panel-primary">
             <div class="panel-heading">Orders</div>
             <div class="panel-body">
-                 <!-- Orders Element -->
+                <?= $this->element('user_orders', array()); ?>
             </div>        
         </div>
     </div>
