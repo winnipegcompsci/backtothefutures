@@ -19,6 +19,7 @@ $okcoin_secretkey = Configure::read('okcoin.secretkey');
     ?>
     <div class="tab-pane fade in active" id="usercontracts_okcoin">
         <h4>OKCoin</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget rutrum purus. Donec hendrerit ante ac metus sagittis elementum. Mauris feugiat nisl sit amet neque luctus, a tincidunt odio auctor. </p>
     </div>
     
     <div class="tab-pane fade" id="usercontracts_796">
@@ -29,4 +30,5 @@ $okcoin_secretkey = Configure::read('okcoin.secretkey');
         <h4>BitVC</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget rutrum purus. Donec hendrerit ante ac metus sagittis elementum. Mauris feugiat nisl sit amet neque luctus, a tincidunt odio auctor. </p>
     </div>
+</div>
 </div>
